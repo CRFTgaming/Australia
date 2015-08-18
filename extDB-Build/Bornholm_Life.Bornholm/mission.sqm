@@ -38,7 +38,6 @@ class Mission
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"jdg_carrier",
 		"A3_Structures_F_Ind_Cargo",
-		"bornholmobjects",
 		"australia"
 	};
 	addOnsAuto[]=
@@ -78,7 +77,6 @@ class Mission
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"jdg_carrier",
 		"A3_Structures_F_Ind_Cargo",
-		"bornholmobjects",
 		"australia"
 	};
 	randomSeed=1343062;
@@ -8630,7 +8628,7 @@ class Mission
 		{
 			position[]={4929.0981,0.53004438,36111.727};
 			name="oil_trader";
-			text="Bornholm Oil";
+			text="Aussie Oil";
 			type="b_unknown";
 		};
 		class Item96
