@@ -19,7 +19,10 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+		_ret =
+		[
+			["U_Rangemaster","Cop Uniform",100]
+		];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
@@ -102,11 +105,14 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		_ret pushBack ["G_Shades_Black",nil,20];
-		_ret pushBack ["G_Shades_Blue",nil,20];
-		_ret pushBack ["G_Sport_Blackred",nil,20];
-		_ret pushBack ["G_Aviator",nil,20];
-		_ret pushBack ["G_Squares",nil,20];
+		_ret =
+		[
+			["G_Shades_Black",nil,20],
+			["G_Shades_Blue",nil,20],
+			["G_Sport_Blackred",nil,20],
+			["G_Aviator",nil,20],
+			["G_Squares",nil,20]
+		];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["G_Lowprofile",nil,30];
@@ -126,7 +132,10 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+		_ret =
+		[
+			["V_Rangemaster_belt_blk",nil,100]
+		];
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
