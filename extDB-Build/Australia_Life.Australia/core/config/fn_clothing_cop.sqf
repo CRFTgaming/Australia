@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Altis Police Department Shop"];
+ctrlSetText[3103,"Australia Police Department Shop"];
 
 _ret = [];
 switch (_filter) do
@@ -21,93 +21,118 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) == 0):
 		{
-			["U_Rangemaster","Cop Uniform",100]
+			["Pub Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100]
+				]
+			];	
 		};
 		if(__GETC__(life_coplevel) == 1):
 		{
-			["U_Rangemaster","Cop Uniform",100]
+			["Cadet Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100]
+				]
+			];	
 		};
 		if(__GETC__(life_coplevel) == 2):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+			["Patrol Office Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100],
+					["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+					["TRYK_U_denim_jersey_blu","Undercover 1",100],
+					["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+				]
+			];	
 		};
 		if(__GETC__(life_coplevel) == 3):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+			["Sergeant Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100],
+					["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+					["TRYK_U_denim_jersey_blu","Undercover 1",100],
+					["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+				]
+			];	
 		};
 		if(__GETC__(life_coplevel) == 4):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+			["Lieutenant Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100],
+					["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+					["TRYK_U_denim_jersey_blu","Undercover 1",100],
+					["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+				]
+			];	
 		};
 		if(__GETC__(life_coplevel) == 5):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+			["Captain Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100],
+					["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+					["TRYK_U_denim_jersey_blu","Undercover 1",100],
+					["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+				]
+			];	
 		};
 		if(__GETC__(life_coplevel) == 6):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
+			["SWAT Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100],
+					["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+					["TRYK_U_denim_jersey_blu","Undercover 1",100],
+					["TRYK_U_B_Denim_T_BK","Undercover 2",100],
+					["U_B_Wetsuit",nil,300],
+					["U_B_GhillieSuit",nil,600],
+					["U_B_FullGhillie_ard",nil,600],
+					["U_B_FullGhillie_lsh",nil,600],
+					["U_B_FullGhillie_sard",nil,600],
+					["45KOso_black","SWAT Fatigues",500],
+					["U_B_CombatUniform_mcam","SWAT",600]
+				]
+			];	
 		};
-		// SWAT
 		if(__GETC__(life_coplevel) == 7):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100],
-			["U_B_Wetsuit",nil,300],
-			["U_B_GhillieSuit",nil,600],
-			["U_B_FullGhillie_ard",nil,600],
-			["U_B_FullGhillie_lsh",nil,600],
-			["U_B_FullGhillie_sard",nil,600],
-			["45KOso_black","SWAT Fatigues",500],
-			["U_B_CombatUniform_mcam","SWAT",600]
+			["Commanding Officer Clothing",
+				[
+					["U_Rangemaster","Cop Uniform",100],
+					["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+					["TRYK_U_denim_jersey_blu","Undercover 1",100],
+					["TRYK_U_B_Denim_T_BK","Undercover 2",100],
+					["U_B_Wetsuit",nil,300],
+					["U_B_GhillieSuit",nil,600],
+					["U_B_FullGhillie_ard",nil,600],
+					["U_B_FullGhillie_lsh",nil,600],
+					["U_B_FullGhillie_sard",nil,600],
+					["45KOso_black","SWAT Fatigues",500],
+					["U_B_CombatUniform_mcam","SWAT",600]
+				]	
+			];		
 		};
-		// APD COMMAND
 		if(__GETC__(life_coplevel) == 8):
 		{
-			["U_Rangemaster","Cop Uniform",100],
-			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
-			["TRYK_U_denim_jersey_blu","Undercover 1",100],
-			["TRYK_U_B_Denim_T_BK","Undercover 2",100],
-			["U_B_Wetsuit",nil,300],
-			["U_B_GhillieSuit",nil,600],
-			["U_B_FullGhillie_ard",nil,600],
-			["U_B_FullGhillie_lsh",nil,600],
-			["U_B_FullGhillie_sard",nil,600],
-			["45KOso_black","SWAT Fatigues",500],
-			["U_B_CombatUniform_mcam","SWAT",600]
+			["Sheriff's Clothing",
+				[
+					 ["U_Competitor","Sheriff Uniform",100],
+					 ["TRYK_U_B_Denim_T_BK","Sheriff Undercover",100],
+					 ["TRYK_U_denim_jersey_blu","Sheriff Undercover 1",100],
+					 ["U_PMC_IndUniformLS_BSBPBB","Sheriff Black Tactical",200],
+					 ["U_PMC_IndUniformLS_GSBPBB","Sheriff Green Tactical",200],
+					 ["TRYK_U_B_wood_CombatUniform","Sheriff Woodland",200],
+					 ["TRYK_U_B_Woodland","Sheriff Woodland 2",200],
+					 ["45KOso_black","Sheriff SWAT",200],
+					 ["TRYK_B_USMC_R","Sheriff SWAT 2",200],
+					 ["U_B_Wetsuit","WetSuit",100]
+				]	 
+			];	
 		};
-		// SHERIFF
-		if(__GETC__(life_coplevel) == 9):
-		{
-			 ["U_Competitor","Sheriff Uniform",100],
-			 ["TRYK_U_B_Denim_T_BK","Sheriff Undercover",100],
-			 ["TRYK_U_denim_jersey_blu","Sheriff Undercover 1",100],
-			 ["U_PMC_IndUniformLS_BSBPBB","Sheriff Black Tactical",200],
-			 ["U_PMC_IndUniformLS_GSBPBB","Sheriff Green Tactical",200],
-			 ["TRYK_U_B_wood_CombatUniform","Sheriff Woodland",200],
-			 ["TRYK_U_B_Woodland","Sheriff Woodland 2",200],
-			 ["45KOso_black","Sheriff SWAT",200],
-			 ["TRYK_B_USMC_R","Sheriff SWAT 2",200],
-			 ["U_B_Wetsuit","WetSuit",100]
-		};
-	};
-	
+
 	//Hats
 	case 1:
 	{
