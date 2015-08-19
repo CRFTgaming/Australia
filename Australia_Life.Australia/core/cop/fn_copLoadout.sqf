@@ -173,7 +173,7 @@ player addItem "ItemRadio";
 player assignItem "ItemRadio";
 };
 
-if(FETCH_CONST(life_coplevel) == 7) then
+if(__GETC__(life_coplevel) == 7) then
 {
 //Load player with default cop gear.
 player addUniform "U_Rangemaster";
