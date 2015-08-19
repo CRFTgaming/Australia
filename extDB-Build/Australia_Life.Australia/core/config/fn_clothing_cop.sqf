@@ -19,101 +19,92 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		if(__GETC__(life_coplevel) == 0 then
+		if(__GETC__(life_coplevel) == 0):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			["U_Rangemaster","Cop Uniform",100]
 		};
-	
-		if(__GETC__(life_coplevel) == 1 then
+		if(__GETC__(life_coplevel) == 1):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			["U_Rangemaster","Cop Uniform",100]
 		};
-
-		if(__GETC__(life_coplevel) == 2 then
+		if(__GETC__(life_coplevel) == 2):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
 		};
-	
-		if(__GETC__(life_coplevel) == 3 then
+		if(__GETC__(life_coplevel) == 3):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
 		};
-	
-		if(__GETC__(life_coplevel) == 4 then
+		if(__GETC__(life_coplevel) == 4):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
 		};
-	};
-	if(__GETC__(life_coplevel) == 5 then
+		if(__GETC__(life_coplevel) == 5):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
 		};
-	
-		if(__GETC__(life_coplevel) == 6 then
+		if(__GETC__(life_coplevel) == 6):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100]
 		};
-	
 		// SWAT
-		if(__GETC__(life_coplevel) == 7 then 
+		if(__GETC__(life_coplevel) == 7):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
-			_ret pushBack ["U_B_Wetsuit",nil,300];
-			_ret pushBack ["U_B_GhillieSuit",nil,600];
-			_ret pushBack ["U_B_FullGhillie_ard",nil,600];
-			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
-			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
-			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
-			_ret pushBack ["U_B_CombatUniform_mcam","SWAT",600];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100],
+			["U_B_Wetsuit",nil,300],
+			["U_B_GhillieSuit",nil,600],
+			["U_B_FullGhillie_ard",nil,600],
+			["U_B_FullGhillie_lsh",nil,600],
+			["U_B_FullGhillie_sard",nil,600],
+			["45KOso_black","SWAT Fatigues",500],
+			["U_B_CombatUniform_mcam","SWAT",600]
 		};
-	
 		// APD COMMAND
-		if(__GETC__(life_coplevel) == 8 then
+		if(__GETC__(life_coplevel) == 8):
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
-			_ret pushBack ["U_B_Wetsuit",nil,300];
-			_ret pushBack ["U_B_GhillieSuit",nil,600];
-			_ret pushBack ["U_B_FullGhillie_ard",nil,600];
-			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
-			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
-			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
-			_ret pushBack ["U_B_CombatUniform_mcam","SWAT",600];
+			["U_Rangemaster","Cop Uniform",100],
+			["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200],
+			["TRYK_U_denim_jersey_blu","Undercover 1",100],
+			["TRYK_U_B_Denim_T_BK","Undercover 2",100],
+			["U_B_Wetsuit",nil,300],
+			["U_B_GhillieSuit",nil,600],
+			["U_B_FullGhillie_ard",nil,600],
+			["U_B_FullGhillie_lsh",nil,600],
+			["U_B_FullGhillie_sard",nil,600],
+			["45KOso_black","SWAT Fatigues",500],
+			["U_B_CombatUniform_mcam","SWAT",600]
 		};
-	
 		// SHERIFF
-		if(__GETC__(life_coplevel) == 9 then 
+		if(__GETC__(life_coplevel) == 9):
 		{
-			_ret pushBack ["U_Competitor","Sheriff Uniform",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Sheriff Undercover",100];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Sheriff Undercover 1",100];
-			_ret pushBack ["U_PMC_IndUniformLS_BSBPBB","Sheriff Black Tactical",200];
-			_ret pushBack ["U_PMC_IndUniformLS_GSBPBB","Sheriff Green Tactical",200];
-			_ret pushBack ["TRYK_U_B_wood_CombatUniform","Sheriff Woodland",200];
-			_ret pushBack ["TRYK_U_B_Woodland","Sheriff Woodland 2",200];
-			_ret pushBack ["45KOso_black","Sheriff SWAT",200];
-			_ret pushBack ["TRYK_B_USMC_R","Sheriff SWAT 2",200];
-			_ret pushBack ["U_B_Wetsuit","WetSuit",100];
+			 ["U_Competitor","Sheriff Uniform",100],
+			 ["TRYK_U_B_Denim_T_BK","Sheriff Undercover",100],
+			 ["TRYK_U_denim_jersey_blu","Sheriff Undercover 1",100],
+			 ["U_PMC_IndUniformLS_BSBPBB","Sheriff Black Tactical",200],
+			 ["U_PMC_IndUniformLS_GSBPBB","Sheriff Green Tactical",200],
+			 ["TRYK_U_B_wood_CombatUniform","Sheriff Woodland",200],
+			 ["TRYK_U_B_Woodland","Sheriff Woodland 2",200],
+			 ["45KOso_black","Sheriff SWAT",200],
+			 ["TRYK_B_USMC_R","Sheriff SWAT 2",200],
+			 ["U_B_Wetsuit","WetSuit",100]
 		};
 	};
 	
