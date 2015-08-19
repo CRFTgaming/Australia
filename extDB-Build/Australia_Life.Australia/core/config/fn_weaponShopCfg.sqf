@@ -639,7 +639,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
-			case (__GETC__(life_coplevel) == 8): 
+			case (__GETC__(life_coplevel) == 7): 
 			{
 				["Bornholm Sheriff's Equipment",
 					[
@@ -663,7 +663,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
-			case (__GETC__(life_coplevel) == 8): 
+			case (__GETC__(life_coplevel) == 7): 
 			{
 				["Bornholm Sheriff's Armory",
 					[
@@ -695,7 +695,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
-			case (__GETC__(life_coplevel) == 8): 
+			case (__GETC__(life_coplevel) == 7): 
 			{
 				["Attachment Shop",
 					[
@@ -741,7 +741,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
-			case (__GETC__(life_coplevel) == 8): 
+			case (__GETC__(life_coplevel) == 7): 
 			{
 				["Sheriff's Task Force",
 					[
