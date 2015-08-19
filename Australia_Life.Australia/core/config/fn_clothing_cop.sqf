@@ -108,41 +108,74 @@ switch (_filter) do
 		};
 	};
 	
-	//Hats
+//Hats
 	case 1:
 	{
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) == 0) then
 		{
-			_ret pushBack ["H_Cap_blk",nil,50];
 			_ret pushBack ["H_Cap_police","Police Hat",50];
-			_ret pushBack ["H_HelmetB_plain_mcamo",nil,200];
-			_ret pushBack ["H_PilotHelmetHeli_B","Air Patrol Helmet",350];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) == 1) then
 		{
+			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Beret_blk",nil,100];
-			_ret pushBack ["H_MilCap_blue",nil,100];
-			_ret pushBack ["H_Helmet_Kerry",nil,200];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) == 2) then
 		{
+			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Beret_02",nil,100];
 		};
-		if(__GETC__(life_coplevel) > 4) then
+		if(__GETC__(life_coplevel) == 3) then
 		{
+			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Beret_Colonel",nil,200];
 			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
 			_ret pushBack ["H_PilotHelmetFighter_B","Gas Mask",800];
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) == 4) then
+		{	
+			_ret pushBack ["H_Cap_police","Police Hat",50];
+			_ret pushBack ["H_Beret_Colonel",nil,200];
+			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
+			_ret pushBack ["H_PilotHelmetFighter_B","Gas Mask",800];
+		};
+		if(__GETC__(life_coplevel) == 5) then
 		{
+			_ret pushBack ["H_Cap_police","Police Hat",50];
+			_ret pushBack ["H_Beret_Colonel",nil,200];
+			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
+			_ret pushBack ["H_PilotHelmetFighter_B","Gas Mask",800];
+		};
+		if(__GETC__(life_coplevel) == 6) then
+		{
+			_ret pushBack ["H_Cap_blk","Black Hat",50];
+			_ret pushBack ["H_Cap_police","Police Hat",50];
+			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
+			_ret pushBack ["H_PilotHelmetFighter_B","Gas Mask",800];
+			_ret pushBack ["45KOso_helmet_alpha","SWAT Tac Helmet",400];
+			_ret pushBack ["H_PilotHelmetHeli_B","Air Patrol Helmet",350];
+		};
+		if(__GETC__(life_coplevel) == 7) then
+		{
+			_ret pushBack ["H_Cap_blk","Black Hat",50];
+			_ret pushBack ["H_Cap_police","Police Hat",50];
+			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
 			_ret pushBack ["H_Watchcap_blk",nil,100];
 			_ret pushBack ["H_Bandanna_khk_hs",nil,100];
 			_ret pushBack ["H_HelmetB_light_black",nil,200];
 			_ret pushBack ["H_Cap_blk_CMMG",nil,200];
+			_ret pushBack ["H_Beret_Colonel",nil,200];
+			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
+			_ret pushBack ["H_PilotHelmetHeli_B","Air Patrol Helmet",350];
+			_ret pushBack ["H_PilotHelmetFighter_B","Gas Mask",800];
 			_ret pushBack ["45KOso_helmet_alpha","SWAT Tac Helmet",400];
+			_ret pushBack ["TRYK_H_Booniehat_CC","Streetman's Hat",400];
+			_ret pushBack ["TRYK_H_Booniehat_MARPAT_Desert","Streetman's Hat 2",400];
+			_ret pushBack ["TRYK_H_Booniehat_MARPAT_WOOD","Streetman's Hat 3",400];
+			_ret pushBack ["TRYK_H_Booniehat_WOOD","Streetman's Hat 4",400];
+			_ret pushBack ["TRYK_H_Booniehat_AOR1","Streetman's Hat 5",400];
 		};
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) == 8) then
 		{
 			_ret pushBack ["H_Cap_blk","Sheriff Hat",50];
 			_ret pushBack ["H_HelmetB_plain_blk","Ballistic Helmet",50];
@@ -156,67 +189,161 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		_ret =
-		[
-			["G_Shades_Black",nil,20],
-			["G_Shades_Blue",nil,20],
-			["G_Sport_Blackred",nil,20],
-			["G_Aviator",nil,20],
-			["G_Squares",nil,20]
-		];
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) == 0) then
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];
+		if(__GETC__(life_coplevel) == 1) then
 		{
-			_ret pushBack ["G_Lowprofile",nil,30];
-			_ret pushBack ["G_Combat",nil,45];
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) == 2) then
 		{
-			_ret pushBack ["G_Diving",nil,55];
-			_ret pushBack ["G_Tactical_Black",nil,55];
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];
 		};
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) == 3) then
 		{
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];		
+		};
+		if(__GETC__(life_coplevel) == 4) then
+		{
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];		
+		};
+			if(__GETC__(life_coplevel) == 5) then
+		{
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];		
+		};
+			if(__GETC__(life_coplevel) == 6) then
+		{
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];	
 			_ret pushBack ["TRYK_G_bala_ess_NV","SWAT Balaclava (NVG)",1000];
+		};
+			if(__GETC__(life_coplevel) == 7) then
+		{
+			_ret pushBack ["G_Shades_Black",nil,20];
+			_ret pushBack ["G_Shades_Blue",nil,20];
+			_ret pushBack ["G_Sport_Blackred",nil,20];
+			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["G_Squares",nil,20];		
+		};
+			if(__GETC__(life_coplevel) == 8) then
+		{
+			_ret pushBack ["G_Aviator","Aviators",20];
+			_ret pushBack ["G_B_Diving","Divers Goggles",20];
+			_ret pushBack ["G_Tactical_Clear","Tactical Glasses",20];
+			_ret pushBack ["G_Tactical_Black","Tactical Shades",20];
+			_ret pushBack ["TRYK_kio_balaclava_ESS","Balaclava & Goggles",20];	
 		};
 	};
 	
 	//Vest
 	case 3:
 	{
-		_ret =
-		[
-			["V_Rangemaster_belt_blk",nil,100]
-		];
-		if(__GETC__(life_coplevel) > 0) then
+		if(__GETC__(life_coplevel) == 0) then
 		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
 			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
 		};
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) == 1) then
 		{
-			_ret pushBack ["V_Chestrig_khk","Air Patrol Rig",300];
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
+		};
+		if(__GETC__(life_coplevel) == 2) then
+		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
+			_ret pushBack ["V_Chestrig_blk","Air Patrol Rig",300];
 			_ret pushBack ["TRYK_V_tacv1_P_BK","Police Vest",300];
+		};
+		if(__GETC__(life_coplevel) == 3) then
+		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
+			_ret pushBack ["V_Chestrig_blk","Air Patrol Rig",300];
+			_ret pushBack ["TRYK_V_tacv1_P_BK","Police Vest",300];
+			_ret pushBack ["TRYK_V_tacv1LP_BK","Police Vest 2",300];
+		};
+		if(__GETC__(life_coplevel) == 4) then
+		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
+			_ret pushBack ["V_Chestrig_blk","Air Patrol Rig",300];
+			_ret pushBack ["TRYK_V_tacv1_P_BK","Police Vest",300];
+			_ret pushBack ["TRYK_V_tacv1LP_BK","Police Vest 2",300];
+		};
+		if(__GETC__(life_coplevel) == 5) then
+		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_TacVest_blk_POLICE",nil,200];
+			_ret pushBack ["V_Chestrig_blk","Air Patrol Rig",300];
+			_ret pushBack ["TRYK_V_tacv1_P_BK","Police Vest",300];
+			_ret pushBack ["TRYK_V_tacv1LP_BK","Police Vest 2",300];
+		};
+		if(__GETC__(life_coplevel) == 6) then
+		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_Chestrig_blk","Air Patrol Rig",300];
+			_ret pushBack ["TRYK_V_tacv1_P_BK","Police Vest",300];
+			_ret pushBack ["TRYK_V_tacv1LP_BK","Police Vest 2",300];
 			_ret pushBack ["V_TacVestIR_blk",nil,300];
-		};
-		if(__GETC__(life_coplevel) > 4) then
-		{
 			_ret pushBack ["V_PlateCarrier1_blk",nil,400];
-		};
-		if(__GETC__(life_coplevel) > 5) then
-		{
 			_ret pushBack ["V_RebreatherB",nil,600];
 			_ret pushBack ["V_PlateCarrierSpec_blk","SWAT Heavy Rig",1200];
 			_ret pushBack ["V_PlateCarrierGL_blk","SWAT Heavy GL Rig",1200];
 			_ret pushBack ["45KO_Special_rig_black","SWAT Tac Vest",2000];
 		};
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) == 7) then
+		{
+			_ret pushBack ["V_Rangemaster_belt_blk",nil,100];
+			_ret pushBack ["V_Chestrig_blk","Air Patrol Rig",300];
+			_ret pushBack ["TRYK_V_tacv1_P_BK","Police Vest",300];
+			_ret pushBack ["TRYK_V_tacv1LP_BK","Police Vest 2",300];
+			_ret pushBack ["V_TacVestIR_blk",nil,300];
+			_ret pushBack ["V_PlateCarrier1_blk",nil,400];
+			_ret pushBack ["V_RebreatherB",nil,600];
+			_ret pushBack ["V_PlateCarrierSpec_blk","SWAT Heavy Rig",1200];
+			_ret pushBack ["V_PlateCarrierGL_blk","SWAT Heavy GL Rig",1200];
+			_ret pushBack ["45KO_Special_rig_black","SWAT Tac Vest",2000];
+		};
+		if(__GETC__(life_coplevel) == 8) then
 		{
 			_ret pushBack ["V_Rangemaster_belt_blk","Sheriff's Duty Belt",100];
 			_ret pushBack ["TRYK_v_Sheriff_BA_OD","Sheriff's Duty Vest",200];
-			_ret pushBack ["TRYK_V_tacv1lc_SRF_OD","Sheriff's TF Vest (OD)",500];
+			_ret pushBack ["TRYK_V_tacv1_SHERIFF_BK","Sheriff's Tact Vest",500];
+			_ret pushBack ["TRYK_V_tacv1LSRF_BK","Sheriff's Tact Vest 2",500];
 			_ret pushBack ["TRYK_V_tacv1lc_SRF_BK","Sheriff's TF Vest(BLK)",500];
+			_ret pushBack ["TRYK_V_tacv1lc_SRF_OD","Sheriff's TF Vest (OD)",500];
 			_ret pushBack ["TRYK_V_tacv1lc_SRF2_OD","Sheriff's SWAT (OD)",650];
 			_ret pushBack ["TRYK_V_tacv1lc_SRF2_BK","Sheriff's SWAT (BLK)",650];
 			_ret pushBack ["V_PlateCarrier1_PMC_marpat","Sheriff's SWAT Marpat",650];
+			_ret pushBack ["V_RebreatherB","Scuba Gear",600];
 		};
 	};
 	
