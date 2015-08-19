@@ -19,33 +19,33 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-	if(__GETC__(life_coplevel) == 0 then
+		if(__GETC__(life_coplevel) == 0 then
 		{
 			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
 		};
-	};
-	if(__GETC__(life_coplevel) == 1 then
+	
+		if(__GETC__(life_coplevel) == 1 then
 		{
 			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
 		};
-	};
-	if(__GETC__(life_coplevel) == 2 then
-		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
-		};
-	};
-	if(__GETC__(life_coplevel) == 3 then
+
+		if(__GETC__(life_coplevel) == 2 then
 		{
 			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
 		};
-	};
-	if(__GETC__(life_coplevel) == 4 then
+	
+		if(__GETC__(life_coplevel) == 3 then
+		{
+			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
+			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
+			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+		};
+	
+		if(__GETC__(life_coplevel) == 4 then
 		{
 			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
@@ -60,33 +60,17 @@ switch (_filter) do
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
 		};
-	};
-	if(__GETC__(life_coplevel) == 6 then
+	
+		if(__GETC__(life_coplevel) == 6 then
 		{
 			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
 		};
-	};
-	// SWAT
-	if(__GETC__(life_coplevel) == 7 then 
-		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
-			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
-			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
-			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
-			_ret pushBack ["U_B_Wetsuit",nil,300];
-			_ret pushBack ["U_B_GhillieSuit",nil,600];
-			_ret pushBack ["U_B_FullGhillie_ard",nil,600];
-			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
-			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
-			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
-			_ret pushBack ["U_B_CombatUniform_mcam","SWAT",600];
-		};
-	};
-	// APD COMMAND
-	if(__GETC__(life_coplevel) == 8 then
+	
+		// SWAT
+		if(__GETC__(life_coplevel) == 7 then 
 		{
 			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
@@ -100,9 +84,25 @@ switch (_filter) do
 			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
 			_ret pushBack ["U_B_CombatUniform_mcam","SWAT",600];
 		};
-	};
-	// SHERIFF
-	if(__GETC__(life_coplevel) == 9 then 
+	
+		// APD COMMAND
+		if(__GETC__(life_coplevel) == 8 then
+		{
+			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
+			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
+			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
+			_ret pushBack ["U_B_Wetsuit",nil,300];
+			_ret pushBack ["U_B_GhillieSuit",nil,600];
+			_ret pushBack ["U_B_FullGhillie_ard",nil,600];
+			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
+			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
+			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
+			_ret pushBack ["U_B_CombatUniform_mcam","SWAT",600];
+		};
+	
+		// SHERIFF
+		if(__GETC__(life_coplevel) == 9 then 
 		{
 			_ret pushBack ["U_Competitor","Sheriff Uniform",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Sheriff Undercover",100];
@@ -116,8 +116,6 @@ switch (_filter) do
 			_ret pushBack ["U_B_Wetsuit","WetSuit",100];
 		};
 	};
-	
-};
 	
 	//Hats
 	case 1:
