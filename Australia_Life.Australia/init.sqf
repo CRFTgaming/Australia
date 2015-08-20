@@ -9,7 +9,7 @@ introSpawn = nil;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "Australia Life RPG"
+life_versionInfo = "Australia Life RPG";
 [] execVM "KRON_Strings.sqf";
 [] execVM "briefing.sqf"; //Load Briefing
 
