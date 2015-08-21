@@ -17,10 +17,16 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Roenne HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_3","Aakirkeby HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_4","Nexoe HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","Sheriff HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_1","Sydney HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_2","Melbourn HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_3","Adelaide HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_4","Darwin HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_6","Brisbane HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_7","Launceston HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_9","Swat HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_10","Perth HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 	
@@ -40,10 +46,14 @@ switch (_side) do
 		// Civ faction.
 		if(!license_civ_rebel && playerSide == civilian) then {
 			_return = [
-				["civ_spawn_1","Roenne","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Nexoe","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","AAkirkeby","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_4","Hasle","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["civ_spawn_1","Sydney","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_2","Melbourne","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_3","Alice Springs","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_4","Perth","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_5","Darwin","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_6","Adelaide","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_7","Brisbane","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_8","Launceston","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
 		
@@ -145,9 +155,14 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_1","Roenne Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","AAkirkeby Regional","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Nexoe Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_1","Sydney Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Melbourne Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Darwin Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Perth Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Adelaide Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Brisbane Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Alice Springs Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_3","Hobart Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
