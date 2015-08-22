@@ -17,7 +17,7 @@ http://www.altisliferpg.com/topic/4703-tut-fueltrucks-only-for-oiltransport-test
 ESU team markers
 http://www.altisliferpg.com/topic/5164-tutorial-marker-medic-team-mates-3145/
 
-Dynamic Marker works with 3.1.4.8 and 4.0.0.0
+Dynamic Market works with 3.1.4.8 and 4.0.0.0
 http://www.altisliferpg.com/topic/9971-script-dynamicmarket-by-ryan-altislife-3148-and-4000-compatible/
 
 Status bar //DOSEN'T WORK PROPERLY NEED TO USE DIFFERENT ONE

@@ -34,6 +34,7 @@ class RscTitles
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
+	#include "dialog\a3ljailhud.hpp"
 
 	class introLife
 	{
