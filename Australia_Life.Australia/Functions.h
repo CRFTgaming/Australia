@@ -336,6 +336,8 @@ class Life_Client_Core
 		class rubberbullet {};
 		class copSiren2 {};
 		class copCrush {};
+		class showArrestDialog {}; //changed
+		class arrestDialog_Arrest {}; //changed
 	};
 
 	class CopPlaceables
