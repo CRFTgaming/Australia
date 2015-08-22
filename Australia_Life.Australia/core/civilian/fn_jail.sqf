@@ -18,9 +18,19 @@ player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
+_jaillocations = [
+	[36371.691,4.0910106,13055.362],
+	[36371.527,4.0954313,13059.585],
+	[36358.094,4.063457,13062.015],
+	[36358.02,4.059164,13057.643],
+	[36358.148,4.0697174,13066.395]
+];
+_randomer = floor random (count _jaillocations);
+_jailpos = _jaillocations select _randomer;
+
 titleText[localize "STR_Jail_Warn","PLAIN"];
 hint localize "STR_Jail_LicenseNOTF";
-player setPos (getMarkerPos "jail_marker");
+player setPos _jailpos;
 
 if(_bad) then
 {
@@ -31,7 +41,7 @@ if(_bad) then
 //Check to make sure they goto check
 if(player distance (getMarkerPos "jail_marker") > 40) then
 {
-	player setPos (getMarkerPos "jail_marker");
+	player setPos _jailpos;
 };
 
 [1] call life_fnc_removeLicenses;
