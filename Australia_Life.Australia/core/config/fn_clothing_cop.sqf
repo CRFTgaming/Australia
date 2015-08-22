@@ -130,28 +130,24 @@ switch (_filter) do
 			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Beret_Colonel",nil,200];
 			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
-			_ret pushBack ["Mask_M50","Gas Mask",800];
 		};
 		if(__GETC__(life_coplevel) == 4) then
 		{	
 			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Beret_Colonel",nil,200];
 			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
-			_ret pushBack ["Mask_M50","Gas Mask",800];
 		};
 		if(__GETC__(life_coplevel) == 5) then
 		{
 			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Beret_Colonel",nil,200];
 			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
-			_ret pushBack ["Mask_M50","Gas Mask",800];
 		};
 		if(__GETC__(life_coplevel) == 6) then
 		{
 			_ret pushBack ["H_Cap_blk","Black Hat",50];
 			_ret pushBack ["H_Cap_police","Police Hat",50];
 			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
-			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["45KOso_helmet_alpha","SWAT Tac Helmet",400];
 			_ret pushBack ["H_PilotHelmetHeli_B","Air Patrol Helmet",350];
 		};
@@ -167,7 +163,6 @@ switch (_filter) do
 			_ret pushBack ["H_Beret_Colonel",nil,200];
 			_ret pushBack ["H_Cap_headphones","FTO Hat",100];
 			_ret pushBack ["H_PilotHelmetHeli_B","Air Patrol Helmet",350];
-			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["45KOso_helmet_alpha","SWAT Tac Helmet",400];
 			_ret pushBack ["TRYK_H_Booniehat_CC","Streetman's Hat",400];
 			_ret pushBack ["TRYK_H_Booniehat_MARPAT_Desert","Streetman's Hat 2",400];
@@ -178,7 +173,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) == 8) then
 		{
 			_ret pushBack ["H_Cap_blk","Sheriff Hat",50];
-			_ret pushBack ["Mask_M50","Gas Mask",50];
 			_ret pushBack ["H_HelmetB_plain_blk","Ballistic Helmet",50];
 			_ret pushBack ["Vdo_opscore_black_3_peltor","Voodoo Helmet Blk",50];
 			_ret pushBack ["45KOso_helmet_alpha","Sheriff SWAT Helmet",50];
@@ -218,6 +212,7 @@ switch (_filter) do
 			_ret pushBack ["G_Shades_Blue",nil,20];
 			_ret pushBack ["G_Sport_Blackred",nil,20];
 			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["G_Squares",nil,20];		
 		};
 		if(__GETC__(life_coplevel) == 4) then
@@ -226,6 +221,7 @@ switch (_filter) do
 			_ret pushBack ["G_Shades_Blue",nil,20];
 			_ret pushBack ["G_Sport_Blackred",nil,20];
 			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["G_Squares",nil,20];		
 		};
 			if(__GETC__(life_coplevel) == 5) then
@@ -234,6 +230,7 @@ switch (_filter) do
 			_ret pushBack ["G_Shades_Blue",nil,20];
 			_ret pushBack ["G_Sport_Blackred",nil,20];
 			_ret pushBack ["G_Aviator",nil,20];
+			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["G_Squares",nil,20];		
 		};
 			if(__GETC__(life_coplevel) == 6) then
@@ -243,6 +240,7 @@ switch (_filter) do
 			_ret pushBack ["G_Sport_Blackred",nil,20];
 			_ret pushBack ["G_Aviator",nil,20];
 			_ret pushBack ["G_Squares",nil,20];	
+			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["TRYK_G_bala_ess_NV","SWAT Balaclava (NVG)",1000];
 		};
 			if(__GETC__(life_coplevel) == 7) then
@@ -252,6 +250,7 @@ switch (_filter) do
 			_ret pushBack ["G_Sport_Blackred",nil,20];
 			_ret pushBack ["G_Aviator",nil,20];
 			_ret pushBack ["G_Squares",nil,20];		
+			_ret pushBack ["Mask_M50","Gas Mask",800];
 		};
 			if(__GETC__(life_coplevel) == 8) then
 		{
@@ -259,6 +258,7 @@ switch (_filter) do
 			_ret pushBack ["G_B_Diving","Divers Goggles",20];
 			_ret pushBack ["G_Tactical_Clear","Tactical Glasses",20];
 			_ret pushBack ["G_Tactical_Black","Tactical Shades",20];
+			_ret pushBack ["Mask_M50","Gas Mask",800];
 			_ret pushBack ["TRYK_kio_balaclava_ESS","Balaclava & Goggles",20];	
 		};
 	};
