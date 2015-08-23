@@ -21,6 +21,7 @@ StartProgress = true;
 [] execVM "R3F_LOG\init.sqf";
 [] execVM "IgiLoad\IgiLoadInit.sqf";
 [] execVM "addons\teargas.sqf";
+call compileFinal preprocessFileLineNumbers "addons\Script_XENO_Taru_Pod\XENO_Taru_Pod_Mod.sqf";
 []spawn
 {
 	if (local player) then
