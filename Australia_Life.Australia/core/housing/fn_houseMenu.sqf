@@ -90,7 +90,7 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget getVariable "house_owner"
 		_Btn1 ctrlEnable false;
 	};
 } else {
-	if((typeOf _curTarget) in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]) then {
+	if((typeOf _curTarget) in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F","Land_HouseDoubleAL","Land_HouseDoubleAL2","Land_HouseA","Land_HouseA1","Land_HouseB","Land_HouseB1","Land_HouseC","Land_HouseC1_L","Land_HouseB1_L","Land_HouseC1_L"]) then {
 		_Btn1 ctrlSetText localize "STR_pInAct_SellGarage";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_sellHouse; closeDialog 0;";
 		_Btn1 ctrlShow true;
