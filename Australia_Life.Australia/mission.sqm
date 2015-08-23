@@ -3507,7 +3507,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={36360.898,4.0618267,13054.352};
+					position[]={36360.582,3.9229236,13054.668};
 					azimut=-310.98999;
 					id=225;
 					side="WEST";
@@ -8922,7 +8922,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=382;
+		items=381;
 		class Item0
 		{
 			position[]={16563.834,5.9399352,36620.363};
@@ -9263,10 +9263,10 @@ class Mission
 		};
 		class Item41
 		{
-			position[]={36377.609,4.0967712,13046.505};
+			position[]={22116.992,16.947033,25610.852};
 			name="jail_release";
 			type="Empty";
-			angle=537.86554;
+			angle=449.67419;
 		};
 		class Item42
 		{
@@ -9550,7 +9550,7 @@ class Mission
 		};
 		class Item74
 		{
-			position[]={36366.383,4.0811243,13059.208};
+			position[]={30000.115,27.3316,17447.037};
 			name="jail_marker";
 			type="Empty";
 			angle=-180.75346;
@@ -10335,20 +10335,6 @@ class Mission
 		};
 		class Item164
 		{
-			position[]={36379.781,4.1268034,13066.424};
-			name="APD_PZ1_8";
-			text="Altis PD Patrol Zone";
-			markerType="ELLIPSE";
-			type="Empty";
-			colorName="ColorWEST";
-			fillName="SolidBorder";
-			a=50;
-			b=50;
-			angle=5.2954302;
-			drawBorder=1;
-		};
-		class Item165
-		{
 			position[]={15491.937,0.15176299,9517.416};
 			name="turtle_2_1";
 			markerType="ELLIPSE";
@@ -10359,7 +10345,7 @@ class Mission
 			b=350;
 			drawBorder=1;
 		};
-		class Item166
+		class Item165
 		{
 			position[]={15518.099,-0.27330807,9492.5957};
 			name="turtle_1_name_1_1";
@@ -10367,7 +10353,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorKhaki";
 		};
-		class Item167
+		class Item166
 		{
 			position[]={24604.125,7.4310384,12394.799};
 			name="dive_shop_1_1";
@@ -10376,7 +10362,7 @@ class Mission
 			colorName="ColorOrange";
 			angle=-42.188126;
 		};
-		class Item168
+		class Item167
 		{
 			position[]={24033.662,3.0175705,21780.295};
 			name="gang_hideout3";
@@ -10388,7 +10374,7 @@ class Mission
 			b=100;
 			angle=-77.014946;
 		};
-		class Item169
+		class Item168
 		{
 			position[]={38584.688,-0.18738601,12915.996};
 			name="police_jail_2";
@@ -10397,7 +10383,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=-179.63554;
 		};
-		class Item170
+		class Item169
 		{
 			position[]={1363.6919,0.18930264,38831.813};
 			name="atm_marker_4_1_1";
@@ -10405,14 +10391,14 @@ class Mission
 			colorName="ColorYellow";
 			angle=514.89539;
 		};
-		class Item171
+		class Item170
 		{
 			position[]={24067.568,4.3779869,21783.838};
 			name="gh3_vehicle_spawn";
 			type="Empty";
 			angle=290.79544;
 		};
-		class Item172
+		class Item171
 		{
 			position[]={31155.049,14.190317,11254.792};
 			name="katalaki_gas";
@@ -10420,7 +10406,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item173
+		class Item172
 		{
 			position[]={31065.734,29.346451,20118.332};
 			name="central_altis_gas";
@@ -10428,7 +10414,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item174
+		class Item173
 		{
 			position[]={35799.512,4.2080455,12174.323};
 			name="kwike_mart";
@@ -10436,7 +10422,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item175
+		class Item174
 		{
 			position[]={5501.4839,13.474975,18706.006};
 			name="rebel_gas";
@@ -10444,7 +10430,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item176
+		class Item175
 		{
 			position[]={3010.0884,0.42643946,36799.328};
 			name="sofia_gas";
@@ -10452,7 +10438,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item177
+		class Item176
 		{
 			position[]={36562.789,4.2468686,13089.431};
 			name="agios_gas";
@@ -10460,14 +10446,14 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item178
+		class Item177
 		{
 			position[]={24033.646,3.2237406,21776.623};
 			name="gh3_air_spawn";
 			type="Empty";
 			angle=435.70682;
 		};
-		class Item179
+		class Item178
 		{
 			position[]={11880.041,0.0028339252,31728.205};
 			name="roenne_safezone";
@@ -10475,7 +10461,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorRed";
 		};
-		class Item180
+		class Item179
 		{
 			position[]={12085.564,7.9159718,30830.387};
 			name="pyrgos_safezone";
@@ -10483,14 +10469,14 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item181
+		class Item180
 		{
 			position[]={19589.477,18.171211,24379.705};
 			name="cop_air_3";
 			type="Empty";
 			angle=205.22356;
 		};
-		class Item182
+		class Item181
 		{
 			position[]={25140.576,7.4310384,12767.59};
 			name="cop_spawn_3";
@@ -10499,14 +10485,14 @@ class Mission
 			colorName="ColorBlue";
 			angle=0.25222501;
 		};
-		class Item183
+		class Item182
 		{
 			position[]={30940.877,0.23133498,10125.917};
 			name="cop_ship_3";
 			type="Empty";
 			angle=269.39572;
 		};
-		class Item184
+		class Item183
 		{
 			position[]={38377.77,4.8820009,20211.457};
 			name="civ_gar_1_2_1";
@@ -10515,7 +10501,7 @@ class Mission
 			colorName="ColorRed";
 			angle=300.16315;
 		};
-		class Item185
+		class Item184
 		{
 			position[]={31130.125,6.6130581,10933.811};
 			name="Lakka_gas";
@@ -10523,7 +10509,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item186
+		class Item185
 		{
 			position[]={37930.316,4.1832504,19785.996};
 			name="Chalkeia_gas";
@@ -10531,7 +10517,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item187
+		class Item186
 		{
 			position[]={15837.746,7.2036133,33439.746};
 			name="Darwin_gas";
@@ -10539,7 +10525,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item188
+		class Item187
 		{
 			position[]={31480.516,6.3856487,9659.9102};
 			name="Anthrakia_gas";
@@ -10547,7 +10533,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item189
+		class Item188
 		{
 			position[]={36582.906,4.2901211,13188.112};
 			name="Kav_airg";
@@ -10556,7 +10542,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=180.78435;
 		};
-		class Item190
+		class Item189
 		{
 			position[]={6749.9126,7.3837967,18076.684};
 			name="Pyr_airg";
@@ -10565,28 +10551,28 @@ class Mission
 			colorName="ColorYellow";
 			angle=57.140518;
 		};
-		class Item191
+		class Item190
 		{
 			position[]={36766.543,4.1102905,12854.524};
 			name="civ_spawn_1";
 			type="Empty";
 			angle=-84.614738;
 		};
-		class Item192
+		class Item191
 		{
 			position[]={36417.77,4.1737328,13078.351};
 			name="cop_spawn_1";
 			type="Empty";
 			angle=89.135498;
 		};
-		class Item193
+		class Item192
 		{
 			position[]={36781.102,4.109776,12842.47};
 			name="civ_car_1_1";
 			type="Empty";
 			angle=96.66967;
 		};
-		class Item194
+		class Item193
 		{
 			position[]={36428.891,4.1767874,13069.488};
 			name="Police HQ_1";
@@ -10594,28 +10580,28 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlue";
 		};
-		class Item195
+		class Item194
 		{
 			position[]={36440.008,4.1887217,13075.985};
 			name="cop_car_1";
 			type="Empty";
 			angle=-185.28363;
 		};
-		class Item196
+		class Item195
 		{
 			position[]={36611.438,0.17203668,12586.967};
 			name="cop_ship_1";
 			type="Empty";
 			angle=450.63745;
 		};
-		class Item197
+		class Item196
 		{
 			position[]={5490.0493,13.5,18263.166};
 			name="car_g_1";
 			type="Empty";
 			angle=183.73477;
 		};
-		class Item198
+		class Item197
 		{
 			position[]={5500.96,13.493404,18273.578};
 			name="civ_gar_1";
@@ -10624,7 +10610,7 @@ class Mission
 			colorName="ColorRed";
 			angle=-43.557827;
 		};
-		class Item199
+		class Item198
 		{
 			position[]={15871.691,6.7265396,33282.719};
 			name="cop_spawn_4";
@@ -10633,7 +10619,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=-0.49316701;
 		};
-		class Item200
+		class Item199
 		{
 			position[]={6815.0874,43.507694,25616.695};
 			name="Rebelop_1";
@@ -10641,35 +10627,35 @@ class Mission
 			type="MinefieldAP";
 			colorName="ColorEAST";
 		};
-		class Item201
+		class Item200
 		{
 			position[]={6817.959,43.557674,25596.279};
 			name="reb_v_2";
 			type="Empty";
 			angle=-194.34447;
 		};
-		class Item202
+		class Item201
 		{
 			position[]={38323.398,4.9214435,20070.336};
 			name="civ_car_2";
 			type="Empty";
 			angle=360.92358;
 		};
-		class Item203
+		class Item202
 		{
 			position[]={4869.1909,7.78689,17751.709};
 			name="civ_truck_2";
 			type="Empty";
 			angle=-190.5316;
 		};
-		class Item204
+		class Item203
 		{
 			position[]={4863.2881,7.7854209,17750.254};
 			name="civ_truck_2_1";
 			type="Empty";
 			angle=-181.88762;
 		};
-		class Item205
+		class Item204
 		{
 			position[]={14246.046,83.7892,18281.75};
 			name="Rebelop_2";
@@ -10677,28 +10663,28 @@ class Mission
 			type="KIA";
 			colorName="ColorEAST";
 		};
-		class Item206
+		class Item205
 		{
 			position[]={26955.598,7.6850767,28278.918};
 			name="reb_v_1";
 			type="Empty";
 			angle=630.39966;
 		};
-		class Item207
+		class Item206
 		{
 			position[]={26948.375,7.6738701,28276.566};
 			name="reb_v_1_1";
 			type="Empty";
 			angle=632.06311;
 		};
-		class Item208
+		class Item207
 		{
 			position[]={5548.5786,12.814854,18415.572};
 			name="civ_spawn_4";
 			type="Empty";
 			angle=171.55156;
 		};
-		class Item209
+		class Item208
 		{
 			position[]={22304.762,16.97698,25556.742};
 			name="cop_spawn_5";
@@ -10707,14 +10693,14 @@ class Mission
 			colorName="ColorBlue";
 			angle=-95.178642;
 		};
-		class Item210
+		class Item209
 		{
 			position[]={22287.719,16.955153,25557.156};
 			name="cop_car_5";
 			type="Empty";
 			angle=-0.47442463;
 		};
-		class Item211
+		class Item210
 		{
 			position[]={26957.129,7.8476806,28303.867};
 			name="Rebelop";
@@ -10722,21 +10708,21 @@ class Mission
 			type="GroundSupport_CAS_EAST";
 			colorName="ColorEAST";
 		};
-		class Item212
+		class Item211
 		{
 			position[]={22116.922,16.947033,25595.334};
 			name="civ_car_4";
 			type="Empty";
 			angle=-290.00885;
 		};
-		class Item213
+		class Item212
 		{
 			position[]={22233.049,16.946886,25598.188};
 			name="car_g_4";
 			type="Empty";
 			angle=-102.31487;
 		};
-		class Item214
+		class Item213
 		{
 			position[]={7964.7954,4.4651885,16999.357};
 			name="rye_1";
@@ -10744,7 +10730,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorKhaki";
 		};
-		class Item215
+		class Item214
 		{
 			position[]={33332.906,70.659302,17568.465};
 			name="hops_1";
@@ -10752,7 +10738,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorKhaki";
 		};
-		class Item216
+		class Item215
 		{
 			position[]={16783.914,7.6903052,33386.758};
 			name="yeast_1";
@@ -10760,7 +10746,7 @@ class Mission
 			type="loc_Tree";
 			colorName="ColorGreen";
 		};
-		class Item217
+		class Item216
 		{
 			position[]={11231.477,101.79262,18571.121};
 			name="distillery";
@@ -10769,7 +10755,7 @@ class Mission
 			colorName="ColorKhaki";
 			angle=138.069;
 		};
-		class Item218
+		class Item217
 		{
 			position[]={38439.707,4.2067766,19467.58};
 			name="brewery";
@@ -10778,7 +10764,7 @@ class Mission
 			colorName="ColorKhaki";
 			angle=1.5745454;
 		};
-		class Item219
+		class Item218
 		{
 			position[]={30806.646,2.66171,10196.168};
 			name="Bottler";
@@ -10787,7 +10773,7 @@ class Mission
 			colorName="ColorKhaki";
 			angle=-177.097;
 		};
-		class Item220
+		class Item219
 		{
 			position[]={33136.309,32.938812,3933.1436};
 			name="bar1";
@@ -10796,7 +10782,7 @@ class Mission
 			colorName="ColorGUER";
 			angle=-1.76631;
 		};
-		class Item221
+		class Item220
 		{
 			position[]={26822.145,7.690865,27974.17};
 			name="speakeasy1";
@@ -10805,7 +10791,7 @@ class Mission
 			colorName="ColorEAST";
 			angle=-34.003201;
 		};
-		class Item222
+		class Item221
 		{
 			position[]={15912.752,32.599178,28936.582};
 			name="slave_trader_marker";
@@ -10813,77 +10799,77 @@ class Mission
 			type="hd_dot";
 			colorName="ColorEAST";
 		};
-		class Item223
+		class Item222
 		{
 			position[]={30316.559,3.5027392,6182.5449};
 			name="slave_trader_center";
 			type="Empty";
 			angle=-275.09116;
 		};
-		class Item224
+		class Item223
 		{
 			position[]={36595.379,4.2981424,13186.52};
 			name="air_g_2";
 			type="Empty";
 			angle=182.60452;
 		};
-		class Item225
+		class Item224
 		{
 			position[]={6754.7661,7.3837967,18066.432};
 			name="air_g_3";
 			type="Empty";
 			angle=-300.17059;
 		};
-		class Item226
+		class Item225
 		{
 			position[]={26953.326,7.6573958,28269.996};
 			name="reb_g_1";
 			type="Empty";
 			angle=383.68076;
 		};
-		class Item227
+		class Item226
 		{
 			position[]={26947.74,7.6672239,28261.332};
 			name="reb_a_1";
 			type="Empty";
 			angle=272.15982;
 		};
-		class Item228
+		class Item227
 		{
 			position[]={6857.0767,43.517807,25603.873};
 			name="reb_a_2";
 			type="Empty";
 			angle=170.61882;
 		};
-		class Item229
+		class Item228
 		{
 			position[]={6829.6709,43.554035,25599.256};
 			name="reb_g_2";
 			type="Empty";
 			angle=-202.10863;
 		};
-		class Item230
+		class Item229
 		{
 			position[]={14256.186,83.715324,18279.334};
 			name="reb_a_3";
 			type="Empty";
 			angle=-68.549263;
 		};
-		class Item231
+		class Item230
 		{
 			position[]={14247.228,83.768013,18274.682};
 			name="reb_v_3";
 			type="Empty";
 			angle=37.864559;
 		};
-		class Item232
+		class Item231
 		{
 			position[]={14239.49,83.815018,18277.768};
 			name="reb_g_3";
 			type="Empty";
 			angle=23.402447;
 		};
-		class Item233
+		class Item232
 		{
 			position[]={29213.979,82.459732,22385.738};
 			name="distillery_1";
@@ -10892,7 +10878,7 @@ class Mission
 			colorName="ColorKhaki";
 			angle=138.06876;
 		};
-		class Item234
+		class Item233
 		{
 			position[]={4832.3008,8.3550091,18010.047};
 			name="brewery_1";
@@ -10901,7 +10887,7 @@ class Mission
 			colorName="ColorKhaki";
 			angle=297.56525;
 		};
-		class Item235
+		class Item234
 		{
 			position[]={35394.199,7.5235152,8551.4014};
 			name="bar2";
@@ -10910,7 +10896,7 @@ class Mission
 			colorName="ColorGUER";
 			angle=-89.891296;
 		};
-		class Item236
+		class Item235
 		{
 			position[]={12368.891,-0.01204589,33547.73};
 			name="bh1";
@@ -10919,7 +10905,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-1.905303;
 		};
-		class Item237
+		class Item236
 		{
 			position[]={26176.912,8.1841555,11143.852};
 			name="speakeasy1_1";
@@ -10928,7 +10914,7 @@ class Mission
 			colorName="ColorEAST";
 			angle=-0.30655399;
 		};
-		class Item238
+		class Item237
 		{
 			position[]={31753.699,10.958862,8657.915};
 			name="fedreserve_marker";
@@ -10937,7 +10923,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=-37.239201;
 		};
-		class Item239
+		class Item238
 		{
 			position[]={22892.77,7.951601,21063.436};
 			name="police_jail_1";
@@ -10945,7 +10931,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=968.93347;
 		};
-		class Item240
+		class Item239
 		{
 			position[]={22891.361,7.9527488,21064.469};
 			name="altis_corrections_processing";
@@ -10954,7 +10940,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=1259.58;
 		};
-		class Item241
+		class Item240
 		{
 			position[]={24664.834,7.4310384,13847.645};
 			name="cop_air_4";
@@ -10962,7 +10948,7 @@ class Mission
 			colorName="ColorWEST";
 			angle=601.24701;
 		};
-		class Item242
+		class Item241
 		{
 			position[]={30748.695,21.178442,11536.683};
 			name="cop_air_5";
@@ -10970,42 +10956,42 @@ class Mission
 			colorName="ColorWEST";
 			angle=-450.66699;
 		};
-		class Item243
+		class Item242
 		{
 			position[]={25156.672,7.4310384,12764.704};
 			name="cop_car_3";
 			type="Empty";
 			angle=-178.55826;
 		};
-		class Item244
+		class Item243
 		{
 			position[]={19590.117,18.170778,24389.752};
 			name="cop_car_4";
 			type="Empty";
 			angle=201.46039;
 		};
-		class Item245
+		class Item244
 		{
 			position[]={19582.211,18.170778,24379.896};
 			name="cop_ship_4";
 			type="Empty";
 			angle=-149.95;
 		};
-		class Item246
+		class Item245
 		{
 			position[]={27870.59,18.823524,8086.0806};
 			name="donator_2_2";
 			type="Empty";
 			angle=86.969131;
 		};
-		class Item247
+		class Item246
 		{
 			position[]={27869.646,18.66441,8073.959};
 			name="donator_2";
 			type="Empty";
 			angle=447.37216;
 		};
-		class Item248
+		class Item247
 		{
 			position[]={3009.0879,0.92801726,36805.484};
 			name="Gen_4_1_1";
@@ -11013,7 +10999,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item249
+		class Item248
 		{
 			position[]={22162.494,16.947023,25653.635};
 			name="telos_gas";
@@ -11021,28 +11007,28 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item250
+		class Item249
 		{
 			position[]={38386.852,4.9124131,20202.301};
 			name="car_g_2";
 			type="Empty";
 			angle=36.774818;
 		};
-		class Item251
+		class Item250
 		{
 			position[]={6060.5928,-0.055144317,35662.629};
 			name="admin_1";
 			type="Empty";
 			angle=-71.206223;
 		};
-		class Item252
+		class Item251
 		{
 			position[]={4292.9707,0.09060204,17651.223};
 			name="civ_ship_4";
 			type="Empty";
 			angle=179.28191;
 		};
-		class Item253
+		class Item252
 		{
 			position[]={4279.7119,5.6999998,17653.223};
 			name="civ_boat";
@@ -11050,15 +11036,15 @@ class Mission
 			type="c_ship";
 			colorName="ColorWhite";
 		};
-		class Item254
+		class Item253
 		{
-			position[]={36367.648,4.0703835,13045.568};
+			position[]={30016.973,27.331648,17421.699};
 			name="police_jail_3";
 			type="Empty";
 			colorName="ColorBlue";
-			angle=270.5791;
+			angle=178.489;
 		};
-		class Item255
+		class Item254
 		{
 			position[]={6444.0991,7.3837967,17905.066};
 			name="airpodshop";
@@ -11067,14 +11053,14 @@ class Mission
 			colorName="ColorRed";
 			angle=180.433;
 		};
-		class Item256
+		class Item255
 		{
 			position[]={6441.2832,7.3837967,17910.949};
 			name="civ_pod_1";
 			type="Empty";
 			angle=-26.025053;
 		};
-		class Item257
+		class Item256
 		{
 			position[]={31179.572,2.66171,10241.907};
 			name="atm_marker_1_2_2";
@@ -11083,7 +11069,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-87.759338;
 		};
-		class Item258
+		class Item257
 		{
 			position[]={25356.469,7.4310384,12703.029};
 			name="Sofia_Medical_Clinic";
@@ -11092,7 +11078,7 @@ class Mission
 			colorName="ColorRed";
 			angle=-359.90601;
 		};
-		class Item259
+		class Item258
 		{
 			position[]={5604.0532,12.725138,18351.871};
 			name="atm_marker_1_2_2_1_1";
@@ -11100,7 +11086,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=177.94659;
 		};
-		class Item260
+		class Item259
 		{
 			position[]={5606.856,12.798557,18338.51};
 			name="Feres_Medical_Clinic";
@@ -11109,7 +11095,7 @@ class Mission
 			colorName="ColorRed";
 			angle=2.1665599;
 		};
-		class Item261
+		class Item260
 		{
 			position[]={16199.183,2.2755437,23257.984};
 			name="Zaros_Medical_Clinic";
@@ -11118,35 +11104,35 @@ class Mission
 			colorName="ColorRed";
 			angle=-0.623936;
 		};
-		class Item262
+		class Item261
 		{
 			position[]={31171.32,2.66171,10236.272};
 			name="med_veh_1";
 			type="Empty";
 			angle=-1.933377;
 		};
-		class Item263
+		class Item262
 		{
 			position[]={25355.188,7.4310384,12712.088};
 			name="med_veh_2";
 			type="Empty";
 			angle=360.155;
 		};
-		class Item264
+		class Item263
 		{
 			position[]={5609.8423,12.727732,18346.006};
 			name="med_veh_3";
 			type="Empty";
 			angle=94.136284;
 		};
-		class Item265
+		class Item264
 		{
 			position[]={16195.034,2.1441388,23249.773};
 			name="med_veh_4";
 			type="Empty";
 			angle=167.13487;
 		};
-		class Item266
+		class Item265
 		{
 			position[]={36133.324,4.5117955,12180.098};
 			name="civ_truck_shop1_1_1";
@@ -11155,14 +11141,14 @@ class Mission
 			colorName="ColorWhite";
 			angle=1.3053954;
 		};
-		class Item267
+		class Item266
 		{
 			position[]={36127.328,4.5082812,12179.504};
 			name="civ_truck_3";
 			type="Empty";
 			angle=274.39215;
 		};
-		class Item268
+		class Item267
 		{
 			position[]={22011.605,17.095922,25350.059};
 			name="Athira_National_Bank";
@@ -11171,7 +11157,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=1.22536;
 		};
-		class Item269
+		class Item268
 		{
 			position[]={37598.492,4.2067766,19736.141};
 			name="Sofia_National_Bank";
@@ -11180,7 +11166,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=448.72601;
 		};
-		class Item270
+		class Item269
 		{
 			position[]={5285.6865,13.36054,18425.188};
 			name="Kavala_National_Bank";
@@ -11189,7 +11175,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-318.44;
 		};
-		class Item271
+		class Item270
 		{
 			position[]={31344.979,6.1383696,9818.0205};
 			name="Pyrgos_National_Bank";
@@ -11198,7 +11184,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-181.09535;
 		};
-		class Item272
+		class Item271
 		{
 			position[]={22010.922,17.096079,25350.148};
 			name="atm_map_marker_101";
@@ -11207,7 +11193,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-80.430878;
 		};
-		class Item273
+		class Item272
 		{
 			position[]={5287.2446,13.37926,18424.205};
 			name="atm_map_marker_101_1";
@@ -11216,7 +11202,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=267.28714;
 		};
-		class Item274
+		class Item273
 		{
 			position[]={37597.461,4.2067766,19739.088};
 			name="atm_map_marker_101_2";
@@ -11225,7 +11211,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-225.66168;
 		};
-		class Item275
+		class Item274
 		{
 			position[]={9335.9766,8.5971231,12727.884};
 			name="gun_runner";
@@ -11233,7 +11219,7 @@ class Mission
 			type="Empty";
 			colorName="ColorEAST";
 		};
-		class Item276
+		class Item275
 		{
 			position[]={22254.043,23.943953,11949.558};
 			name="gun_runner_1";
@@ -11242,7 +11228,7 @@ class Mission
 			colorName="ColorRed";
 			angle=220.72177;
 		};
-		class Item277
+		class Item276
 		{
 			position[]={23406.307,6.7266278,35118.309};
 			name="gun_runner_1_1";
@@ -11251,7 +11237,7 @@ class Mission
 			colorName="ColorEAST";
 			angle=74.319901;
 		};
-		class Item278
+		class Item277
 		{
 			position[]={19581.758,18.170515,24385.295};
 			name="cop_spawn_9";
@@ -11260,14 +11246,14 @@ class Mission
 			colorName="ColorBlue";
 			angle=-0.49316701;
 		};
-		class Item279
+		class Item278
 		{
-			position[]={36377.316,4.0982709,13048.493};
+			position[]={30006.98,27.331654,17377.42};
 			name="jail_breakout";
 			type="Empty";
 			angle=-178.17188;
 		};
-		class Item280
+		class Item279
 		{
 			position[]={22736.879,22.799925,24681.662};
 			name="Kav_airg_1";
@@ -11276,7 +11262,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=212.63676;
 		};
-		class Item281
+		class Item280
 		{
 			position[]={1437.0845,0.46136269,38795.797};
 			name="atm_marker_3_1";
@@ -11284,7 +11270,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=68.152138;
 		};
-		class Item282
+		class Item281
 		{
 			position[]={1401.8213,0.8464067,38785.484};
 			name="atm_marker_2_3_1";
@@ -11293,7 +11279,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-188.00616;
 		};
-		class Item283
+		class Item282
 		{
 			position[]={1396.5488,0.46668041,38790.68};
 			name="atm_marker_2_4_1";
@@ -11302,7 +11288,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=202.29132;
 		};
-		class Item284
+		class Item283
 		{
 			position[]={1379.3345,-0.21613015,38862.797};
 			name="atm_marker_2_5_1";
@@ -11310,7 +11296,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=324.84814;
 		};
-		class Item285
+		class Item284
 		{
 			position[]={1397.2163,-0.15323508,38801.066};
 			name="atm_marker_2_6_1";
@@ -11319,7 +11305,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=7.7883267;
 		};
-		class Item286
+		class Item285
 		{
 			position[]={1423.0781,-0.1333001,38880.531};
 			name="atm_marker_1_1_1";
@@ -11327,7 +11313,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=-311.08475;
 		};
-		class Item287
+		class Item286
 		{
 			position[]={6723.1299,7.3837967,18081.018};
 			name="atm_marker_1_3_1";
@@ -11335,7 +11321,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-208.22694;
 		};
-		class Item288
+		class Item287
 		{
 			position[]={36419.887,4.1750979,13080.487};
 			name="atm_marker_4_2_1";
@@ -11344,7 +11330,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-180.2532;
 		};
-		class Item289
+		class Item288
 		{
 			position[]={1367.3354,0.41609216,38796.793};
 			name="atm_marker_3_2";
@@ -11352,7 +11338,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-98.501617;
 		};
-		class Item290
+		class Item289
 		{
 			position[]={1396.4634,-0.33121023,38870.176};
 			name="atm_marker_2_3_2";
@@ -11361,7 +11347,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=214.27261;
 		};
-		class Item291
+		class Item290
 		{
 			position[]={1399.0249,-0.12746102,38849.066};
 			name="atm_marker_2_4_2";
@@ -11370,7 +11356,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=1.9188225;
 		};
-		class Item292
+		class Item291
 		{
 			position[]={6798.3613,43.573822,25632.457};
 			name="atm_marker_2_5_2";
@@ -11378,7 +11364,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=153.15213;
 		};
-		class Item293
+		class Item292
 		{
 			position[]={1408.4956,-0.03726247,38780.07};
 			name="atm_marker_2_6_2";
@@ -11387,7 +11373,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=6.7926869;
 		};
-		class Item294
+		class Item293
 		{
 			position[]={1411.6807,0.61844575,38803.816};
 			name="atm_marker_1_3_2";
@@ -11395,7 +11381,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-265.48599;
 		};
-		class Item295
+		class Item294
 		{
 			position[]={1471.7601,0.84511238,38834.867};
 			name="atm_marker_4_2_2";
@@ -11404,7 +11390,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-13.45081;
 		};
-		class Item296
+		class Item295
 		{
 			position[]={1439.8184,-0.45782492,38857.281};
 			name="atm_marker_3_2_1";
@@ -11412,7 +11398,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=231.8166;
 		};
-		class Item297
+		class Item296
 		{
 			position[]={1458.2056,-0.29819009,38801.453};
 			name="atm_marker_2_3_2_1";
@@ -11421,7 +11407,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-58.049763;
 		};
-		class Item298
+		class Item297
 		{
 			position[]={1409.4614,-0.19345854,38820.375};
 			name="atm_marker_1_3_2_1";
@@ -11429,7 +11415,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=-263.48544;
 		};
-		class Item299
+		class Item298
 		{
 			position[]={1385.5757,0.21366984,38877.164};
 			name="atm_marker_4_2_2_1";
@@ -11438,28 +11424,28 @@ class Mission
 			colorName="ColorYellow";
 			angle=129.07654;
 		};
-		class Item300
+		class Item299
 		{
 			position[]={36769.328,4.1101966,12842.43};
 			name="civ_car_1";
 			type="Empty";
 			angle=88.753227;
 		};
-		class Item301
+		class Item300
 		{
 			position[]={29014.156,5.2151322,36588.84};
 			name="donator_1_1";
 			type="Empty";
 			angle=268.18628;
 		};
-		class Item302
+		class Item301
 		{
 			position[]={15864.24,6.7265406,33297.879};
 			name="cop_car_6";
 			type="Empty";
 			angle=-298.09592;
 		};
-		class Item303
+		class Item302
 		{
 			position[]={16696.701,8.5,33852.406};
 			name="cop_air_6";
@@ -11467,7 +11453,7 @@ class Mission
 			colorName="ColorWEST";
 			angle=-343.69101;
 		};
-		class Item304
+		class Item303
 		{
 			position[]={24772.436,7.4310384,13630.484};
 			name="air_g_5";
@@ -11476,7 +11462,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-120.31;
 		};
-		class Item305
+		class Item304
 		{
 			position[]={35187.383,14.281119,12352.314};
 			name="civ_plane_1";
@@ -11484,14 +11470,14 @@ class Mission
 			colorName="ColorBlack";
 			angle=31.716396;
 		};
-		class Item306
+		class Item305
 		{
 			position[]={35166.551,14.281119,12367.804};
 			name="PlaneShop";
 			type="c_plane";
 			colorName="ColorCIV";
 		};
-		class Item307
+		class Item306
 		{
 			position[]={11332.248,-0.13688739,30523.359};
 			name="airshopsafezone";
@@ -11499,7 +11485,7 @@ class Mission
 			type="mil_flag";
 			colorName="ColorRed";
 		};
-		class Item308
+		class Item307
 		{
 			position[]={19310.301,9.4424877,16440.566};
 			name="gas34";
@@ -11507,7 +11493,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item309
+		class Item308
 		{
 			position[]={38552.707,4.6006451,20180.637};
 			name="Chalkeia_gas_1";
@@ -11515,7 +11501,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item310
+		class Item309
 		{
 			position[]={31805.969,7.0993662,4896.8618};
 			name="bar1_1";
@@ -11524,7 +11510,7 @@ class Mission
 			colorName="ColorGUER";
 			angle=-1.76631;
 		};
-		class Item311
+		class Item310
 		{
 			position[]={31301.623,6.1380911,9860.6152};
 			name="bar2_1";
@@ -11533,7 +11519,7 @@ class Mission
 			colorName="ColorGUER";
 			angle=-89.891296;
 		};
-		class Item312
+		class Item311
 		{
 			position[]={30848.328,3.9590719,10690.398};
 			name="bar2_2";
@@ -11542,7 +11528,7 @@ class Mission
 			colorName="ColorGUER";
 			angle=-178.64999;
 		};
-		class Item313
+		class Item312
 		{
 			position[]={38212.113,11.836349,20593.16};
 			name="civ_plane_2";
@@ -11550,7 +11536,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=164.591;
 		};
-		class Item314
+		class Item313
 		{
 			position[]={38227.605,11.964293,20611.953};
 			name="PlaneShop_1";
@@ -11558,7 +11544,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=180.886;
 		};
-		class Item315
+		class Item314
 		{
 			position[]={32149.842,7.8775802,2786.7896};
 			name="civ_plane_3";
@@ -11566,14 +11552,14 @@ class Mission
 			colorName="ColorBlack";
 			angle=222.002;
 		};
-		class Item316
+		class Item315
 		{
 			position[]={32139.771,7.8775802,2798.2983};
 			name="PlaneShop_2";
 			type="c_plane";
 			colorName="ColorCIV";
 		};
-		class Item317
+		class Item316
 		{
 			position[]={24423.129,7.4310384,13734.599};
 			name="civ_plane_4";
@@ -11581,7 +11567,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=423.60599;
 		};
-		class Item318
+		class Item317
 		{
 			position[]={24412.439,7.4310384,13762.582};
 			name="PlaneShop_2_1";
@@ -11589,7 +11575,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=62.3195;
 		};
-		class Item319
+		class Item318
 		{
 			position[]={30730.869,21.178442,11836.763};
 			name="civ_plane_5";
@@ -11597,7 +11583,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=357.763;
 		};
-		class Item320
+		class Item319
 		{
 			position[]={30762.908,21.178442,11856.439};
 			name="PlaneShop_2_1_1";
@@ -11605,7 +11591,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-0.24943568;
 		};
-		class Item321
+		class Item320
 		{
 			position[]={31679.936,21.272924,30927.656};
 			name="civ_plane_6";
@@ -11613,7 +11599,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=336.46201;
 		};
-		class Item322
+		class Item321
 		{
 			position[]={31653.971,21.272924,30905.502};
 			name="PlaneShop_2_1_2";
@@ -11621,7 +11607,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=1.0616601;
 		};
-		class Item323
+		class Item322
 		{
 			position[]={16786.814,8.5,33816.27};
 			name="civ_plane_7";
@@ -11629,7 +11615,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=377.04001;
 		};
-		class Item324
+		class Item323
 		{
 			position[]={16779.93,8.5,33808.27};
 			name="PlaneShop_2_1_3";
@@ -11637,7 +11623,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=2.08303;
 		};
-		class Item325
+		class Item324
 		{
 			position[]={22567.391,22.799171,24748.375};
 			name="civ_plane_8";
@@ -11645,7 +11631,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=659.33502;
 		};
-		class Item326
+		class Item325
 		{
 			position[]={22576.838,22.799068,24767.324};
 			name="PlaneShop_2_1_3_1";
@@ -11654,7 +11640,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=2.0830309;
 		};
-		class Item327
+		class Item326
 		{
 			position[]={6867.2754,7.3837967,18142.186};
 			name="civ_plane_9";
@@ -11662,7 +11648,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=410.60999;
 		};
-		class Item328
+		class Item327
 		{
 			position[]={6871.543,7.3837967,18112.461};
 			name="PlaneShop_2_1_3_2";
@@ -11670,7 +11656,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-27.273075;
 		};
-		class Item329
+		class Item328
 		{
 			position[]={26651.625,31.964834,18592.111};
 			name="civ_plane_10";
@@ -11678,7 +11664,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=497.276;
 		};
-		class Item330
+		class Item329
 		{
 			position[]={26649.088,31.964815,18601.33};
 			name="PlaneShop_2_1_3_3";
@@ -11686,7 +11672,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=0.52000999;
 		};
-		class Item331
+		class Item330
 		{
 			position[]={25205.799,7.4310384,12799.727};
 			name="Gen_1";
@@ -11695,7 +11681,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-5.1783924;
 		};
-		class Item332
+		class Item331
 		{
 			position[]={25205.869,7.4310384,12801.291};
 			name="Gen_3_1_2";
@@ -11704,7 +11690,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=2.2261612;
 		};
-		class Item333
+		class Item332
 		{
 			position[]={25205.766,7.4310384,12829.312};
 			name="license_shop_3";
@@ -11713,7 +11699,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=252.74171;
 		};
-		class Item334
+		class Item333
 		{
 			position[]={25177.393,7.4310384,12827.411};
 			name="Gen_3_4_2";
@@ -11721,7 +11707,7 @@ class Mission
 			type="c_unknown";
 			colorName="ColorCIV";
 		};
-		class Item335
+		class Item334
 		{
 			position[]={25042.604,7.4310384,12759.507};
 			name="gas34_1";
@@ -11729,7 +11715,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item336
+		class Item335
 		{
 			position[]={26206.596,8.1529341,11175.857};
 			name="gas34_2";
@@ -11737,7 +11723,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item337
+		class Item336
 		{
 			position[]={33219.367,33.937187,4154.9258};
 			name="kwike_mart_1";
@@ -11745,7 +11731,7 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
-		class Item338
+		class Item337
 		{
 			position[]={27559.012,29.237804,16987.799};
 			name="bar1_1_1";
@@ -11754,7 +11740,7 @@ class Mission
 			colorName="ColorGUER";
 			angle=-4.892839;
 		};
-		class Item339
+		class Item338
 		{
 			position[]={27606.246,29.292635,17005.152};
 			name="Gen_5";
@@ -11763,7 +11749,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-5.1783924;
 		};
-		class Item340
+		class Item339
 		{
 			position[]={27609.773,29.29372,17001.109};
 			name="Gen_3_1_3";
@@ -11772,26 +11758,26 @@ class Mission
 			colorName="ColorCIV";
 			angle=72.737289;
 		};
-		class Item341
+		class Item340
 		{
 			position[]={33105.875,32.936306,3931.8066};
 			name="civ_spawn_8";
 			type="Empty";
 		};
-		class Item342
+		class Item341
 		{
 			position[]={37996.109,4.1477847,19836.813};
 			name="civ_spawn_7";
 			type="Empty";
 			angle=-90.761253;
 		};
-		class Item343
+		class Item342
 		{
 			position[]={25192.33,7.4310384,12749.984};
 			name="civ_spawn_6";
 			type="Empty";
 		};
-		class Item344
+		class Item343
 		{
 			position[]={25238.76,7.4310384,12759.936};
 			name="bar2_1_1";
@@ -11800,41 +11786,41 @@ class Mission
 			colorName="ColorGUER";
 			angle=-89.891296;
 		};
-		class Item345
+		class Item344
 		{
 			position[]={15817.966,7.2036209,33406.516};
 			name="civ_spawn_5";
 			type="Empty";
 			angle=85.129974;
 		};
-		class Item346
+		class Item345
 		{
 			position[]={31042.67,4.4587517,10718.745};
 			name="cop_spawn_2";
 			type="Empty";
 			angle=360.08511;
 		};
-		class Item347
+		class Item346
 		{
 			position[]={38140.098,4.9806871,20178.926};
 			name="cop_spawn_6";
 			type="Empty";
 		};
-		class Item348
+		class Item347
 		{
 			position[]={33139.418,32.942463,4009.2188};
 			name="cop_spawn_7";
 			type="Empty";
 			angle=173.69415;
 		};
-		class Item349
+		class Item348
 		{
 			position[]={27572.199,29.244492,17040.572};
 			name="cop_spawn_8";
 			type="Empty";
 			angle=55.287086;
 		};
-		class Item350
+		class Item349
 		{
 			position[]={31182.85,2.66171,10220.867};
 			name="medical1";
@@ -11842,7 +11828,7 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
-		class Item351
+		class Item350
 		{
 			position[]={16625.385,15.528791,33569.156};
 			name="medical2";
@@ -11850,34 +11836,34 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
-		class Item352
+		class Item351
 		{
 			position[]={5607.4155,12.771095,18341.258};
 			name="medic_spawn_4";
 			type="Empty";
 		};
-		class Item353
+		class Item352
 		{
 			position[]={25362.285,7.4310384,12702.787};
 			name="medic_spawn_5";
 			type="Empty";
 			angle=-89.348763;
 		};
-		class Item354
+		class Item353
 		{
 			position[]={38082.027,4.9214435,20064.025};
 			name="medic_spawn_6";
 			type="Empty";
 			angle=177.65448;
 		};
-		class Item355
+		class Item354
 		{
 			position[]={22084.252,16.945242,25436.275};
 			name="medic_spawn_7";
 			type="Empty";
 			angle=-67.215134;
 		};
-		class Item356
+		class Item355
 		{
 			position[]={22082.346,24.555016,25421.352};
 			name="medical3";
@@ -11885,7 +11871,7 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
-		class Item357
+		class Item356
 		{
 			position[]={33766.363,6.5390816,3413.1372};
 			name="medical4";
@@ -11893,14 +11879,14 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
-		class Item358
+		class Item357
 		{
 			position[]={5615.356,13.292665,18616.875};
 			name="cop_spawn_10";
 			type="Empty";
 			angle=90.308601;
 		};
-		class Item359
+		class Item358
 		{
 			position[]={1066.9249,-0.91599774,34064.719};
 			name="PlaneShop_2_1_3_2_1";
@@ -11908,7 +11894,7 @@ class Mission
 			type="c_plane";
 			colorName="ColorCIV";
 		};
-		class Item360
+		class Item359
 		{
 			position[]={1060.0801,0.16757387,33956.141};
 			name="air_g_5_1";
@@ -11916,42 +11902,42 @@ class Mission
 			type="c_air";
 			colorName="ColorCIV";
 		};
-		class Item361
+		class Item360
 		{
 			position[]={38144.75,4.9806151,20196.633};
 			name="cop_car_7";
 			type="Empty";
 			angle=94.669693;
 		};
-		class Item362
+		class Item361
 		{
 			position[]={31047.605,4.7539539,10737.159};
 			name="cop_car_8";
 			type="Empty";
 			angle=87.881516;
 		};
-		class Item363
+		class Item362
 		{
 			position[]={5631.4902,13.158558,18616.951};
 			name="cop_car_9";
 			type="Empty";
 			angle=182.47139;
 		};
-		class Item364
+		class Item363
 		{
 			position[]={33135.367,32.942394,3992.7734};
 			name="cop_car_10";
 			type="Empty";
 			angle=-95.592827;
 		};
-		class Item365
+		class Item364
 		{
 			position[]={27591.086,29.270916,17050.602};
 			name="cop_car_11";
 			type="Empty";
 			angle=-230.80099;
 		};
-		class Item366
+		class Item365
 		{
 			position[]={27582.682,29.267387,17043.076};
 			name="Sheriff";
@@ -11959,28 +11945,28 @@ class Mission
 			type="n_hq";
 			colorName="ColorWEST";
 		};
-		class Item367
+		class Item366
 		{
 			position[]={31018.512,29.381996,19991.111};
 			name="cop_car_12";
 			type="Empty";
 			angle=-199.90601;
 		};
-		class Item368
+		class Item367
 		{
 			position[]={32095.684,5.2514668,29918.953};
 			name="cop_car_13";
 			type="Empty";
 			angle=-10.3943;
 		};
-		class Item369
+		class Item368
 		{
 			position[]={32103.406,5.2513533,29920.121};
 			name="aussie";
 			text="Cairns Detachment";
 			type="b_hq";
 		};
-		class Item370
+		class Item369
 		{
 			position[]={31009.914,29.382353,19990.123};
 			name="sheriff2";
@@ -11988,7 +11974,7 @@ class Mission
 			type="n_hq";
 			colorName="ColorWEST";
 		};
-		class Item371
+		class Item370
 		{
 			position[]={38279.273,4.2067766,19563.59};
 			name="civ_truck_shop1_1_1_1";
@@ -11997,14 +11983,14 @@ class Mission
 			colorName="ColorWhite";
 			angle=1.3054;
 		};
-		class Item372
+		class Item371
 		{
 			position[]={38273.277,4.2067766,19562.996};
 			name="civ_truck_4";
 			type="Empty";
 			angle=274.392;
 		};
-		class Item373
+		class Item372
 		{
 			position[]={36656.395,4.2381496,13011.503};
 			name="Pyrgos_National_Bank_1";
@@ -12013,7 +11999,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-360.065;
 		};
-		class Item374
+		class Item373
 		{
 			position[]={38272.719,4.9214435,20096.57};
 			name="license_shop_4";
@@ -12022,7 +12008,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=361.30646;
 		};
-		class Item375
+		class Item374
 		{
 			position[]={38314.898,4.9220495,20104.477};
 			name="Pyrgos_National_Bank_1_1";
@@ -12031,7 +12017,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-360.065;
 		};
-		class Item376
+		class Item375
 		{
 			position[]={25208.26,7.4310384,12766.227};
 			name="Pyrgos_National_Bank_1_2";
@@ -12040,7 +12026,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-360.065;
 		};
-		class Item377
+		class Item376
 		{
 			position[]={5652.5015,12.113776,18487.07};
 			name="Pyrgos_National_Bank_1_3";
@@ -12049,7 +12035,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-180.66299;
 		};
-		class Item378
+		class Item377
 		{
 			position[]={33181.949,32.942364,3988.3127};
 			name="Pyrgos_National_Bank_1_4";
@@ -12058,7 +12044,7 @@ class Mission
 			colorName="ColorCIV";
 			angle=-352.29599;
 		};
-		class Item379
+		class Item378
 		{
 			position[]={33747.074,6.579164,3414.4863};
 			name="Sofia_Medical_Clinic_1";
@@ -12067,14 +12053,14 @@ class Mission
 			colorName="ColorRed";
 			angle=-411.52814;
 		};
-		class Item380
+		class Item379
 		{
 			position[]={33714.223,6.7174683,3420.9419};
 			name="med_veh_5";
 			type="Empty";
 			angle=126.997;
 		};
-		class Item381
+		class Item380
 		{
 			position[]={33750.887,6.684865,3418.9026};
 			name="medic_spawn_8";
@@ -12144,9 +12130,9 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={36379.543,4.1262345,13066.471};
-			a=100;
-			b=100;
+			position[]={29986.484,27.331553,17445.941};
+			a=150;
+			b=150;
 			angle=5.5035801;
 			activationBy="ANY";
 			repeating=1;
