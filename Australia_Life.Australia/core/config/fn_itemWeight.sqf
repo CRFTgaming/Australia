@@ -57,7 +57,8 @@ switch (_item) do
 	case "storagesmall": {5};
 	case "storagebig": {10};
 	case "zipties": {8};
-	case "handcuffs": {8};
+	case "handcuffs": {5};
+    case "handcuffkeys": {1};
 	case "rye": {2};
 	case "hops": {2};
 	case "yeast": {2};

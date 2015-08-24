@@ -66,7 +66,6 @@ switch (_mode) do
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
 			case "zipties": {"life_inv_zipties"};
-			case "handcuffs": {"life_inv_handcuffs"};
 			case "rye": {"life_inv_rye"};
 			case "hops": {"life_inv_hops"};
 			case "yeast": {"life_inv_yeast"};
@@ -90,8 +89,8 @@ switch (_mode) do
 			case "bho": {"life_inv_bho"};
 			case "hash": {"life_inv_hash"};
 			case "heroinx": {"life_inv_heroinx"};
-
-
+            case "handcuffs": {"life_inv_handcuffs"};
+            case "handcuffkeys": {"life_inv_handcuffkeys"};
 		};
 	};
 	
@@ -173,6 +172,8 @@ switch (_mode) do
 			case "life_inv_bho": {"bho"};
 			case "life_inv_hash": {"hash"};
 			case "life_inv_heroinp": {"heroinp"};
+			case "life_inv_handcuffs": {"handcuffs"};
+            case "life_inv_handcuffkeys": {"handcuffkeys"};
 		};
 	};
 };

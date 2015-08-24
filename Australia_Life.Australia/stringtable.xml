@@ -4982,6 +4982,44 @@
 				<Russian>Pod dropped with parachute</Russian>
 				<Spanish>Pod dropped with parachute</Spanish>
 			</Key>
+			<Key ID="STR_Item_Handcuffs">
+			<Original>Handcuffs</Original>
+			<French>Menottes</French>
+			<German>Handschellen</German>
+			</Key>
+			<Key ID="STR_Item_Handcuffkeys">
+			<Original>Handcuff keys</Original>
+			<French>Clés de menottes</French>
+			<German>Handschellenschlüssel</German>
+			</Key>
+			</Package>
+			<Package name="Civ_Strings">
+			<Key ID="STR_Civ_Retrained">
+			<Original>You have been restrained by %1</Original>
+			<German>Du wurdest von %1 festgenommen</German>
+			<French>Vous avez été menotté par %1</French>
+			<Italian>%1 ti ha tolto le manette</Italian>
+			<Portuguese>Você foi solto por %1</Portuguese>
+			</Key>
+			<Key ID="STR_Civ_ExcessiveRestrain">
+			<Original>You have been released automatically for excessive restrainment time</Original>
+			<German>Du wurdest automatisch freigelassen, da die maximale Verhaftungszeit überschritten wurde</German>
+			<French>Vous êtes démenotté automatiquement pour un menottage excessivement long</French>
+			<Italian>Sei stato automaticamente liberato per essere rimasto ammanettato troppo tempo</Italian>
+			<Portuguese>Você foi solto automaticamente, devido ao tempo limite ter expirado.</Portuguese>
+				</Key>
+			</package>
+			<Package name="Player_Interaction">
+			<Key ID="STR_pInAct_Lockpick">
+			<Original>Lockpick</Original>
+			<French>Crocheter</French>
+			</Key>
+			</Package>
+			<Package name="Vehicle_Interaction">
+			<Key ID="STR_vInAct_Lockpick">
+			<Original>Lockpick</Original>
+			<French>Crocheter</French>
+		</Key>
 		</Container>
 	</Package>
 </Project>

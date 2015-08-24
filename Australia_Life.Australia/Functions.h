@@ -450,4 +450,27 @@ class Life_Client_Core
 		class sellHostage {};
 		class sellHostageAction {};
 	};
+	
+	class Life_Client_Core
+	{
+    tag = "life";
+	
+    class Civilian
+    {
+        file = "core\civilian";
+        class civInteractionMenu {};
+    };
+	
+    class Vehicle
+    {
+        file = "core\vehicle";
+        class civVInteractionMenu {};
+        class medVInteractionMenu {};
+    };
+	
+    class Items
+    {
+        file = "core\items";
+        class pLockpick {};
+    };
 };

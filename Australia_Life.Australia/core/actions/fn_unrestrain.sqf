@@ -3,7 +3,14 @@
 */
 private["_unit"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-if(isNull _unit OR !(_unit getVariable["restrained",FALSE])) exitWith {}; //Error check?
+if(isNull _unit OR !(_unit getVariable["restrained",FALSE])) exitWith {};
+
+if(life_inv_handcuffs > 0) then
+{
+    life_inv_handcuffs = life_inv_handcuffs + 1;
+} else {
+    [true,"handcuffs",1] call life_fnc_handleInv;
+};
 
 _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];

@@ -175,7 +175,9 @@ if(count (handGunItems player) > 0) then
     ["life_inv_handcuffs", life_inv_handcuffs],
     ["life_inv_bottledwhiskey", life_inv_bottledwhiskey],
     ["life_inv_bottledbeer", life_inv_bottledbeer],
-    ["life_inv_bottledshine", life_inv_bottledshine]
+    ["life_inv_bottledshine", life_inv_bottledshine],
+	["life_inv_handcuffs", life_inv_handcuffs],
+    ["life_inv_handcuffkeys", life_inv_handcuffkeys]
 ];
 
 _return pushBack _uItems;
