@@ -76,6 +76,7 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	sounds[] = {};
     class handcuffs
 	{
         name="handcuffs";
