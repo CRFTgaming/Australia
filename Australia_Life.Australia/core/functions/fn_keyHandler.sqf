@@ -123,40 +123,59 @@ switch (_code) do
 		};
 	};
 	
-	//Restraining (Shift + R)
+	// Shift-R:
+        //   Cops: Restrain.
+        //   Civs: Knock-out if they have a gun and the target is < 4M and not moving.
 	case 19:
 	{
-	if(_shift) then {_handled = true;};
-	switch (playerSide) do
-    {
-	    case west:
-	    {
-		    if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !life_knockout && speed cursorTarget < 1) then
-		    {
-			    [] call life_fnc_restrainAction;
-		    };
-	    };
-			
-			case civilian:
-		{
-			if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && (animationState cursorTarget == "Incapacitated") && !life_knockout && speed cursorTarget < 1) then
-	        {
+		if (_shift) then {_handled = true;};
+		if (_shift && playerSide == west && !isNull cursorTarget &&
+		    cursorTarget isKindOf "Man" && (isPlayer cursorTarget) &&
+		    alive cursorTarget && cursorTarget distance player < 3.5 &&
+		    !(cursorTarget getVariable "Escorting") &&
+		    !(cursorTarget getVariable "restrained") &&
+		    speed cursorTarget < 4) then {
+				if([false,"handcuffs",1] call life_fnc_handleInv) then {
 				[] call life_fnc_restrainAction;
+				} else {
+				hint "You have no handcuffs!";
 			};
 		};
-	};
 
-	//Knock out, this is experimental and yeah...
-	case 34:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1 && !(cursorTarget getVariable "restrained")) then
-		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
-			{
-				[cursorTarget] spawn life_fnc_knockoutAction;
+		if (_shift && playerSide == civilian && !isNull cursorTarget &&
+		    cursorTarget isKindOf "Man" && isPlayer cursorTarget &&
+		    alive cursorTarget && cursorTarget distance player < 4 &&
+		    speed cursorTarget < 1) then {
+			private ["_inSafeZone"];
+			_inSafeZone = [player] call life_fnc_isInSafeZone;
+			diag_log format["Knockout safezone check = %1", _inSafeZone];
+
+			if (_inSafeZone) exitWith {
+				hint "You cannot knock someone out in a safe-zone.";
 			};
-		};
+
+                        if ((animationState cursorTarget) == "Incapacitated") exitWith {
+				hint "Target is already incapacitated.";
+			};
+			if ((currentWeapon player) == "") exitWith {
+				hint "You must be holding a weapon to knock someone out.";
+			};
+			if ((currentWeapon player) != (primaryWeapon player) &&
+			    (currentWeapon player) != (handgunWeapon player)) exitWith {
+				hint "You need to be holding a gun to knock someone out.";
+			};
+			if (life_knockout) exitWith {
+				hint "You cannot knock someone out when you're knocked out.";
+			};
+			if (life_istazed) exitWith {
+				hint "You cannot knock someone out when you're tazed.";
+			};
+			if (player getVariable["restrained", false]) exitWith {
+				hint "You cannot knock someone out when you're restrained.";
+			};
+
+			[cursorTarget] spawn life_fnc_knockoutAction;
+		}
 	};
 
 	//C remove comms

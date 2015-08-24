@@ -202,8 +202,6 @@ life_inv_items =
 	"life_inv_bho",
 	"life_inv_hash",
 	"life_inv_heroinx"
-	 "life_inv_handcuffs",
-    "life_inv_handcuffkeys"
 ];
 
 //Setup variable inv vars.
@@ -282,7 +280,7 @@ life_prof = [
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["handcuffs",200],["handcuffkeys",100],["boltcutter",500],["moonshine",9000],["bottledshine",11000],["mash",5000]];
+life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["moonshine",9000],["bottledshine",11000],["mash",5000]];
 
 
 /*
@@ -341,8 +339,6 @@ sell_array =
 	["cotton",0],
 	["APDuniform",0],
 	["speedbomb",300000],
-	["handcuffs",200],
-    ["handcuffkeys",100],
 	["uwsl",5000]
 ];
 __CONST__(sell_array,sell_array);
@@ -397,9 +393,7 @@ buy_array =
 	["rso",45],
 	["bho",45],
 	["hash",45],
-	["heroinp",65],
-	["handcuffs",500],
-    ["handcuffkeys",300]
+	["heroinp",65]
 ];
 __CONST__(buy_array,buy_array);
 

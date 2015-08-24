@@ -73,8 +73,6 @@ switch(_type) do
     case "35": {_type = ["Flying without a pilots license",1500]};
     case "36": {_type = ["Flying/hovering below 150m in city limits",2000]};
     case "37": {_type = ["Prison Break",25000]};
-	case "485": {_type = ["Tried to lockpick handcuffs",2500]};
-	case "486": {_type = ["Lockpicked handcuffs",5000]};
 	default {_type = [];};
 };
 

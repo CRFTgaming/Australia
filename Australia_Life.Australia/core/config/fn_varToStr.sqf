@@ -84,8 +84,6 @@ switch (_var) do
 	case "life_inv_bho": {"Hash Oil"};
 	case "life_inv_hash": {"Hash"};
 	case "life_inv_heroinp": {"Heroin"};
-	case "life_inv_handcuffs": {(localize "STR_Item_Handcuffs")};
-    case "life_inv_handcuffkeys": {(localize "STR_Item_Handcuffkeys")};
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
