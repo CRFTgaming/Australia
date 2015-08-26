@@ -102,39 +102,23 @@ life_istazed = false;
 life_my_gang = ObjNull;
 life_vehicles = [];
 bank_robber = [];
-switch (playerSide) do
-{
-	case west: 
-	{
-		if (__GETC__(life_coplevel) == 0) then {
-			life_cop_rank = 3500
-		};
-		if (__GETC__(life_coplevel) == 1) then {
-			life_cop_rank = 3500
-		};
-		if (__GETC__(life_coplevel) == 2) then {
-			life_cop_rank = 4500
-		};
-		if (__GETC__(life_coplevel) == 3) then {
-			life_cop_rank = 5500
-		};
-		if (__GETC__(life_coplevel) == 4) then {
-			life_cop_rank = 6500
-		};
-		if (__GETC__(life_coplevel) == 5) then {
-			life_cop_rank = 7500
-		};
-		if (__GETC__(life_coplevel) == 6) then {
-			life_cop_rank = 8500
-		};
-		if (__GETC__(life_coplevel) == 7) then {
-			life_cop_rank = 9500
-		};
-		if (__GETC__(life_coplevel) == 8) then {
-			life_cop_rank = 10500
-		};
-	};
-};
+if (__GETC__(life_coplevel) == 0) then {life_cop_rank = 3500};
+
+if (__GETC__(life_coplevel) == 1) then {life_cop_rank = 3500};
+    
+if (__GETC__(life_coplevel) == 2) then {life_cop_rank = 4500};
+
+if (__GETC__(life_coplevel) == 3) then {life_cop_rank = 5500};
+
+if (__GETC__(life_coplevel) == 4) then {life_cop_rank = 6500};
+
+if (__GETC__(life_coplevel) == 5) then {life_cop_rank = 7500};
+	
+if (__GETC__(life_coplevel) == 6) then {life_cop_rank = 8500};
+
+if (__GETC__(life_coplevel) == 7) then {life_cop_rank = 9500};
+
+if (__GETC__(life_coplevel) == 8) then {life_cop_rank = 10500};
 
 
 switch (playerSide) do
