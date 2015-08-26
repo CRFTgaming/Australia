@@ -102,12 +102,26 @@ life_istazed = false;
 life_my_gang = ObjNull;
 life_vehicles = [];
 bank_robber = [];
+
+switch (__GETC__(life_coplevel)) do 
+{
+	case 1: { life_cop_rank = 3500; }; //Cadet
+	case 2: { life_cop_rank = 4500; }; //Patrol Officer
+	case 3: { life_cop_rank = 5500; }; //Sergeant
+	case 4: { life_cop_rank = 6500; }; //Lieutenant
+	case 5: { life_cop_rank = 7500; }; //Captain
+	case 6: { life_cop_rank = 8500; }; //Swat
+	case 7: { life_cop_rank = 9500; }; //Commander
+	case 8: { life_cop_rank = 10500; }; //Sheriff
+	default { life_cop_rank = 3500; }; //default in-case anything goes tits up
+};
+
 switch (playerSide) do
 {
 	case west: 
 	{
 		life_atmcash = 100000; //Starting Bank Money
-		life_paycheck = (life_multiply * 8000); //Paycheck Amount
+		life_paycheck = life_cop_rank; //Paycheck Amount
 	};
 	case civilian: 
 	{
