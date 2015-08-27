@@ -2,11 +2,13 @@ Server to-do list:
 
 ALTISLIFERPG.COM
 
-Extending re-spawn timer 
+/*Extending re-spawn timer 
 http://www.altisliferpg.com/topic/2768-tutorial-increasing-respawn-timer-after-requesting-medic/
+DONE*/
 
-Pay checks by rank (police)
+/*Pay checks by rank (police)
 http://www.altisliferpg.com/topic/3198-how-to-modify-paycheck-for-each-rank-eg-police-312313/
+DONE*/
 
 Paintball 
 http://www.altisliferpg.com/topic/8218-tutorial-stable-paintball-script/
