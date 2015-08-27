@@ -17,6 +17,19 @@ if(life_blacklisted) exitWith
 	sleep 30;
 };
 
+switch(__GETC__(life_coplevel)) do
+{
+	case 1: {life_paycheck = life_paycheck + 3000;};
+	case 2: {life_paycheck = life_paycheck + 4000;};
+	case 3: {life_paycheck = life_paycheck + 5000;};
+	case 4: {life_paycheck = life_paycheck + 6000;};
+	case 5: {life_paycheck = life_paycheck + 7000;};
+	case 6: {life_paycheck = life_paycheck + 8000;};
+	case 7: {life_paycheck = life_paycheck + 9000;};
+	case 8: {life_paycheck = life_paycheck + 10000;};
+	default {life_paycheck = life_paycheck};
+};
+
 if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 	if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
