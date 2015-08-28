@@ -28,8 +28,9 @@ http://www.altisliferpg.com/topic/4393-howto-add-statusbar/
 New moves menu (push-ups and such)
 http://www.altisliferpg.com/topic/10991-tutorial-move-menus/
 
-Go-Pro Camera
+/*Go-Pro Camera
 http://www.altisliferpg.com/topic/11791-go-pro-camera-and-live-monitor-for-police/
+DONE*/
 
 Advanced Mining
 http://www.altisliferpg.com/topic/10219-tutorial-rng-mining-rework-403x/
