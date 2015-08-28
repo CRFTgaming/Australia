@@ -83,7 +83,9 @@ class Mission
 		"A3_Structures_F_EPA_Civ_Constructions",
 		"A3_Structures_F_Ind_Shed",
 		"A3_Structures_F_Ind_SolarPowerPlant",
-		"A3_Characters_F_Mark"
+		"A3_Characters_F_Mark",
+		"CAMisc",
+		"aia_misc_config"
 	};
 	addOnsAuto[]=
 	{
@@ -165,6 +167,8 @@ class Mission
 		"A3_Structures_F_EPA_Civ_Constructions",
 		"A3_Structures_F_Ind_Shed",
 		"A3_Structures_F_Ind_SolarPowerPlant",
+		"CAMisc",
+		"aia_misc_config",
 		"australia"
 	};
 	randomSeed=1343062;
@@ -6489,7 +6493,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2621;
+		items=2622;
 		class Item0
 		{
 			position[]={4865.8379,7.7860556,17753.553};
@@ -9168,6 +9172,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_FlatTV_01_F";
 			skill=0.60000002;
+			text="Monitor1";
 			init="this enableSimulation false;this setdir 974.898;this setposATL [22298.271484,25549.783203,5.80892];this setVectorUp [0,0,1]";
 		};
 		class Item251
@@ -33553,6 +33558,16 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Flush_Light_red_F";
 			skill=0.60000002;
+		};
+		class Item2621
+		{
+			position[]={844.98871,4,1036.9971};
+			special="NONE";
+			id=3001;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			skill=0.60000002;
+			text="SERVER";
 		};
 	};
 	class Markers
