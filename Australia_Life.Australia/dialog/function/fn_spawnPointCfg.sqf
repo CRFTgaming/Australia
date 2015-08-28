@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_spawnPointCfg.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -16,18 +17,27 @@ switch (_side) do
 {
 	case west:
 	{
-		_return = [
-			["cop_spawn_1","Sydney HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_2","Melbourn HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_3","Adelaide HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_4","Darwin HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_6","Brisbane HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_7","Launceston HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_9","Swat HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_10","Perth HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
-		];
+		if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 1 or higher.
+   		{
+   			_return = [
+   				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+   				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+   			];
+   		};
+
+   		if(__GETC__(life_coplevel) < 8) then // Vehicles available to cops level 1 or higher.
+   		{
+			_return = [
+				["cop_spawn_1","Sydney HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["cop_spawn_2","Melbourn HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+				["cop_spawn_3","Adelaide HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_4","Darwin HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_6","Brisbane HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_7","Launceston HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_9","Swat HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_10","Perth HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			];
+		};
 	};
 	
 	case civilian:
@@ -37,7 +47,7 @@ switch (_side) do
 			_return = [
 				["Rebelop","Rbl. Airfield","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["Rebelop_2","East Rebel Outpost","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","AAkirkeby","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","Sydney","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["Rebelop_1","Raghammer Rebel Compound","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
