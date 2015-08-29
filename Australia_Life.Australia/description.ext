@@ -4,7 +4,7 @@
 author = "Tonic";
 onLoadName = "Australia Life RPG";
 onLoadMission = "A RPG game mode developed by Tonic, Edited by CRFT Gaming's Dev Team";
-loadScreen = "newloading.jpg";
+loadScreen = "textures\crftlogo.paa";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 3;
