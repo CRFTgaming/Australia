@@ -4,7 +4,7 @@
 author = "Tonic";
 onLoadName = "Australia Life RPG";
 onLoadMission = "A RPG game mode developed by Tonic, Edited by CRFT Gaming's Dev Team";
-loadScreen = "textures\crftlogo.paa";
+loadScreen = "newloading.paa";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 3;
@@ -54,7 +54,7 @@ class RscTitles
 	            sizeEx = 0.05; 
 	            colorBackground[] = {1,1,1,0};
 	            colorText[] = {1,1,1,1};
-	            text = "textures\crftlogo.paa";
+	            text = "newloading.paa";
 	            lineSpacing = 1;
 	        }; 
 	    }; 
@@ -115,6 +115,13 @@ class CfgSounds
 	{
 		name = "Yelp";
 		sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+	class SirenLong
+	{
+		name = "SirenLong";
+		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
 		titles[] = {};
 	};
 
