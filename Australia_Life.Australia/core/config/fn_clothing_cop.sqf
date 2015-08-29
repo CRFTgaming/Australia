@@ -21,11 +21,11 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) == 0) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 		};
 		if(__GETC__(life_coplevel) == 1) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -33,7 +33,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) == 2) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -41,7 +41,7 @@ switch (_filter) do
 	
 		if(__GETC__(life_coplevel) == 3) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -49,7 +49,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) == 4) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -57,7 +57,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) == 5) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -65,7 +65,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) == 6) then 
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -80,7 +80,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) == 7) then
 		{
-			_ret pushBack ["U_Rangemaster","Cop Uniform",100];
+			_ret pushBack ["APD_basic","Cop Uniform",100];
 			_ret pushBack ["U_B_HeliPilotCoveralls","Air Patrol Flight Suit",200];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Undercover 1",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Undercover 2",100];
@@ -95,7 +95,7 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) == 8) then 
 		{
-			_ret pushBack ["U_Competitor","Sheriff Uniform",100];
+			_ret pushBack ["APD_sheriff","Sheriff Uniform",100];
 			_ret pushBack ["TRYK_U_B_Denim_T_BK","Sheriff Undercover",100];
 			_ret pushBack ["TRYK_U_denim_jersey_blu","Sheriff Undercover 1",100];
 			_ret pushBack ["U_PMC_IndUniformLS_BSBPBB","Sheriff Black Tactical",200];
