@@ -45,8 +45,8 @@ _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = fa
 
 
 /* shows RESTART IN X MINS */
-_USE_RESTART_TIMER = false;	/* true or false */
-_RESTART_TIME_IN_M =   240;	/* restart time in minutes */
+_USE_RESTART_TIMER = true;	/* true or false */
+_RESTART_TIME_IN_M =   15;	/* restart time in minutes */
 _SHOW_TIMER_IN_MIN =	[1,2,3,5,10];	/* minutes before restart, when message is shown */
 
 
@@ -70,7 +70,7 @@ _announce_adminstate_changed = false;	/* true or false */
 
 
 /* "_passwordAdmin": Taken from the servers config.cfg, needed for servercommands     */
-_passwordAdmin = 'EnterAdminPasswordFromYourConfigHere';
+_passwordAdmin = 'password123';
 _adminLevel1_UIDs =
 // Tundra, Casey, Rad, Talos, Doppler, Aceshadow, flamez Only owners and devs have access to this. For Testing Envy & Woody & torovich & drolkrad
 [
