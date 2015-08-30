@@ -748,7 +748,6 @@ switch(_shop) do
 					[
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
-							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
 							["HandGrenade_Stone","Flashbang",1000],
 							["SmokeShellBlue","Teargas",700],
 							["hgun_ACPC2_F",nil,900],
@@ -781,6 +780,9 @@ switch(_shop) do
 							["30Rnd_mas_556x45_Stanag","AR-X 30rd Mag",100],							
 							["arifle_mas_arx_l","AR-X Long Barrel",3500],
 							["30Rnd_mas_556x45_Stanag","AR-X 30rd Mag",100],
+							["arifle_MX_GL_Black_F","MX GL",1500],
+							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
+							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",500],
 							//Long Range					
 							["srifle_mas_m24","M24 Rifle",4000],
 							["5Rnd_mas_762x51_Stanag","5rd M24 Mag",100],
