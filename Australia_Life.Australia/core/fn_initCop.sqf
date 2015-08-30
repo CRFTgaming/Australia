@@ -29,6 +29,12 @@ switch(__GETC__(life_coplevel)) do
 	case 8: {life_paycheck = life_paycheck + 10000;};
 	default {life_paycheck = life_paycheck};
 };
+switch(__GETC__(life_doclevel)) do
+{
+	case 1: {life_paycheck = life_paycheck + 8000;};
+	case 2: {life_paycheck = life_paycheck + 10000;};
+	default {life_paycheck = life_paycheck};
+};
 
 if(!(str(player) in ["cop_16","cop_17","cop_18","cop_13"])) then {
 	if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
