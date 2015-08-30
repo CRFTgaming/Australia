@@ -55,7 +55,7 @@ if(count (_this select 9) > 0) then {
 switch(playerSide) do {
 	case west: {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
-		__CONST__(life_coplevel, parseNumber(_this select 11));
+		__CONST__(life_doclevel, parseNumber(_this select 11));
 		__CONST__(life_medicLevel,0);
 		life_blacklisted = _this select 10;
 	};
