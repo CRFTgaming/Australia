@@ -14,7 +14,7 @@ waitUntil {scriptDone _handle};
 if(__GETC__(life_coplevel) == 0) then
 {
 //Load player with default cop gear.
-player addUniform "police1";
+player addUniform "police1_1";
 player addVest "V_TacVest_blk_POLICE";
 player addHeadgear "H_Cap_police";
 //weapons
@@ -41,7 +41,7 @@ player assignItem "ItemRadio";
 if(__GETC__(life_coplevel) == 1) then
 {
 //Load player with default cop gear.
-player addUniform "police1";
+player addUniform "police1_1";
 player addVest "V_TacVest_blk_POLICE";
 player addHeadgear "H_Cap_police";
 //weapons
@@ -229,10 +229,10 @@ player assignItem "ItemRadio";
 if(__GETC__(life_coplevel) == 8) then
 {
 //Load player with default sheriff's gear.
-player addUniform "sheriff1";
+player addUniform "APD_sheriff";
 player addVest "TRYK_v_Sheriff_BA_OD";
 player addHeadgear "pcapgreen";
-addGoggles "G_Aviator";
+player addGoggles "G_Aviator";
 //weapons
 player addWeapon "hgun_mas_glocksf_F";
 player addMagazine "12Rnd_mas_45acp_Mag";
