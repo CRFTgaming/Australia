@@ -751,7 +751,6 @@ switch(_shop) do
 							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
 							["HandGrenade_Stone","Flashbang",1000],
 							["SmokeShellBlue","Teargas",700],
-							["HandGrenade","Hornet's Nest",700],
 							["hgun_ACPC2_F",nil,900],
 							["9Rnd_45ACP_Mag",nil,30],
 							["hgun_Pistol_heavy_01_F",nil,1100],
