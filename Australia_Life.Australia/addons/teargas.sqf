@@ -10,7 +10,7 @@ While{true} do
     waituntil{
     ((nearestObject [getpos player, "SmokeShellBlue"]) distance player < 10)
     and
-    (getpos (nearestObject [getpos player, "SmokeShellBlue","1Rnd_SmokeBlue_Grenade_shell"]) select 2 < 0.5)
+    (getpos (nearestObject [getpos player, "SmokeShellBlue"]) select 2 < 0.5)
     };
 
     if (headgear player = "Mask_M50","Mask_M40") then
