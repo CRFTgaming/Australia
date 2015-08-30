@@ -354,7 +354,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_9";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - APD 12";
+					description="WhiteListed - D.O.C. 1";
 				};
 				class Item12
 				{
@@ -367,7 +367,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_8";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - APD 13";
+					description="WhiteListed - D.O.C. 2";
 				};
 				class Item13
 				{
@@ -380,7 +380,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - APD 14";
+					description="WhiteListed - D.O.C. 3";
 				};
 				class Item14
 				{
@@ -393,7 +393,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - APD 15";
+					description="WhiteListed - D.O.C. 4";
 				};
 				class Item15
 				{
