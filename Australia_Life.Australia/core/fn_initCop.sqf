@@ -37,7 +37,7 @@ if(!(str(player) in ["cop_16","cop_17","cop_18","cop_13"])) then {
 	};
 };
 if(str(player) in ["cop_3","cop_5","cop_10","cop_1"]) then {
-	if(__GETC__(life_coplevel) < 8) then {
+	if((__GETC__(life_coplevel) < 8) && (__GETC__(life_coplevel) > 9)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
