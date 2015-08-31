@@ -17,11 +17,26 @@ switch (_side) do
 {
 	case west:
 	{
-		if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 1 or higher.
+		if(__GETC__(life_coplevel) == 8) then // Vehicles available to cops level 1 or higher.
    		{
    			_return = [
    				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
    				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+   			];
+   		};
+
+   		if(__GETC__(life_coplevel) == 9) then // Vehicles available to cops level 1 or higher.
+   		{
+   			_return = [
+   				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+   				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+   			];
+   		};
+
+   		if(__GETC__(life_coplevel) == 10) then // Vehicles available to cops level 1 or higher.
+   		{
+   			_return = [
+   				["police_jail_3","Department of Corrections","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
    			];
    		};
 
