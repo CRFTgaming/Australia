@@ -58,7 +58,6 @@ if (!_extDB) exitWith {
 life_adminlevel = 0;
 life_medicLevel = 0;
 life_coplevel = 0;
-life_doclevel = 0;
 
 //Null out harmful things for the server.
 __CONST__(JxMxE_PublishVehicle,"No");

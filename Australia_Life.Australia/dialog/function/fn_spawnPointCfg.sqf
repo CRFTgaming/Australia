@@ -38,13 +38,6 @@ switch (_side) do
 				["cop_spawn_10","Perth HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 			];
 		};
-
-		if(__GETC__(life_doclevel) > 0) then // Vehicles available to cops level 1 or higher.
-   		{
-   			_return = [
-   				["cop_spawn_5","Department of Corrections","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
-   			];
-   		};
 	};
 	
 	case civilian:
