@@ -50,6 +50,12 @@ if(!(str(player) in ["cop_2","cop_4","cop_8","cop_9"])) then {
 		sleep 25;
 	};
 };
+if(str(player) in ["cop_2","cop_4","cop_8","cop_9"]) then {
+	if(__GETC__(life_coplevel) < 10) then {
+		["NotWhitelisted",false,true] call BIS_fnc_endMission;
+		sleep 25;
+	};
+};
 player setVariable["rank",(__GETC__(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
