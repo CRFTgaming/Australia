@@ -27,19 +27,27 @@ switch(__GETC__(life_coplevel)) do
 	case 6: {life_paycheck = life_paycheck + 8000;};
 	case 7: {life_paycheck = life_paycheck + 9000;};
 	case 8: {life_paycheck = life_paycheck + 10000;};
+	case 9: {life_paycheck = life_paycheck + 11000;};
+	case 10: {life_paycheck = life_paycheck + 8000;};
 	default {life_paycheck = life_paycheck};
 };
 
 if(!(str(player) in ["cop_16","cop_17","cop_18","cop_13"])) then {
 	if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
-		sleep 35;
+		sleep 25;
 	};
 };
 if(str(player) in ["cop_3","cop_5","cop_10","cop_1"]) then {
-	if((__GETC__(life_coplevel) < 8) && (__GETC__(life_coplevel) > 9)) then {
+	if(__GETC__(life_coplevel) < 8) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
-		sleep 35;
+		sleep 25;
+	};
+};
+if(!(str(player) in ["cop_2","cop_4","cop_8","cop_9"])) then {
+	if(__GETC__(life_coplevel) == 10) then {
+		["NotWhitelisted",false,true] call BIS_fnc_endMission;
+		sleep 25;
 	};
 };
 player setVariable["rank",(__GETC__(life_coplevel)),true];
