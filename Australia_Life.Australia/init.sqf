@@ -21,6 +21,7 @@ StartProgress = true;
 [] execVM "R3F_LOG\init.sqf";
 [] execVM "IgiLoad\IgiLoadInit.sqf";
 [] execVM "addons\teargas.sqf";
+[] execVM "addons\teargas2.sqf";
 null = [[Monitor1],["cop_3","cop_5","cop_10","cop_1"]] execVM "LFC\feedInit.sqf";
 call compileFinal preprocessFileLineNumbers "addons\Script_XENO_Taru_Pod\XENO_Taru_Pod_Mod.sqf";
 []spawn
