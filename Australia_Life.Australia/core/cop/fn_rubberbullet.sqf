@@ -13,7 +13,7 @@ if(_target != player) exitWith {};
 if(_who == "") exitWith {};
 
 titleText[format[localize "STR_Cop_Rubberbullet",_who],"PLAIN"];
-player playMoveNow "Incapacitated";
+player playMoveNow "AinjPpneMstpSnonWrflDnon";
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
 player attachTo [_obj,[0,0,0]];
