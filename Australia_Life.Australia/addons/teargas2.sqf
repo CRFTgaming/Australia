@@ -8,12 +8,12 @@ While{true} do
 
 
     waituntil{
-    ((nearestObject [getpos player, "1Rnd_SmokeBlue_Grenade_shell"]) distance player < 10)
+    ((nearestObject [getpos player, "G_40mm_SmokeBlue"]) distance player < 10)
     and
-    (getpos (nearestObject [getpos player, "1Rnd_SmokeBlue_Grenade_shell"]) select 2 < 0.5)
+    (getpos (nearestObject [getpos player, "G_40mm_SmokeBlue"]) select 2 < 0.5)
     };
 
-    if (headgear player != "Mask_M50") then
+    if (Goggles player != "Mask_M50") then
     {
         "dynamicBlur" ppEffectEnable true; // enables ppeffect
         "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
