@@ -101,7 +101,32 @@ if(!isNull _source) then {
 		};
 	};
 };
+//rubber grenade
+if(!isNull _source) then {
+	if(_source != _unit) then {
+		_curMag = currentMagazine _source;
+		if (_curMag in ["1Rnd_HE_Grenade_shell"] && _projectile in ["G_40mm_HE"]) then {
+			if((side _source == west && playerSide != west)) then {
+				private["_isVehicle"];
+				_isVehicle = if(vehicle player != player) then {true} else {false};
+				_damage = false;
+				_damageHandle = false;
+				if(!(_isVehicle && !life_istazed)) then {
+					//Copy a knocking out function instead of using the tazing function on the server
+					[player,"Rubber Bullet",true] spawn life_fnc_rubberbullet;
 
+				
+				};
+			};
+			
+			//Change _damagae = true to false if you do not want cops to kill eachother with these. _damagaHandle is being used also so they take no damage aswell.
+			if(playerSide == west && side _source == west) then {
+				_damage = false;
+				_damageHandle = false;
+			};
+		};
+	};
+};
 
 
 
