@@ -753,7 +753,6 @@ switch(_shop) do
 							["SmokeShellBlue","Teargas",700],
 							["arifle_MX_GL_Black_F","Non-Lethal Rifle",2500],
 							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
-							["1Rnd_HE_Grenade_shell","GL Rubber Grenade",50],
 							["hgun_ACPC2_F",nil,900],
 							["9Rnd_45ACP_Mag",nil,30],
 							["hgun_Pistol_heavy_01_F",nil,1100],
