@@ -39,7 +39,7 @@ _MOD = 'AltisLife';
 /* "_OPEN_ADMIN_MENU_KEY": Key to open the menu (google DIK_KeyCodes (0x3B is F1))   */
 _OPEN_ADMIN_MENU_KEY = 0x3B;
 /* What ESCAPE Menu shows */
-_ESCMNUTOP = 'CRFT Gamings Bornholm Life Server';
+_ESCMNUTOP = 'CRFT Gamings Australia Life Server';
 _ESCMNUBOT = 'Protected By InfiSTAR';
 _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
