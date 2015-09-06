@@ -22,6 +22,7 @@ StartProgress = true;
 [] execVM "IgiLoad\IgiLoadInit.sqf";
 [] execVM "addons\teargas.sqf";
 [] execVM "addons\teargas2.sqf";
+[] execVM "zlt_fastrope.sqf";
 null = [[Monitor1],["cop_3","cop_5","cop_10","cop_1"]] execVM "LFC\feedInit.sqf";
 call compileFinal preprocessFileLineNumbers "addons\Script_XENO_Taru_Pod\XENO_Taru_Pod_Mod.sqf";
 []spawn
