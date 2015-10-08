@@ -1,0 +1,17 @@
+***************************************************************************************
+*** Author: Chris(tian) 'infiSTAR' Lorenzen *******************************************
+*** Contact: infiSTAR23@gmail.com *****************************************************
+*** AntiHack & AdminTools - infiSTAR.de ***********************************************
+*** infiSTAR.de / DayZAntiHack.com - Copyright®© 2011 - 2015 All rights reserved. *****
+***************************************************************************************
+*** Please keep a backup before you install the new update, incase there is a problem *
+*** Linux server might need -profiles as start paramter of the server. ****************
+***************************************************************************************
+
+
+
+
+
+30.09.2015 - 16:38 (UTC/GMT +2 hours)
+- restructured the antihack / admintools so it can start from inside a pbo (due to Arma3 1.52 changes)
+--> with the latest arma3 patch you can not load files from outside a pbo anymore. Unless you allow it through the config which is a security risk.

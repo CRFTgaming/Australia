@@ -1,0 +1,69 @@
+//new2
+7 forceRespawn
+7 setFriend
+7 setAmmo !="do \n		{\n			if(local vehicle player)then{\n				vehicle player setAmmo [currentWeapon vehicle player, 1000000];\n			};\n			player set"
+7 RscDebugConsole_watch !="RscDebugConsole_watchSave = [true,true,true,true];"
+7 enableFatigue
+7 setUnitRecoilCoefficient !="		if(noRecoilRun!=1)exitWith{};\n			(vehicle player) setUnitRecoilCoefficient 0;\n			player setUnitRecoilCoefficient 0;\n			player "
+7 setWeaponReloadingTime !="\n			_vehicle = (vehicle player);\n			_done = _vehicle setWeaponReloadingTime [gunner (vehicle player), currentMuzzle (gunner (veh"
+7 allMissionObjects !="PlotPole == 1} do\n			{\n				ADMIN_PlotPole_LIST = [] + (allMissionObjects 'PlotPole_EPOCH');\n				if(markadPlotPole == 0)exitWith{"
+7 callExtension
+7 showCommandingMenu !="showCommandingMenu '';" !"#USER:USERMENU" !="go_in_nearestvehicle_callmevar;']], '1', '1']\n			];\n			showCommandingMenu '#USER:JoinOrNotJoinIsTheQuestion';\n			cutText [format"
+7 enableCollisionWith !="f(!isNull _x)then\n								{\n									(vehicle player) enableCollisionWith _x;player enableCollisionWith _x;\n									if(true)the"
+7 disableCollisionWith !"EPOCH_currentBuildObj disableCollisionWith player;"
+7 hideObject !="_dogHolder hideobject true;" !="_dogHolder hideobject false;" !="er _xobj)then{if!(getPlayerUID _xobj in _admins)then{_xobj hideObject false;};};\n							};\n						} forEach _closeveh;\n					};\n		"
+7 allowDamage !="player allowDamage true;" !="(vehicle player) allowDamage true;" !="vehicle player allowDamage true;" !="player allowDamage false;{missionNamespace setVariable[format['EPOCH_player%1" !="gRemaining 0;\n				player setOxygenRemaining 1;\n				player allowDamage false;\n				{\n					missionNamespace setVariable[format['EPO" !="			{\n				_x removeAllEventhandlers 'HandleDamage';\n				_x allowDamage true;\n			} forEach MY_VEHICLES;\n			\n			_log = 'Vehicle God"
+7 addWeaponCargo !="_acceptHolder addWeaponCargo [_wWeapon, 1] ;"
+7 onMapSingleClick !="onMapSingleClick '';" !"time"
+7 addMagazine !"addMagazineCargo" !="player addMagazine _craftItem;" !="player addMagazine \"jerrycanE_epoch\";" !="player addMagazine \"emptyjar_epoch\";" !="player addMagazine \"jerrycan_epoch\";" !="player addMagazine \"Hatchet_swing\";" !="player addMagazine [(_x select 0),(_x select 1)]" !="player addMagazine _x;" !="if !(player canAdd (_x select 0)) exitWith {};\nplayer addMagazine[_x select 0, _x select 1];" !="_unit addMagazine configName _item;" !=" = {_x == _class} count (magazines _target);\n					_target addMagazine _class;\n					_newCountMag = {_x == _class} count (magazine"
+7 addMagazineCargo !"_dogHolder addMagazineCargo [\"RabbitCarcass_EPOCH\", 1]" !"_dogHolder addMagazineCargo [\"Pelt_EPOCH\", 1]" !"_dogHolder addMagazineCargo [\"Venom_EPOCH\", 1]" !"_dogHolder addMagazineCargo [\"SnakeCarcass_EPOCH\", 1]" !"_dogHolder addMagazineCargo [\"ChickenCarcass_EPOCH\", 1]" !="_acceptHolder addMagazineCargo [_wAmmo, 1] ;"
+7 addItem !="player addItem _craftItem;" !="player addItem _x;" !="_plyr addItemToVest _missionItem;" !="axeVIP addItemToVest _item;" !="_plyr  addItemToVest _missionItem;" !="rm ''%2'';',_var,uniform _unit];\n			[uniformitems _unit,'%1 addItemToUniform ''%2'';'] call _fnc_addMultiple;\n		};\n		if(vest _un"
+7 addBackPack !="itbackpack _unit)then{\n			_export = _export + format ['%1 addBackpack ''%2'';',_var,typeof unitbackpack _unit];\n			[backpackitem"
+7 removeAllWeapons !="removeAllWeapons axeGeneral;" !="yer;';\n		_var = '_unit';\n		_export = _export + format ['removeAllWeapons %1;',_var];\n		_export = _export + format ['removeAllIte"
+7 removeAllItems !="oveAllWeapons %1;',_var];\n		_export = _export + format ['removeAllItems %1;',_var];\n		_export = _export + format ['removeAllAssi"
+7 removeAllActions !=";\n							if(_actionid > _acnt + 1)then\n							{\n								removeAllActions player;removeAllActions (vehicle player);\n								_log "
+7 createGroup !="_playing = true;\n\n\nBIS_fnc_establishingShot_logic_group = createGroup sideLogic;\nBIS_fnc_establishingShot_logic1 = BIS_fnc_estab" !="rivate [\"_grpLogic\"];\ncreatecenter sidelogic;\n_grpLogic = creategroup sidelogic;\nbis_functions_mainscope = _grpLogic createunit " !="category;\n_group = grpnull;\nif (isserver) then {\n_group = creategroup sidelogic;\nmissionnamespace setvariable [_groupVar,_group]"
+7 createVehicleCrew
+7 createVehicleLocal !"\"#particlesource\" createVehicleLocal" !"\"#lightpoint\" createVehicleLocal" !"\"BloodSplat\" createVehicleLocal" !"[\"lightning1_F\", \"lightning2_F\"] call BIS_fnc_selectRandom;\n_lighting = _class createVehicleLocal" !=" {(call fnc_LBSelChanged_LEFT)};\n			LOCAL_OBJ = _class createVehicleLocal [0,0,0];\n			_bbr = boundingBoxReal LOCAL_OBJ;\n			_p1 ="
+7 createUnit !="_unit = _grp createUnit[(_arrUnits select _i), _pos, [], 0, \"FORM\"];" !="_driver = _grp createUnit[\"I_UAV_AI\", position _unit, [], 0, \"CAN_COLLIDE\"];" !="axeGeneral = grpVIPGeneral createUnit [\"I_officer_F\", axeGeneralPos, [], 1, \"CAN_COLLIDE\"];" !="creategroup sidelogic;\nbis_functions_mainscope = _grpLogic createunit [\"Logic\",[9,9,9],[],0,\"none\"];\nbis_functions_mainscope set" !="creategroup sidelogic;\nbis_functions_mainscope = _grpLogic createunit [\"Logic\",[9,9,9],[],0,\"none\"];\nbis_functions_mainscope set"
+7 createAgent !="_unit = createAgent[_unitClass, _targetPos, [], 256, \"FORM\"];" !="_unit = createAgent [_unitClass, _targetPos, [], 120, \"FORM\"];" !="_animal = createAgent[_randomAIClass, _animalPos, [], 5, \"NONE\"];" !="_unit = createAgent [\"Epoch_Cloak_F\", _pos, [], 0, \"CAN_COLLIDE\"];" !="_unit = createAgent [\"Epoch_Sapper_F\", _targetPos, [], 180, \"FORM\"];" !="_sapper = createAgent [\"Epoch_Sapper_F\", getPos _cage2, [], 0, \"FORM\"];"
+7 createTeam
+7 createDialog !="createDialog \"QuickUpgrade\";" !="createDialog \"QuickTake\";" !="createDialog \"InteractBank\";" !="createdialog \"SelectGender\";" !="_handled = createdialog _dialog;" !="if !(createdialog \"InteractItem\") exitWith {};" !="createDialog \"TapOut\";" !="if !(createdialog \"Trade\") exitWith {};" !="_ok = createdialog \"Interact\";" !="_ok = createdialog \"TradeNPCMenu\";" !="createDialog \"Epoch_myGroup\";" !="createDialog (if ((Epoch_my_GroupUID == \"\") && (Epoch_my_Group isEqualTo [])) then {\"EPOCH_createGrp\"} else {\"Epoch_myGroup\"});" !="createDialog \"GroupRequests\";" !="_ok = createdialog \"MissionSelect\";" !="createDialog 'Skaronator_AdminMenu';" !"createdialog 'AdminMenu';[] call fnc_addMenuMapHandler;" !"RscFunctionsViewer" !="rialization;\n		if(isNull findDisplay MAIN_DISPLAY_ID)then{createdialog 'infiSTAR_AdminMenu';};\n		[] call fnc_initMenu;\n		[] call"
+7 deleteMarker !="0) || (_pos select 1 != _xPos select 1))then\n					{\n						deleteMarkerLocal _cm;\n						_vm = createMarkerLocal [_cm,_xPos];\n				"
+7 setMarker !="Marker ['respawn_west', '+str _respawn_west+'];\n					_mark setMarkerColor 'Default';\n					_mark setMarkerText _do;\n				}\n				els" !=" _cm;\n						_vm = createMarkerLocal [_cm,_xPos];\n						_vm setMarkerDirLocal (getDir _x);\n						_vm setMarkerTypeLocal 'mil_star"
+7 createMarker !="Marker ['respawn_west', '+str _respawn_west+'];\n					_mark setMarkerColor 'Default';\n					_mark setMarkerText _do;\n				}\n				els" !="t 1))then\n					{\n						deleteMarkerLocal _cm;\n						_vm = createMarkerLocal [_cm,_xPos];\n						_vm setMarkerDirLocal (getDir _x)"
+7 assignItem !="axeVIP assignItem _item;" !="tMarkerColor 'respawn_west' == '')then\n				{\n					_mark = createMarker ['respawn_west', '+str _respawn_west+'];\n					_mark setMa"
+7 forceAddUniform !="rm _unit != '')then{\n			_export = _export + format ['%1 forceAddUniform ''%2'';',_var,uniform _unit];\n			[uniformitems _unit,'%1"
+7 removeAllMPEventHandlers
+7 setDamage !="player setdamage 1;"
+7 setDammage
+7 displaySetEventHandler !="entHandlers 'MouseButtonDown';\n					(findDisplay 46) displaySetEventHandler ['MouseButtonDown',\"\n						if(round diag_tickTime =="
+7 ctrlSetEventHandler !"BIS_fnc_guiMessage_status" !"ctrlSetEventHandler ['LBDblClick', '_this call" !="_buttonRespawn ctrlseteventhandler [\"buttonclick\",\"with uinamespace do {['buttonRespawn'," !=" 0;\n		(findDisplay MAIN_DISPLAY_ID displayCtrl 44466) ctrlSetEventHandler['ButtonClick','call fnc_ButtonClick_44466'];\n		\n		\n		c"
+7 addMPEventHandler
+7 remoteControl !"fn_moduleRemoteControl.sqf" !="\"BIS_fnc_moduleRemoteControl\""
+7 ctrlCreate !="_ListGroup = _display ctrlCreate [\"RscControlsGroupNoHScrollbars\"" !="PLAY_ID) displayCtrl 44464);\n		findDisplay MAIN_DISPLAY_ID ctrlCreate['IGUIBack', 44464];\n		(findDisplay MAIN_DISPLAY_ID display"
+7 ctrlClassName
+7 ctrlModel
+7 ctrlModelDirection
+7 ctrlModelSide
+7 ctrlModelUp
+7 ctrlSetDirection
+7 ctrlSetModel
+7 deleteVehicleCrew !"fn_deleteVehicleCrew.sqf" !="\"BIS_fnc_deleteVehicleCrew\""
+7 loadFile
+7 selectPlayer !="selectPlayer _playerObject;"
+7 setGroupIconsVisible
+7 setGroupIconsSelectable
+7 setGroupIconParams
+7 addGroupIcon
+7 EPOCH_whitelist
+7 EPOCH_defaultVars_SEPXVar
+7 EPOCH_group_upgrade_lvl_SVar
+7 EPOCH_GROUP_Delete_PVS !="EPOCH_GROUP_Delete_PVS = [player,Epoch_personalToken];"
+7 _typeofHookMonky
+7 _allocMemory !="_allocMemory651"
+7 _d3d9multipliervariable
+7 _runASM
+7 _addGFX_hookD3D9eventhandler
+7 _BEhookBYPASSBOB
+7 JJMMEE_INIT_MENU

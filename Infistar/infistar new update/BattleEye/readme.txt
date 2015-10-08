@@ -1,0 +1,1 @@
+BE Filters are not really kept up 2 date. The scripts.txt(s) should be a lot more aggressive in my opinion!
