@@ -145,7 +145,7 @@ _adminLevel2 =
 ];
 _adminLevel3_UIDs =
 [
-	'0','0','0'
+	'76561198023052526'
 ];
 _adminLevel3 =
 [
