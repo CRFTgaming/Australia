@@ -54,20 +54,20 @@
 	_MOD can be 'Epoch', 'AltisLife', 'KOTH', 'WASTELAND' or 'Other'.
 	Epoch and AltisLife should be resolved automatically
 */
-_MOD = 'Epoch';
+_MOD = 'AltisLife';
 
 /* "_OPEN_ADMIN_MENU_KEY": Key to open the menu (google DIK_KeyCodes (0x3B is F1))   */
 _OPEN_ADMIN_MENU_KEY = 0x3B;
 
 /* What ESCAPE Menu shows */
-_ESCMNUTOP = 'AntiHack & AdminTools';
+_ESCMNUTOP = 'CRFT Gamings Australia Life Server';
 _ESCMNUBOT = 'by infiSTAR.de';
 _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
-_USE_RESTART_TIMER = false;	/* true or false */
-_RESTART_TIME_IN_M = 180;		/* restart time in minutes */
-_SHOW_TIMER_IN_MIN = [1,2,3,5,10];	/* minutes before restart, when message is shown */
+_USE_RESTART_TIMER = true;	/* true or false */
+_RESTART_TIME_IN_M = 360;		/* restart time in minutes */
+_SHOW_TIMER_IN_MIN = [1,2,3,5,10,15,20,25,30];	/* minutes before restart, when message is shown */
 
 /* The following 3 options can be disabled by putting the value to -1. For example "_TGV = -1;" */
 /* Terrain Grid Value   */ _TGV = 40;		/* 50, 25, 12.5  */	/* if set to 50 grass will be very low for better client FPS.. default is 25 ~35 is good performance and grass :) */
@@ -91,10 +91,11 @@ _announce_adminstate_changed = false;	/* true or false */
 
 
 /* "_passwordAdmin": Taken from the servers config.cfg, needed for servercommands */
-_passwordAdmin = 'EnterAdminPasswordFromYourConfigHere';
+_passwordAdmin = 'password123';
 _adminLevel1_UIDs =
+// Tundra, Casey, Rad, Talos, Doppler, Aceshadow, flamez, jeff Only owners and devs have access to this. For Testing Envy & Woody & torovich & drolkrad
 [
-	'0','0','0'
+	'76561198105556705','76561198134898961','76561198032047520','76561198054879039','76561197966618733','76561198056017572','76561198058368737','76561198082256888','76561198033984650','76561198030376566','76561198089779519','76561198149395868'
 ];
 _adminLevel1 =
 [
@@ -188,19 +189,19 @@ _adminLevel3 =
 /*  Check Actions Plr    */ _CAP = true;	/* true or false */	/* will announce: xxx possible scroll menu hack */
 /*  Remove Actions Plr   */ _OAP = true;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
 /*  Remove Actions Objs  */ _OAO = true;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
-/*  Check Attached Objs  */ _CAO = true;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
-/*  Use Anti Teleport    */ _UAT = true;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
+/*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
+/*  Use Anti Teleport    */ _UAT = false;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
 /*  Chat-Vote Day/Night  */ _VDN = true;	/* true or false */
 /*  Check Vision Mode    */ _CVM = true;	/* true or false */
 /*  check view distance  */ _CVD = false;	/* true or false */	/* if the viewdistance is not 1600 - ban. */
 /*  check cameraOn       */ _CCO = true;	/* true or false */	/* needs to be false for UAV drones and such things.. */
-/*  Revert onEachFrame   */ _REF = true;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
-/*  Map Icon Check       */ _MIC = true;	/* true or false */	/* Needs to be  false  on some WasteLand versions */
+/*  Revert onEachFrame   */ _REF = false;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
+/*  Map Icon Check       */ _MIC = false;	/* true or false */	/* Needs to be  false  on some WasteLand versions */
 /*  Remove All Mines     */ _RAM = false;	/* true or false */
 /*  Remove All UAVs      */ _RUS = false;	/* true or false */
 /*  onEachFrame function */ _rOEF = {};	/* this needs to be CODE */
 /*  custom HandleDamage  */ _CHD = {};		/* this needs to be CODE */
-/*  Revert allowDamage   */ _RAD = true;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
+/*  Revert allowDamage   */ _RAD = false;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
 /*  Revert HandleDamage  */ _RHD = false;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  EH_Draw3D check      */ _C3D = false;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
 /*  MouseMoving EH check */ _MOH = false;	/* true or false */	/* announces: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
@@ -213,7 +214,7 @@ _adminLevel3 =
 /*  Remove Hit Handler   */ _REH = true;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  Revert InventoryOpen */ _RIO = true;	/* true or false */	/* Sets the custom InventoryOpened Handler for AltisLife only - don't mind this option if you are on a different mod. */
 /*  Revert Killed EH     */ _RKH = true;	/* true or false */
-/*  "" Respawn Handler   */ _RRH = true;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
+/*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
 /*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','Draw','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
 /*  mod PlayerDisconnect */ _OPD = true;	/* true or false */
 /*  mod PlayerConnect    */ _OPC = true;	/* true or false */
@@ -268,8 +269,8 @@ _cMenu =
 ];
 
 
-/*  Check Global Markers */ _CGM = true;	/* true or false */	/* you may need to disable this check for A.I. Missions - or whitelist the used Markers in the _aLocalM Array beneath */
-/*  Check Local Markers  */ _CLM = true;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
+/*  Check Global Markers */ _CGM = false;	/* true or false */	/* you may need to disable this check for A.I. Missions - or whitelist the used Markers in the _aLocalM Array beneath */
+/*  Check Local Markers  */ _CLM = false;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
 /*  Use _aLocalM array   */ _UMW = false;	/* true or false */	/* use allowed marker array from below (for example AltisLife uses house_ and others in there) or A.I. Missions */
 /* _aLocalM: if '_CLM' && _UMW - this array of names will be allowed */
 _aLocalM =
@@ -485,7 +486,7 @@ _ForbiddenVehicles =
 ];
 
 
-_UFI = true;	/* Use "_ForbiddenItems"/Item Check(s) */
+_UFI = false;	/* Use "_ForbiddenItems"/Item Check(s) */
 _UIW = false;	/* if "_UIW = true;" then it checks if the items the individual player has are in "_ItemWhiteList" */
 _ItemWhiteList =
 [
@@ -513,7 +514,7 @@ _ForbiddenOnEpochOnly =
 ];
 
 
-_UFA = true;	/* Use Ammo Check(s) */
+_UFA = false;	/* Use Ammo Check(s) */
 _UAW = false;	/* if "_UAW = true;" then it checks if the ammo used by the individual player is in "_AmmoWhiteList" */
 _AmmoWhiteList =
 [
@@ -584,7 +585,46 @@ _badpeople =
 	'76561198052912993',	/*	Epoch Axle */
 	'76561198042281363',	/*	Epoch Mr. CopyPaste aka Skarokid */
 	'76561197960406763',	/*	Epoch [VB]AWOL */
-	'0'
+	'76561198059930120','76561198134916119','76561198130615382','76561198000135158',
+	'76561198098132364','76561198127436055','76561198120497784','76561198151285096',
+	'76561198037143375','76561198053362106','76561197960693668','76561198029212490',
+	'76561198118994984','76561198150211409','76561198118066332','76561198148495214',
+	'76561198124727926','76561198087505309','76561198106834234','76561198056113988',
+	'76561198153161518','76561198077972256','76561198144416171','76561198151661947',
+	'76561198075411542','76561198106140797','76561198118378695','76561198062509950',
+	'76561198080657666','76561198156021205','76561198126816660','76561197979392398',
+	'76561197969005505','76561197978751247','76561197971107759','76561197967087500',
+	'76561197995117205','76561197964338716','76561198128229370','76561198141766032',
+	'76561198131838128','76561198137119508','76561198077957452','76561198067414796',
+	'76561198055161991','76561198089299178','76561198129631838','76561198119258603',
+	'76561198002094787','76561198148907901','76561197978913290','76561197984690630',
+	'76561198025777475','76561197961122016','76561198160514374','76561198165856213',
+	'76561198094783145','76561198085523173','76561197984998237','76561198013819290',
+	'76561197982406660','76561197972252136','76561198009791150','76561198154257484',
+	'76561197960292002','76561198044218532','76561198035170425','76561198141958508',
+	'76561198152649864','76561198127341284','76561198166513783','76561198032309705',
+	'76561198137073763','76561198085897950','76561198145115648','76561198080244706',
+	'76561197994045926','76561198124128052','76561198119472477','76561198049992289',
+	'76561198111864019','76561197997686263','76561198161483683','76561198124849894',
+	'76561198164196577','76561198133066692','76561198163057499','76561198058635527',
+	'76561198062276128','76561198157673117','76561198131170408','76561198128889826',
+	'76561198128939134','76561198065607803','76561198121247387','76561198076232303',
+	'76561198144358523','76561198032349954','76561198028313707','76561198148216075',
+	'76561198165881759','76561198165211039','76561198074110583','76561198098254345',
+	'76561198054619746','76561198061552644','76561198068243806','76561198164444108',
+	'76561198165496777','76561198160602020','76561198018065224','76561198202739900',
+	'76561198047883815','76561198069085023','76561198059688627','76561198122259220',
+	'76561198164784675','76561198162451605','76561198151137695','76561198203651168',
+	'76561198149065671','76561198175611354','76561198157469769','76561198019017645',
+	'76561197963041299','76561198159780832','76561198014790670','76561198142729104',
+	'76561198095569574','76561198016803159','76561198161648337','76561198134613431',
+	'76561198166419716','76561198175853759','76561198123807524','76561198167827911',
+	'76561198167152679','76561197980206587','76561197963458654','76561197967605970',
+	'76561198033680504','76561198180913597','76561198123886811','76561197985584715',
+	'76561197999691527','76561198105419039','76561198005271335','76561198053629469',
+	'76561198026212101','76561198103738030','76561198035798322','76561198046700395',
+	'76561198043439272','76561197970859383','76561198038412105','76561197987629806'
+
 ];
 /* ********************************************************************************* */
 /* ********************************************************************************* */
