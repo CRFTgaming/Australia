@@ -174,7 +174,7 @@ _adminLevel3 =
 /*  Items Added Check    */ _IAC = true;	/* true or false */	/* checks if Items are being added unrightful! */
 /*  Local Vehicle Check  */ _LVC = true;	/* true or false */
 /*  unitRecoil checks    */ _URC = true;	/* true or false */	/* checks unitRecoilCoefficient and resets default unitRecoilCoefficient */
-/*  Notification check   */ _UNC = true;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
+/*  Notification check   */ _UNC = false;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
 /*  Use MPInterrupt check*/ _UMP = false;	/* true or false */
 /*  Check GearMenu CTRLs */ _GCC = false;	/* true or false */	/* will announce: BadControls count on D602 - if the gear menu has an increased or lower control count (Epoch = 87, AltisLife = 82) */
 /*  Check CTRLs on D12   */ _C12 = false;	/* true or false */	/* will announce: BadControls count on IDD 12 or BadControl and a number */
@@ -185,16 +185,16 @@ _adminLevel3 =
 /*  Check CTRLs on D49   */ _C49 = true;	/* true or false */	/* will announce: BadCTRLs on 49 */
 /*  Check BTTNs on D49   */ _B49 = true;	/* true or false */	/* will announce: BadButton on 49 */
 /*  whitelist for _B49   */ _excludedButtons = [];	/* Will Kick for BadButton XYZ if a customnized button is not white-listed here. Example: _excludedButtons = [1010]; */
-/*  Change MpFramework   */ _MPF = false;	/* true or false */	/* important to protect AltisLife */
+/*  Change MpFramework   */ _MPF = true;	/* true or false */	/* important to protect AltisLife */
 /*  Check Actions Plr    */ _CAP = false;	/* true or false */	/* will announce: xxx possible scroll menu hack */
 /*  Remove Actions Plr   */ _OAP = false;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
 /*  Remove Actions Objs  */ _OAO = false;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
 /*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
 /*  Use Anti Teleport    */ _UAT = false;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
 /*  Chat-Vote Day/Night  */ _VDN = true;	/* true or false */
-/*  Check Vision Mode    */ _CVM = true;	/* true or false */
+/*  Check Vision Mode    */ _CVM = false;	/* true or false */
 /*  check view distance  */ _CVD = false;	/* true or false */	/* if the viewdistance is not 1600 - ban. */
-/*  check cameraOn       */ _CCO = true;	/* true or false */	/* needs to be false for UAV drones and such things.. */
+/*  check cameraOn       */ _CCO = false;	/* true or false */	/* needs to be false for UAV drones and such things.. */
 /*  Revert onEachFrame   */ _REF = false;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
 /*  Map Icon Check       */ _MIC = false;	/* true or false */	/* Needs to be  false  on some WasteLand versions */
 /*  Remove All Mines     */ _RAM = false;	/* true or false */
@@ -211,8 +211,8 @@ _adminLevel3 =
 /*  Revert KeyDown       */ _RDK = true;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
 /*  Check Keybinds       */ _CKB = true;	/* true or false */	/* recommended:  true  _RKB needs to be true! Checks Keybinds, if it finds added ones it shows: "KeyBinds added   %1 should be %2" */
 /*  check MapSingleClick */ _OMC = false;	/* true or false */	/* announces: "MapSingleClick modified", if modification is found - NEEDS _MBC to be true! */
-/*  Remove Hit Handler   */ _REH = true;	/* true or false */	/* Needs to be  false  for Paintball script */
-/*  Revert InventoryOpen */ _RIO = true;	/* true or false */	/* Sets the custom InventoryOpened Handler for AltisLife only - don't mind this option if you are on a different mod. */
+/*  Remove Hit Handler   */ _REH = false;	/* true or false */	/* Needs to be  false  for Paintball script */
+/*  Revert InventoryOpen */ _RIO = false;	/* true or false */	/* Sets the custom InventoryOpened Handler for AltisLife only - don't mind this option if you are on a different mod. */
 /*  Revert Killed EH     */ _RKH = true;	/* true or false */
 /*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
 /*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','Draw','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
@@ -229,9 +229,9 @@ _adminLevel3 =
 /*  Check Crypto         */ _CCT = false;	/* true or false */	/* When a players Crypto is smaller than 0 or bigger than 25000, the player gets banned (not possible with default epoch)
 /*  Use CombatLog checks */ _CLG = false;	/* true or false */	/* "PLAYERNAME CombatLogged GPS X/Y find the dead body!"
 /*  Use Anti Glitch      */ _UAG = true;	/* true or false */	/* a try to stop glitching through walls on Doors/Walls */
-/*  Use Anti Wall Look   */ _AWL = true;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
+/*  Use Anti Wall Look   */ _AWL = false;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
 /*  MPHit Log            */ _MPH = false;	/* true or false */	/* will create a A3_MPHIT.txt file where logs hits on players */
-/*  Token Check          */ _TOC = true;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
+/*  Token Check          */ _TOC = false;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
 /* ------- SOME EPOCH ONLY FUNCTIONS - ABOVE ------- */
 
 
