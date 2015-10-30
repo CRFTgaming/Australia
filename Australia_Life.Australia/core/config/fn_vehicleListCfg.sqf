@@ -52,11 +52,6 @@ switch (_shop) do
 			["C_Hatchback_01_F",800],
 			["C_Offroad_01_F",1500],
 			["C_Van_01_transport_F",2500],
-			["A3L_F350Black",4500],
-			["A3L_F350Blue",4500],
-			["A3L_F350Red",4500],
-			["A3L_F350White",4500],
-			["A3L_F350Mex",4500],
 			["C_Van_01_Box_F",2500],
 			["C_SUV_01_F",1300],
 			["C_Hatchback_01_sport_F",1100]
@@ -95,14 +90,10 @@ switch (_shop) do
 			["GNT_C185",15000],
 			["IVORY_CRJ200_1",40000],
 			["IVORY_ERJ135_1",35000],
-			["USAF_C17",80000],
-			["usaf_c5",100000],
 			["sab_C130_J",65000],
 			["sab_C130_JT",65000],
 			["sab_c130_JC",65000],
 			["sab_C130_FA",65000],
-			["sab_C130_CG",65000],
-			["sab_C130_CSP",65000],
 			["sab_L100_AL",65000],
 			["bwi_a3_t6a",25000],
 			["bwi_a3_t6a_2",25000],
@@ -121,12 +112,6 @@ switch (_shop) do
 			["O_G_Quadbike_01_F",650],
 			["I_G_Offroad_01_F",1500],
 			["O_MRAP_02_F",1800],
-			["A3L_F350Black",4500],
-			["A3L_F350Blue",4500],
-			["A3L_F350Red",4500],
-			["A3L_F350White",4500],
-			["A3L_F350Mex",4500],
-			["USAF_HH60G",10530],
 			["B_Heli_Light_01_F",10500]
 		];
 		
@@ -230,8 +215,6 @@ switch (_shop) do
 			["EC635",25000],
 			["O_Heli_Transport_04_box_F",25000],
 			["B_Heli_Transport_03_unarmed_F",20000],
-			["USAF_CV22",20000],
-			["USAF_HH60GMED",20000],
 			["ARMSCor_A109_Civ",20000],
 			["dezkit_b206_ls",20000]
 		];
@@ -270,10 +253,12 @@ switch (_shop) do
     	// Vehicles available to cops level 5 or higher. Captain
     	_return pushBack ["B_Heli_Light_01_F",1000];
     	_return pushBack ["O_Heli_Transport_04_bench_F",10000];
+		_return pushBack ["sab_C130_J",30000];
 	
     	if (__GETC__(life_coplevel) < 6) exitWith {};
     	// Vehicles available to cops level 6 or higher. SWAT
     	_return pushBack ["B_Heli_Transport_03_F",12000];
+		_return pushBack ["sab_C130_CSP",50000];
 
     	if (__GETC__(life_coplevel) < 7) exitWith {};
     	// Vehicles available to cops level 7 or higher. Superintendant and Chiefs
@@ -285,7 +270,7 @@ switch (_shop) do
 
 	
     	if (__GETC__(life_coplevel) < 8) exitWith {};
-    	// Vehicles available to cops level 8 or higher.
+    	// Vehicles available to cops level 8 or higher. Sheriff's Department
   	};
 	
 	case "cop_airhq":
