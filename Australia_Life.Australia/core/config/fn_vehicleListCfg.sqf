@@ -289,11 +289,9 @@ switch (_shop) do
 		_return =
 		[
 			["C_Rubberboat",500],
-			["A3L_JetSki",500],
 			["C_Boat_Civil_01_F",2200],
 			["B_SDV_01_F",3200],
 			["D41_Trawler",10000],
-			["A3L_Ship",5000],
 			["Burnes_MK10_1",15000]
 		];
 	};
