@@ -9,7 +9,7 @@ class ASORVS
 		class cameraEnd {scope = 1;};
 		class cameraStart {scope = 1;};
 		class closed {scope = 1;};
-		class config { scope = 1; file = "ASORVS\config.sqf"; preInit = 1; };
+		class config { scope = 1; file = "ASORVS\config_whitelist.sqf"; preInit = 1; };
 		class GetDescription {scope=1;};
 		class getDetails {scope = 1;};
 		class GetFilteredItems {scope=1;};
