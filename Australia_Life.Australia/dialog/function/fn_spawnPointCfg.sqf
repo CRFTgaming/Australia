@@ -61,9 +61,9 @@ switch (_side) do
 		if(license_civ_rebel && playerSide == civilian) then {
 			_return = [
 				["Rebelop","Rbl. Airfield","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["Rebelop_2","East Rebel Outpost","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["Rebelop_2","Southern Rebel Outpost","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_1","Sydney","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["Rebelop_1","Raghammer Rebel Compound","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["Rebelop_1","Northern Rebel Compound","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
 
