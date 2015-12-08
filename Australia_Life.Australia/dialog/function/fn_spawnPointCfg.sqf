@@ -182,12 +182,12 @@ switch (_side) do
 		_return = [
 			["medic_spawn_1","Sydney Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_2","Melbourne Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Darwin Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Perth Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Adelaide Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Brisbane Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Alice Springs Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Hobart Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_3","Darwin Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_4","Perth Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_5","Adelaide Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_6","Brisbane Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_7","Alice Springs Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_8","Hobart Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
