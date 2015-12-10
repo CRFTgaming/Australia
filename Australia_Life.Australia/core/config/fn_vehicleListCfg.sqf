@@ -38,7 +38,6 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F",5000],
 			["O_Heli_Light_02_unarmed_F",7500],
 			["dezkit_b206_ems",8000],
-			["EC635_SAR",8000],
 			["dezkit_b206_rescue",8000],
 			["O_Heli_Transport_04_medevac_black_F",10000]
 		];
@@ -54,6 +53,16 @@ switch (_shop) do
 			["C_Van_01_transport_F",2500],
 			["C_Van_01_Box_F",2500],
 			["C_SUV_01_F",1300],
+			["aus_taxi",10000],
+			["sub_blue",40000],
+			["sub_black",40000],
+			["holden_red",70000],
+			["holden_blue",70000],
+			["holden_black",70000],
+			["sky_yellow",70000],
+			["sky_black",70000],
+			["sky_blue",70000],
+			["sky_red",70000],
 			["C_Hatchback_01_sport_F",1100]
 		];
 	};
@@ -88,6 +97,7 @@ switch (_shop) do
 		_return =
 		[
 			["GNT_C185",15000],
+			["ARMSCor_A109_Civ",15000],
 			["IVORY_CRJ200_1",40000],
 			["IVORY_ERJ135_1",35000],
 			["sab_C130_J",65000],
@@ -160,45 +170,48 @@ switch (_shop) do
   	{
     	_return pushBack 
     	["C_Offroad_01_F",400];
-    	if(__GETC__(life_coplevel) > 0) then // Vehicles available to cops level 1 or higher.
+    	if(__GETC__(life_coplevel) > 0) then // Vehicles available to cops level 1 or higher. Cadet
    		{
+			_return pushBack 
+			["aus_pd",2000];
+			_return pushBack 
+			["C_SUV_01_F",500];
    		};
-    	if(__GETC__(life_coplevel) > 1) then // Vehicles available to cops level 2 or higher.
+    	if(__GETC__(life_coplevel) > 1) then // Vehicles available to cops level 2 or higher. Patrol Officer
 		{
 			_return pushBack 
-			["C_SUV_01_F",350];
+			["aus_pdslick",2000];
     		_return pushBack 
-    		["B_Truck_01_covered_F",450];
-		};
-    	if(__GETC__(life_coplevel) > 2) then // Vehicles available to cops level 3 or higher.
-    	{
-    		_return pushBack 
+    		["B_Truck_01_covered_F",500];
+			_return pushBack 
     		["C_Hatchback_01_sport_F",350];
-    		_return pushBack 
-    		["B_MRAP_01_F",400];
-    	};
-    	if(__GETC__(life_coplevel) > 3) then // Vehicles available to cops level 4 or higher.
-    	{
-    	};
-    	if(__GETC__(life_coplevel) > 4) then // Vehicles available to cops level 5 or higher.
-		{
-			_return pushBack 
-			["B_Quadbike_01_F",150];
-			_return pushBack 
-			["I_MRAP_03_F",750];
-			_return pushBack 
-			["B_G_Offroad_01_armed_F",1500];
 		};
-    	if(__GETC__(life_coplevel) > 5) then // Vehicles available to cops level 6 or higher.
-		{	
-    	};
-    	if(__GETC__(life_coplevel) > 6) then // Vehicles available to cops level 7 or higher.
-		{	
-    	};
-    	if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 8 or higher.
+    	if(__GETC__(life_coplevel) > 2) then // Vehicles available to cops level 3 or higher. Sergeant
     	{
-			_return pushBack ["B_APC_Tracked_01_CRV_F",15000];
-			_return pushBack ["B_APC_Tracked_01_rcws_F",15000];
+    		_return pushBack 
+    		["holden_pd",1000];
+    	};
+    	if(__GETC__(life_coplevel) > 3) then // Vehicles available to cops level 4 or higher. Lieutenant
+    	{
+			_return pushBack 
+    		["B_MRAP_01_F",5000];
+			_return pushBack 
+			["sky_pd",15000];
+    	};
+    	if(__GETC__(life_coplevel) > 4) then // Vehicles available to cops level 5 or higher. Captain
+		{
+		};
+    	if(__GETC__(life_coplevel) > 5) then // Vehicles available to cops level 6 or higher. SWAT
+		{	
+    	};
+    	if(__GETC__(life_coplevel) > 6) then // Vehicles available to cops level 7 or higher. Command
+		{	
+			_return pushBack ["subpd",15000];
+    	};
+    	if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 8 or higher. Sheriff
+    	{
+			_return pushBack ["aus_sheriff",2000];
+			_return pushBack ["aus_sheriffslick",2000];
 			
     	};
   	};
@@ -238,33 +251,32 @@ switch (_shop) do
     
     	if (__GETC__(life_coplevel) < 2) exitWith {};
     	// Vehicles available to cops level 2 or higher. Patrol Officer
-    	_return pushBack ["C_Heli_Light_01_civil_F",1000];
-		_return pushBack ["I_Heli_Light_03_unarmed_F",2500];
 
     	if (__GETC__(life_coplevel) < 3) exitWith {};
     	// Vehicles available to cops level 3 or higher. Sergeant
+    	_return pushBack ["C_Heli_Light_01_civil_F",1000];
+		_return pushBack ["I_Heli_Light_03_unarmed_F",2500];
 		_return pushBack ["B_Heli_Transport_03_unarmed_F",4500];
-		_return pushBack ["B_Heli_Transport_01_F",5500];
 	
     	if (__GETC__(life_coplevel) < 4) exitWith {};
     	// Vehicles available to cops level 4 or higher. Lieutenant
+		_return pushBack ["sab_C130_J",30000];
+		_return pushBack ["sab_C130_JC",40000];
+		_return pushBack ["armscor_A109LUH_B",30000];
 
     	if (__GETC__(life_coplevel) < 5) exitWith {};
     	// Vehicles available to cops level 5 or higher. Captain
     	_return pushBack ["B_Heli_Light_01_F",1000];
-    	_return pushBack ["O_Heli_Transport_04_bench_F",10000];
-		_return pushBack ["sab_C130_J",30000];
+    	_return pushBack ["I_Heli_Transport_02_F",8000];
 	
     	if (__GETC__(life_coplevel) < 6) exitWith {};
     	// Vehicles available to cops level 6 or higher. SWAT
-    	_return pushBack ["B_Heli_Transport_03_F",12000];
 		_return pushBack ["sab_C130_CSP",50000];
+		
 
     	if (__GETC__(life_coplevel) < 7) exitWith {};
     	// Vehicles available to cops level 7 or higher. Superintendant and Chiefs
-    	_return pushBack ["I_Heli_Transport_02_F",8000];
 		_return pushBack ["dezkit_b206_fbi",8000];
-		_return pushBack ["I_Heli_light_03_unarmed_F",10000];
 		
 
 
