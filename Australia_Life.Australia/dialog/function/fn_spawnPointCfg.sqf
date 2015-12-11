@@ -17,7 +17,7 @@ switch (_side) do
 {
 	case west:
 	{
-		if(__GETC__(life_coplevel) == 8) then // Vehicles available to cops level 1 or higher.
+		if(__GETC__(life_coplevel) == 8) then // Vehicles available to cops level 8 or higher.
    		{
    			_return = [
    				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
@@ -25,7 +25,7 @@ switch (_side) do
    			];
    		};
 
-   		if(__GETC__(life_coplevel) == 9) then // Vehicles available to cops level 1 or higher.
+   		if(__GETC__(life_coplevel) == 9) then // Vehicles available to cops level 9 or higher.
    		{
    			_return = [
    				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
