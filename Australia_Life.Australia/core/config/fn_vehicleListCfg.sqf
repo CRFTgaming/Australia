@@ -67,6 +67,20 @@ switch (_shop) do
 		];
 	};
 	
+		case "civ_murica":
+	{
+		_return = 
+		[
+			["aus_rust",1000],
+			["aus_yellow",3000],
+			["aus_grey",3000],
+			["aus_brown",3000],
+			["aus_black",3000],
+			["aus_taxi",5000],
+			["aus_grey",3000],
+		];
+	}
+	
 	case "civ_truck":
 	{
 		_return =
