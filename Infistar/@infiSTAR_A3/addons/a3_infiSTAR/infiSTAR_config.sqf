@@ -122,7 +122,7 @@ _adminUIDandAccess =
 		]
 	],
 	[
-		['76561198134898961','76561198032047520','76561198054879039','76561198058368737','76561198056017572','76561197966618733','76561198089779519','76561198033984650','76561198030376566','76561198149395868'],// Admins with UIDs in this Array have their Access defined in the array below //Casey//RAD//TALOS//FLAMES//ACESHADOW//DOPHAWK//TOROVICH//ENVY//WOODY//DROL.
+		['76561198032047520','76561198054879039','76561198058368737','76561198056017572','76561197966618733','76561198089779519','76561198033984650','76561198030376566','76561198149395868'],// Admins with UIDs in this Array have their Access defined in the array below //Casey//RAD//TALOS//FLAMES//ACESHADOW//DOPHAWK//TOROVICH//ENVY//WOODY//DROL.
 		[
 			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
 			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
