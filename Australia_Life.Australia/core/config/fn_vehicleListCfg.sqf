@@ -24,6 +24,7 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
+			["f150ems",7000],
 			["C_Offroad_01_F",1500],
 			["C_SUV_01_F",1300],
 			["C_Hatchback_01_F",800],
@@ -67,7 +68,7 @@ switch (_shop) do
 		];
 	};
 	
-		case "civ_murica":
+	case "civ_murica":
 	{
 		_return = 
 		[
@@ -78,6 +79,9 @@ switch (_shop) do
 			["aus_black",3000],
 			["aus_taxi",5000],
 			["aus_grey",3000],
+			["f150_black",7000],
+			["f150_red",7000],
+			["f150_blue",7000]
 		];
 	}
 	
