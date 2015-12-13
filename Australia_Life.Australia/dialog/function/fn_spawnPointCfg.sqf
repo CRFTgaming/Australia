@@ -53,7 +53,7 @@ switch (_side) do
 				["cop_spawn_4","Darwin HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 				["cop_spawn_6","Brisbane HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 				["cop_spawn_7","Launceston HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-				["cop_spawn_9","Swat HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_9","SWAT HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 				["cop_spawn_10","Perth HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 			];
 		};
