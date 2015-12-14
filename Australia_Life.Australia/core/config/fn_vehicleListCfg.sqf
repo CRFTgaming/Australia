@@ -228,8 +228,10 @@ switch (_shop) do
     	};
     	if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 8 or higher. Sheriff
     	{
-			_return pushBack ["aus_sheriff",2000];
-			_return pushBack ["aus_sheriffslick",2000];
+			_return pushBack 
+			["aus_sheriff",2000];
+			_return pushBack 
+			["aus_sheriffslick",2000];
 			
     	};
   	};

@@ -2,3 +2,8 @@ Re spawn after death is still not working if you are not in infastar list **real
 	**fixed the Y-menu teleporting 
 	
 Menus are not working for interaction same with the Y-menu its not working **idk if both probs are related to infastar and if it needs to be reinstalled	
+		Ace - Y menu works just fine for me. And windows key works just fine for me as well though i have not tested since changes to infistar but has been within the week.
+		
+I just broke the vehicle shops. I attempted to change the shop name in the fn_vehicleListCfg.sqf from med_air_hs to just med_air to bypass the spawn on the hospital script. 
+		If you can get this working with out my change just revert my change.
+		
