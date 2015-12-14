@@ -1,2 +1,4 @@
 Re spawn after death is still not working if you are not in infastar list **really the only prob holding back from alpha launch **
 	**fixed the Y-menu teleporting 
+	
+Menus are not working for interaction same with the Y-menu its not working **idk if both probs are related to infastar and if it needs to be reinstalled	
