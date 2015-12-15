@@ -3,7 +3,6 @@
 	Author: GRIMandinfiSTAR
 	Contact: bruno.marcetic@gmail.com or infiSTAR23@gmail.com // www.infiSTAR.de
 	Antihack & AdminTools - ChristianLorenzen - www.infiSTAR.de-License: (CC)
-	#651
 */
 class RscTextInfi
 {
