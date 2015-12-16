@@ -1,3 +1,0 @@
-5 "life_fnc_netSetVar"
-5 "BIS_fnc_dbg_reminder_value"
-5 "BIS_fnc_dbg_reminder"

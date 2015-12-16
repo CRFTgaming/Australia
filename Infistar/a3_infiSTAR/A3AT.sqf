@@ -10,7 +10,7 @@
 /* **************infiSTAR Copyright®© 2011 - 2015 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
-VERSION_DATE_IS = '05102015#651';
+VERSION_DATE_IS = '08122015#1910';
 infiSTAR_MAIN_CODE = "
 	_log = format['%1 <infiSTAR.de> Loading Menu...',time];systemchat _log;diag_log _log;
 	_mainMap = uiNamespace getVariable 'A3MAPICONS_mainMap';
@@ -634,7 +634,7 @@ infiSTAR_MAIN_CODE = "
 			
 			
 			_ctrlLTMP = [(ctrlposL select 0),(ctrlposL select 1)+.165,(ctrlposL select 2),(ctrlposL select 3)-.165];
-			_ctrleditSearchTMP = [SafeZoneX,(ctrlposeditSearch select 1)-0.04,(ctrlposL select 2),(ctrlposeditSearch select 3)];
+			_ctrleditSearchTMP = [SafeZoneX,(ctrlposeditSearch select 1)-0.045,(ctrlposL select 2),(ctrlposeditSearch select 3)*0.75];
 			_ctrlbtnItemsTMP = [SafeZoneX,(ctrlposbtnItems select 1)-0.035,(ctrlposL select 2),(ctrlposbtnItems select 3)];
 		};
 		_ctrlL ctrlSetPosition _ctrlLTMP;
@@ -4350,20 +4350,16 @@ infiSTAR_MAIN_CODE = "
 		{
 			if(!isNull _x)then
 			{
+				if!(getPlayerUID _x isEqualTo '')exitWith{};
+				
 				_distance = cameraOn distance _x;
 				if(_distance < 500)then
 				{
 					_name = _x getVariable['realname',''];
 					if(_name != '')then
 					{
-						if(getPlayerUID _x != '')then
-						{
-							_name = format['%1 (DEAD, but still watching)',_name];
-						};
-						
 						_clr = [1,1,1,0.7];
 						_txt = format['%1 %2m',_name,round _distance];
-						if(infiSTAR_MOD != 'Epoch')then{_txt = _txt+' '+str side _x};
 						_pos = _x modelToWorld [0,0,1];
 						drawIcon3D['',_clr,_pos,0,0,45,_txt,0,.032];
 					};
@@ -5261,7 +5257,7 @@ infiSTAR_MAIN_CODE = "
 		cutText [_log, 'PLAIN DOWN'];
 		hint _log;
 	};
-	_stayLocalNumber = 654;
+	_stayLocalNumber = 1913;
 	fnc_RscDisplayDebugPublic = {
 		disableSerialization;
 		createdialog 'RscDisplayDebugPublic';
@@ -5302,16 +5298,9 @@ infiSTAR_MAIN_CODE = "
 		} forEach _names;
 		
 		_watchField1 = _display displayCtrl 12285;
-		_watchField1 ctrlSetText '';
-		
 		_watchField2 = _display displayCtrl 12287;
-		_watchField2 ctrlSetText '';
-		
-		_watchField3 = _display displayCtrl 12289;
-		_watchField3 ctrlSetText '';
-		
+		_watchField3 = _display displayCtrl 12289;		
 		_watchField4 = _display displayCtrl 12291;
-		_watchField4 ctrlSetText '';
 		
 		waitUntil
 		{
@@ -5397,15 +5386,14 @@ infiSTAR_MAIN_CODE = "
 			';
 			
 			_btnSE = _display displayCtrl 13286;
-			_btnSE buttonSetAction '[toArray(ctrlText ((findDisplay 316000) displayCtrl 12284))] call admin_d0_server;';
+			_btnSE buttonSetAction '[ctrlText ((findDisplay 316000) displayCtrl 12284)] call admin_d0_server;';
 			
 			_btnGE = _display displayCtrl 13285;
-			_btnGE buttonSetAction '[toArray(ctrlText ((findDisplay 316000) displayCtrl 12284))] call admin_d0;';
+			_btnGE buttonSetAction '[ctrlText ((findDisplay 316000) displayCtrl 12284)] call admin_d0;';
 			
 			
 			isNull findDisplay 316000
 		};
-		profileNamespace setVariable['rscdebugconsole_expression',''];saveprofileNamespace;
 	};
 	[] spawn {
 		waituntil { !(isNull findDisplay 46) };
@@ -5641,7 +5629,7 @@ infiSTAR_MAIN_CODE = "
 					if(_chris)then{
 						if(_shift)then
 						{
-							[] call infiSTAR_shortTP;
+							[] call infiSTAR_shortTP;_handled = true;
 						};
 					};
 				};

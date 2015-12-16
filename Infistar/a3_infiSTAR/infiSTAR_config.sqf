@@ -1,73 +1,56 @@
 /*
-	File: run.sqf
+	File: infiSTAR_config.sqf
 	Author: Chris(tian) "infiSTAR" Lorenzen
 	Contact: infiSTAR23@gmail.com
 	
 	Description:
 	Arma AntiHack & AdminTools - infiSTAR.de
 	
-	
-	______ _____  ___ ______  ______ _____ _     _____  _    _ 
-	| ___ \  ___|/ _ \|  _  \ | ___ \  ___| |   |  _  || |  | |
-	| |_/ / |__ / /_\ \ | | | | |_/ / |__ | |   | | | || |  | |
-	|    /|  __||  _  | | | | | ___ \  __|| |   | | | || |/\| |
-	| |\ \| |___| | | | |/ /  | |_/ / |___| |___\ \_/ /\  /\  /
-	\_| \_\____/\_| |_/___/   \____/\____/\_____/\___/  \/  \/ 
-	
-	Default settings are most likely for Arma3 Epoch.
-	Most checks are false by default, I recommend to change all to true as long as it works with your setup!
-	
-	Also there is certain checks that might cost more client FPS than others.
-	For example checking BadVariables is not a big thing for the clients Arma engine but the
-	"Use BadVar #2" can be intense.
-	I would still recommend to have it running.
-	
-	Most of the AntiHack will be started from the server on the individual client, which is why
-	you have to keep the BattlEye Scripts.txt Filter as effective as you can.
-	Everything that goes through any clients scripting engine will be checked by that filter.
-	There is a huge difference of it having 50 Lines or 150 Lines in Client FPS.
-	Even if there is no logs/kicks from it.
-	
-	By adding
-	//new2
-	at the top of the scripts.txt - it now checks pretty much everything that runs on your client.
-	If you are going to do that, you will probably have to change your scripts.txt to allow more default or antihack 'things'.
-	
-	I have confirmed feedback from a few very big communities that the client FPS
-	has become better when running my tools.
-	Why?
-	There will be more threads running but some of those are also speeding up the client & the server.
-	Use the support ticket system (http://support.infistar.de or mail support@sealdrop.de if it is not working for you) to get in touch.
-	
-	Oh and don't forget to read the readme.txt
-	--
-	I have made this with/for MGT Dave and he confirmed that it gave his Epoch Servers a good boost:
-	https://github.com/infiSTAR/Epoch_custom_changes
-	just throw this on your server into @EpochHive\Addons
+	ON LINUX YOU NEED THIS PARAMETER: -profiles
 */
 
 
-/* ********************************************************************************* */
-/* **********************************ADMIN CONFIG*********************************** */
-/* ********************************************************************************* */
+/*
+	"_serverCommandPassword" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
+	
+	This is   VERY IMPORTANT   as it is needed to KICK & BAN people.
+*/
+_serverCommandPassword = 'Enter_serverCommandPassword_FromYourConfigHere';
+
+
+
+/*
+	"_passwordAdmin" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
+	
+	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
+*/
+_passwordAdmin = 'Enter_passwordAdmin_FromYourConfigHere';
+
+
 /*
 	_MOD can be 'Epoch', 'AltisLife', 'KOTH', 'WASTELAND' or 'Other'.
-	Epoch and AltisLife should be resolved automatically
+	You have to set the mod you run manually
 */
-_MOD = 'AltisLife';
+_MOD = 'ALtisLife';
+
+
+
+
+
+
 
 /* "_OPEN_ADMIN_MENU_KEY": Key to open the menu (google DIK_KeyCodes (0x3B is F1))   */
 _OPEN_ADMIN_MENU_KEY = 0x3B;
 
 /* What ESCAPE Menu shows */
-_ESCMNUTOP = 'CRFT Gamings Australia Life Server';
+_ESCMNUTOP = 'AntiHack & AdminTools';
 _ESCMNUBOT = 'by infiSTAR.de';
 _BRIEFING_MSG = false;	/* use mission briefing message: if   "_BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 
 /* shows RESTART IN X MINS */
-_USE_RESTART_TIMER = true;	/* true or false */
-_RESTART_TIME_IN_M = 360;		/* restart time in minutes */
-_SHOW_TIMER_IN_MIN = [1,2,3,5,10,15,20,25,30];	/* minutes before restart, when message is shown */
+_USE_RESTART_TIMER = false;	/* true or false */
+_RESTART_TIME_IN_M = 180;		/* restart time in minutes */
+_SHOW_TIMER_IN_MIN = [1,2,3,5,10];	/* minutes before restart, when message is shown */
 
 /* The following 3 options can be disabled by putting the value to -1. For example "_TGV = -1;" */
 /* Terrain Grid Value   */ _TGV = 40;		/* 50, 25, 12.5  */	/* if set to 50 grass will be very low for better client FPS.. default is 25 ~35 is good performance and grass :) */
@@ -90,83 +73,77 @@ _startAsNormal =
 _announce_adminstate_changed = false;	/* true or false */
 
 
-/* "_passwordAdmin": Taken from the servers config.cfg, needed for servercommands */
-_passwordAdmin = 'password123';
-_adminLevel1_UIDs =
-// Tundra, Casey, Rad, Talos, Doppler, Aceshadow, flamez, jeff Only owners and devs have access to this. For Testing Envy & Woody & torovich & drolkrad
+_adminUIDandAccess =
 [
-	'76561198105556705','76561198134898961','76561198032047520','76561198054879039','76561197966618733','76561198056017572','76561198058368737','76561198082256888','76561198033984650','76561198030376566','76561198089779519','76561198149395868'
-];
-_adminLevel1 =
-[
-	'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
-	'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
-	'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
-	'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====',
-	'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
-	'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
-	'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
-	'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
-	'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
-	'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
-	'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
-	'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
-	'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
-	'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
-	'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
-	'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
-	'Request Steam Name','Dump unique client variables',
-	'Restrain','Unrestrain'
-];
-_adminLevel2_UIDs =
-[
-	'0','0','0'
-];
-_adminLevel2 =
-[
-	'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
-	'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
-	'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
-	'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====',
-	'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
-	'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
-	'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
-	'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
-	'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
-	'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
-	'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
-	'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
-	'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
-	'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
-	'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
-	'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
-	'Request Steam Name','Dump unique client variables',
-	'Restrain','Unrestrain'
-];
-_adminLevel3_UIDs =
-[
-	'76561198023052526'
-];
-_adminLevel3 =
-[
-	'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
-	'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
-	'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
-	'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====',
-	'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
-	'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
-	'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
-	'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
-	'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
-	'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
-	'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
-	'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
-	'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
-	'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
-	'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
-	'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
-	'Request Steam Name','Dump unique client variables',
-	'Restrain','Unrestrain'
+	[
+		['UID1','UID2','UID3','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		[
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
+			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====',
+			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
+			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
+			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
+			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
+			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
+			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
+			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
+			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
+			'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
+			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
+			'Request Steam Name','Dump unique client variables',
+			'Restrain','Unrestrain'
+		]
+	],
+	[
+		['UID1','UID2','UID3','...'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		[
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
+			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====',
+			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
+			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
+			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
+			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
+			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
+			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
+			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
+			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
+			'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
+			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
+			'Request Steam Name','Dump unique client variables',
+			'Restrain','Unrestrain'
+		]
+	],
+	[
+		['76561198134898961','76561198032047520','76561198054879039','76561198058368737','76561197966618733','76561198149395868','76561198056017572','76561198089779519','76561198105556705'],	// Admins with UIDs in this Array have their Access defined in the array below.
+		[
+			'Teleport On Map Click','Teleport - Target To Me','Teleport - Me To Target','Teleport In Facing Direction (10m steps)',
+			'spectating','AdminConsole','Delete Vehicle','FlyUp','EjectTarget','ToggleVehLock','UpgradeBuilding','ShowGear',
+			'HealSelf','HealRepairNear','AddAmmoSelf','AdminStart','AdminLog','Freeze Target','UnFreeze Target',
+			'==== Loadouts ====','==== WeatherLord ====','==== Base Deleter ====',
+			'==== Weapons ====','==== Magazines ====','==== Bags ====','==== Vehicles ====','==== Objects ====','==== AltisLife Money ====',
+			'Remove Gear','Revive','Heal','Restore','Move In My Vehicle','Move In Target Vehicle','Parachute Target',
+			'Spawn UAV','Spawn Cloak','Spawn Sapper','Spawn SapperB','Eject','Eject Crew','Kill','Explode','MineField (around target)','Zeus','Force Disconnect',
+			'Kick (Silent)','Kick (Announce)','Ban (Silent)','Ban (Announce)',
+			'Default Epoch Player ESP','Default Epoch Vehicle ESP','infiSTAR Player ESP 1',
+			'infiSTAR Player ESP 2','infiSTAR Dead ESP','infiSTAR AI ESP',
+			'infiSTAR LockBox ESP','infiSTAR Shelf ESP','infiSTAR PlotPole ESP','Fake Epoch group to nearest PlotPole',
+			'infiSTAR MapIcons','PlotPole Marker','Vehicle Marker','Construction Marker','LockBox Marker','DeadPlayer Marker',
+			'God Mode','Vehicle God Mode','Lower Terrain','Vehboost','UnlimAmmo','noRecoil','FastFire','Stealth / Invisible',
+			'Disable Announces','Show FPS','Give All Liscenses','Call EMP','Mass Message','DayTime','NightTime','Add / Remove Crypto',
+			'Spawn Epoch-Box','Spawn Support-Box1','Spawn Support-Box2','Spawn Support-Box3',
+			'Spawn Ammo','showinfo','Login as Arma Admin','BIS FreeRoam Cam (works with ESP)','FreeRoam Cam (does not work with ESP)',
+			'Request Steam Name','Dump unique client variables',
+			'Restrain','Unrestrain'
+		]
+	]
 ];
 /* ********************************************************************************* */
 /*            many checks should be set to true instead of false.                    */
@@ -174,34 +151,27 @@ _adminLevel3 =
 /*  Items Added Check    */ _IAC = true;	/* true or false */	/* checks if Items are being added unrightful! */
 /*  Local Vehicle Check  */ _LVC = true;	/* true or false */
 /*  unitRecoil checks    */ _URC = true;	/* true or false */	/* checks unitRecoilCoefficient and resets default unitRecoilCoefficient */
-/*  Notification check   */ _UNC = false;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
+/*  Notification check   */ _UNC = true;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
 /*  Use MPInterrupt check*/ _UMP = false;	/* true or false */
-/*  Check GearMenu CTRLs */ _GCC = false;	/* true or false */	/* will announce: BadControls count on D602 - if the gear menu has an increased or lower control count (Epoch = 87, AltisLife = 82) */
-/*  Check CTRLs on D12   */ _C12 = false;	/* true or false */	/* will announce: BadControls count on IDD 12 or BadControl and a number */
-/*  Check CTRLs on D18   */ _C18 = false;	/* true or false */	/* will announce: BadControls count on IDD 18 or BadControl and a number */
-/*  Check CTRLs on D24   */ _C24 = true;	/* true or false */	/* will announce: BadControls count on IDD 24 or BadControl and a number */
-/*  Check CTRLs on D46   */ _C46 = true;	/* true or false */	/* will announce: BadControls count on IDD 46 or BadControl and a number */
-/*  Check CTRLs on D70   */ _C70 = false;	/* true or false */	/* will announce: BadControls count on IDD 70 or BadControl and a number */
-/*  Check CTRLs on D49   */ _C49 = true;	/* true or false */	/* will announce: BadCTRLs on 49 */
 /*  Check BTTNs on D49   */ _B49 = true;	/* true or false */	/* will announce: BadButton on 49 */
 /*  whitelist for _B49   */ _excludedButtons = [];	/* Will Kick for BadButton XYZ if a customnized button is not white-listed here. Example: _excludedButtons = [1010]; */
-/*  Change MpFramework   */ _MPF = true;	/* true or false */	/* important to protect AltisLife */
-/*  Check Actions Plr    */ _CAP = false;	/* true or false */	/* will announce: xxx possible scroll menu hack */
-/*  Remove Actions Plr   */ _OAP = false;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
-/*  Remove Actions Objs  */ _OAO = false;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
-/*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
-/*  Use Anti Teleport    */ _UAT = false;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
+/*  Change MpFramework   */ _MPF = false;	/* true or false */	/* important to protect AltisLife */
+/*  Check Actions Plr    */ _CAP = true;	/* true or false */	/* "Actions: xxx/xxx possible scroll menu hack (or you added custom actions..)" */
+/*  Remove Actions Plr   */ _OAP = true;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
+/*  Remove Actions Objs  */ _OAO = true;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
+/*  Check Attached Objs  */ _CAO = true;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
+/*  Use Anti Teleport    */ _UAT = true;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
 /*  Chat-Vote Day/Night  */ _VDN = true;	/* true or false */
-/*  Check Vision Mode    */ _CVM = false;	/* true or false */
+/*  Check Vision Mode    */ _CVM = true;	/* true or false */
 /*  check view distance  */ _CVD = false;	/* true or false */	/* if the viewdistance is not 1600 - ban. */
-/*  check cameraOn       */ _CCO = false;	/* true or false */	/* needs to be false for UAV drones and such things.. */
-/*  Revert onEachFrame   */ _REF = false;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
-/*  Map Icon Check       */ _MIC = false;	/* true or false */	/* Needs to be  false  on some WasteLand versions */
+/*  check cameraOn       */ _CCO = true;	/* true or false */	/* needs to be false for UAV drones and such things.. */
+/*  Revert onEachFrame   */ _REF = true;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
+/*  Map Icon Check       */ _MIC = true;	/* true or false */	/* Needs to be  false  on some WasteLand versions */
 /*  Remove All Mines     */ _RAM = false;	/* true or false */
 /*  Remove All UAVs      */ _RUS = false;	/* true or false */
 /*  onEachFrame function */ _rOEF = {};	/* this needs to be CODE */
 /*  custom HandleDamage  */ _CHD = {};		/* this needs to be CODE */
-/*  Revert allowDamage   */ _RAD = false;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
+/*  Revert allowDamage   */ _RAD = true;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
 /*  Revert HandleDamage  */ _RHD = false;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  EH_Draw3D check      */ _C3D = false;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
 /*  MouseMoving EH check */ _MOH = false;	/* true or false */	/* announces: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
@@ -211,10 +181,10 @@ _adminLevel3 =
 /*  Revert KeyDown       */ _RDK = true;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
 /*  Check Keybinds       */ _CKB = true;	/* true or false */	/* recommended:  true  _RKB needs to be true! Checks Keybinds, if it finds added ones it shows: "KeyBinds added   %1 should be %2" */
 /*  check MapSingleClick */ _OMC = false;	/* true or false */	/* announces: "MapSingleClick modified", if modification is found - NEEDS _MBC to be true! */
-/*  Remove Hit Handler   */ _REH = false;	/* true or false */	/* Needs to be  false  for Paintball script */
-/*  Revert InventoryOpen */ _RIO = false;	/* true or false */	/* Sets the custom InventoryOpened Handler for AltisLife only - don't mind this option if you are on a different mod. */
+/*  Remove Hit Handler   */ _REH = true;	/* true or false */	/* Needs to be  false  for Paintball script */
+/*  Revert InventoryOpen */ _RIO = true;	/* true or false */	/* AltisLife only: Sets the custom InventoryOpened Handler */
 /*  Revert Killed EH     */ _RKH = true;	/* true or false */
-/*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
+/*  "" Respawn Handler   */ _RRH = true;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
 /*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','Draw','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
 /*  mod PlayerDisconnect */ _OPD = true;	/* true or false */
 /*  mod PlayerConnect    */ _OPC = true;	/* true or false */
@@ -229,9 +199,9 @@ _adminLevel3 =
 /*  Check Crypto         */ _CCT = false;	/* true or false */	/* When a players Crypto is smaller than 0 or bigger than 25000, the player gets banned (not possible with default epoch)
 /*  Use CombatLog checks */ _CLG = false;	/* true or false */	/* "PLAYERNAME CombatLogged GPS X/Y find the dead body!"
 /*  Use Anti Glitch      */ _UAG = true;	/* true or false */	/* a try to stop glitching through walls on Doors/Walls */
-/*  Use Anti Wall Look   */ _AWL = false;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
+/*  Use Anti Wall Look   */ _AWL = true;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
 /*  MPHit Log            */ _MPH = false;	/* true or false */	/* will create a A3_MPHIT.txt file where logs hits on players */
-/*  Token Check          */ _TOC = false;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
+/*  Token Check          */ _TOC = true;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
 /* ------- SOME EPOCH ONLY FUNCTIONS - ABOVE ------- */
 
 
@@ -270,8 +240,8 @@ _cMenu =
 
 
 /*  Check Global Markers */ _CGM = false;	/* true or false */	/* you may need to disable this check for A.I. Missions - or whitelist the used Markers in the _aLocalM Array beneath */
-/*  Check Local Markers  */ _CLM = false;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
-/*  Use _aLocalM array   */ _UMW = false;	/* true or false */	/* use allowed marker array from below (for example AltisLife uses house_ and others in there) or A.I. Missions */
+/*  Check Local Markers  */ _CLM = true;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
+/*  Use _aLocalM array   */ _UMW = true;	/* true or false */	/* use allowed marker array from below (for example AltisLife uses house_ and others in there) or A.I. Missions */
 /* _aLocalM: if '_CLM' && _UMW - this array of names will be allowed */
 _aLocalM =
 [
@@ -281,31 +251,37 @@ _aLocalM =
 
 
 
-/* Use allowed Dialogs ? */ _UDW = true;	/* true or false */
-/* _allowedDialogs: Insert IDDs here to prevent them from being closed! Default ArmA3 and Altis-Life idds should be in already. */
-_allowedDialogs = [
-	-1,602,5001,-3,999,37400,
+
+/* _badIDDsToKick will be checked before _badIDDsToClose, _badIDDsToClose will be checked before _allowedIDDs */
+/* _badIDDsToKick: Forbidden Idds that will get you Kicked by the AH */
+_badIDDsToKick = [-1337,133,167,1340,1341,1342,1343,1344,1345,1346,1347];
+
+/* _badIDDsToClose: Forbidden Idds that will get closed by the AH */
+_badIDDsToClose =
+[
+	2,3,7,17,19,25,26,27,28,29,30,31,32,37,40,41,43,44,45,51,52,53,56,74,85,
+	106,126,127,132,146,147,150,151,152,153,154,155,159,162,164,262,
+	314,632,1320,2121,148,163,129,169,157,131,69
+];
+
+/* Use IDD White-List ? */ _UDW = true;	/* true or false */
+/* _allowedIDDs: Insert IDDs here to prevent them from being closed! */
+_allowedIDDs =
+[
+	// Displays whitelisted for Epoch
+	-3000,-1900,-1500,-1338,-1300,-1200,-13,-8,-7,-6,-5,
+	0,4,5,6,8,12,18,24,46,49,54,55,63,70,129,131,148,151,154,163,169,174,262,602,999,
+	66600,77700,316000
+];
+/*
+	// Different Displays from different mods/additions (might not be needed at all)
+	160,
+	9990,9992,9993,99440,
+	-1,-2,-3,-4,-5,-9,-10,-11,-12,-14,-15,-666,300,301,302,303,304,13377,
 	2620,2629,2621,2622,2624,2625,2630,2631,2632,601,2520,2523,2522,
 	2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2300,2400,2600,
 	2650,2700,2800,2900,3000,3100,3500,7300,38200,38300,38400,38500,39400
-];
-
-
-/* _badDialogsKICK: Forbidden Dialog Idds that will get you Kicked by the AH */
-_badDialogsKICK = [-1337];
-
-
-/* _badDialogsClose: Forbidden Dialog Idds that will get closed by the AH */
-/*
-	131 Change Keybinds
-	148 Controller Menu
 */
-_badDialogsClose =
-[
-	2,3,7,17,19,25,26,27,28,29,30,31,32,37,40,41,43,44,45,51,52,53,74,85,
-	106,126,127,129,132,146,147,150,151,152,153,154,159,162,164,262,
-	314,632,1320,2121
-];
 
 
 
@@ -337,28 +313,6 @@ _onLoadUnload1 = [
 	'RscDisplayMissionFail','RscDisplayLogin','RscDisplayModLauncher','RscDisplayDifficulty','RscDisplaySelectIsland'
 ];
 
-
-/* Arma3 1.52 patch only allows the file scan if you have "allowedFilePatching = 2;" in your config. But that is not recommended.. */
-/*  Use BadFile check    */ _UBF = false;	/* true or false */	/* Scriptscan pops up with message: "Done! badcontent.sqf not found" */
-/* _blacklistedFileArray: The AntiHack will test if the client has one of these files in his Arma3 folder. You have to put the extensions in allowedPreprocessFileExtensions in your servers config.cfg (only if _UBF = true;) */
-_blacklistedFileArray =
-[
-	'MixedScript.sqf','justtrolling.sqf','A3AH.sqf','hackfr.sqf','derp.sqf','run.sqf',
-	'1.sqf','3.sqf','qa.sqf','gknova61_money.sqf','invi.sqf','Krypto.sqf','Dta\mhm.sqf','Newscroll.sqf',
-	'test\jude\3dollar\blub.sqf','lel.sqf','_src\Load.sqf','scripts\jmepoch.sqf','Det\Test.sqf','test\mhm.sqf',
-	'Jowin.sqf','FreundeMod\altea.sqf','dracau18scripts.sqf','CraftLourens.sqf','My Menu Collection\Wookie\mongoose.sqf',
-	'menu\menuext.sqf','LystoArma3\Lystic.sqf','LystoArma3\antiantihax.sqf','rouvenk.sqf','chub\start.sqf','Whippy\playerTools.sqf',
-	'rouven33.sqf','Addons\temp.sqf','hihi.sqf','test.sqf','\Life41337\init.sqf','swagre.sqf','huki.sqf','y.sqf',
-	'Dta\nom.sqf','AnalFuckMeOnATable.sqf','JH\Action.sqf','V4Run.sqf','_src\test.sqf','ScriptName.sqf','999999999999999999999999999.sqf',
-	'RommelV1\Rexecv1.sqf','abra.sqf','jmepochV2.sqf','FuryV3.sqf','69.sqf','_src\menu1.sqf','_src\keybinds.sqf','porno.sqf',
-	'RhynoV1\RJZSexecutev4.sqf','RJZSexecv4.sqf','ArmA2OA_Extars\BB_menu_BB.sqf','LystoArma3\start.sqf','ammobox.sqf','temp.sqf',
-	'v102.sqf','jestersMENU\jester@start.sqf','uc.sqf','FireTide.sqf','test\lol.sqf','lol.sqf','corn.sqf',
-	'debug_console.dll','debug_consolee.dll','tbb4malloc_bi.dll','Xenos.exe','Xenos64.exe','fraps.dll','youtube.dll','_CommonRedist\DirectX\Config.cab',
-	'DirectX\Config.cab','G-e-F_Menu\StartGeF.dta','Bonus\Soundtrack\Win\12_Wins.dta','_CommonRedist\DirectX\Jun2010\Apr2005_d3dx9_24_x64.cab',
-	'Bonus\Soundtrack\clickSound.ogg','G-e-F_Menu\G-e-F_HackConfig.ini','Launcher\kernel_x86.dll','DLL\DatMalloc.dll','\G-e-F_HackConfig.ini',
-	'Dta\Screens.bin','ArmA2OA_Extras\ben_ex.sqf','RyanV1\Keybindiezz.sqf','ArmaX.sqf','insanity.sqf'
-];
-
 /*  Use BadVar #1 */ _UBV = true;	/* true or false */	/* recommended to use */
 /*  Use BadVar #2 */ _UBV2 = true;	/* true or false */	/* recommended to use */
 /*  Use BadVar #2 CONTENT */ _UBV2C = true;	/* true or false */	/* NEEDS _UBV2 = true;  -  recommended to use */
@@ -372,12 +326,12 @@ _blacklistedVariables =
 [
 	'arsenalOpened','BIS_fnc_arsenal_fullArsenal','n912','TBMKnlist','PLAY','ALTISLIFENEXT3','SOMEONE_dsfnsjf',
 	'FND_fnc_subs','setcash','Dummy_Ghost','entf','check_loaded','LY_Menu','AndysClosed','GOLDENS_GLOBAL_SHIT_YEAH','Fanatic_Main_Bereich',
-	'a','imgoingnukeyou','fnc_usec_damageHandler',
+	'imgoingnukeyou','fnc_usec_damageHandler',
 	'Status_BB','TZ_BB_A3','TZ_BB_KB_Hint','TZ_BB_BindHandler','AH_BRAZZERS_TZ_BB','kamakazi_lystic','fuckfest','LYSTIC_MENU_LOADED','D_AMEZ_COA',
 	'Intro','Repair','Heal','T3le','TNK','I_like_turtles','BIGM','GMod','E3p','Does_Tonic_Like_to_take_Turtle_penis_in_the_ass_LODESTARS',
 	'lel','vars','PSwap','toLower_new','BCast','thfile','tlmadminrq','infiSTARBLACK','carepkg','scrollAim','BlurExec','sbpc','CALLRE',
 	'quake','menu_run','ZedProtect','actid1','vehicles1','MapClicked','MapClickedPosX','MouseUpEvent','scrollPlayerlist','keypress_xxx','D_AMEZ_COA',
-	'envi','G_A_N_G_S_T_A','ZoombiesCar','timebypass','returnString_z','isori','tangrowth27','PVAH_AdminRequest','AH_OFF_LOL','b','infiSTAR_fillRE',
+	'envi','G_A_N_G_S_T_A','ZoombiesCar','timebypass','returnString_z','isori','tangrowth27','PVAH_AdminRequest','AH_OFF_LOL','infiSTAR_fillRE',
 	'qwak','infoe','font','title_dialog','sexymenu_adds_Star','boolean_1','initre337','skype_option','bleh','magnetomortal','fnc_allunits','sbp',
 	'PV_IAdminMenuCode','PVAH_WriteLogRequest','skype_img','Lhacks','Lpic','LtToTheRacker','Lexstr','take1','Called','epochExec','sdgff4535hfgvcxghn',
 	'adadawer24_1337','fsdddInfectLOL','W_O_O_K_I_E_Car_RE','kW_O_O_K_I_E_Go_Fast','epchDeleted','lystobindkeys','lystoKeypress','fnc_usec_unconscious',
@@ -385,11 +339,11 @@ _blacklistedVariables =
 	'AdminLoadOKAY','PV_TMPBAN','T_o_g_g_l_e_BB','fixMenu','PV_AdminMenuCodee','AdminPlayer','PVAH_AdminRequestVariable','epochBackpack','JME_Red',
 	'JME_MENU_Sub','JME_menu_title','JME_Sub','JME_OPTIONS','god','heal','grass','fatguybeingchasedbyalion','night','day','infammo','nvg','thermal',
 	'Keybinds','fredtargetkill','loopfredtpyoutome','epochTp','AdminLst','BB_Pr0_Esp','BBProEsp','epochMapMP','CALLRESVR','EPOCH_spawnVehicle_PVS',
-	'adminlite','adminlitez','antihacklite','bp','inSub','scroll_m_init_star','markerCount','zombies','startmenu_star','LystoDone','MOD_EPOCH',
+	'adminlite','adminlitez','antihacklite','inSub','scroll_m_init_star','markerCount','zombies','startmenu_star','LystoDone','MOD_EPOCH',
 	'Admin_Lite_Menu','admingod','adminESPicons','fnc_MapIcons_infiSTAR','BIS_MPF_remoteExecutionServer4','adminadd','shnext','infiSTAR_fill_Weapons',
 	'adminZedshld','adminAntiAggro','admin_vehicleboost','admin_low_terrain','admin_debug','admincrate','exstr','nlist','PV_AdminMainCode','TPCOUNTER',
 	'PVDZ_Hangender','fn_filter','vehiList','Remexec_Bitch','zeus_star','igodokxtt','tmmenu','AntihackScrollwheel','survcam','infiniteammo','PVAH_AHTEMPBAN',
-	'lalf','toggle','iammox','dayzlogin3','dayzlogin4','changeBITCHinstantly','antiAggro_zeds','BigFuckinBullets','abcdefGEH','adminicons',
+	'lalf','toggle','iammox','telep','dayzlogin3','dayzlogin4','changeBITCHinstantly','antiAggro_zeds','BigFuckinBullets','abcdefGEH','adminicons',
 	'fn_esp','aW5maVNUQVI_re_1','passcheck','isInSub','qodmotmizngoasdommy','ozpswhyx','xdistance','wiglegsuckscock','diz_is_real__i_n_f_i_S_T_A_R',
 	'pic','veh','unitList','list_wrecked','addgun','ESP','BIS_fnc_3dCredits_n','dayzforce_save','ViLayer','blackhawk_sex','activeITEMlist','items1',
 	'adgnafgnasfnadfgnafgn','Metallica_infiSTAR_hax_toggled','activeITEMlistanzahl','xyzaa','iBeFlying','rem','DAYZ_CA1_Lollipops','HMDIR','vehC',
@@ -431,7 +385,7 @@ _blacklistedVariables =
 	'PermDialogSelected','TempDialogSelected','AdminDialogList','pfKeygen','pfScanUnits','pfPickPlayer','pfshnext','pfnlist','pfselecteditem','pfshnmenu',
 	'pfPlayerMonitor','pfPlayersToMonitor','pfShowPlayerMonitor','pfPlayerMonitorMutex','marker','JJJJ_MMMM___EEEEEEE_INIT_MENU','E_X_T_A_S_Y_Init_Menu',
 	'monkaiinsalt','monkaiin','part88','adminKeybinds','PV_DevUIDs','fapEspGroup','Repair','RepairIT','rainbowTarget','rainbowTarget1','rainbowTarget2',
-	'rainbowTarget3','letmeknow','VehicleMenue','Menue_Vehicle','my_anus_hurtz','life_no_injection','Tonic_has_a_gaping_vagina','teletoplr',
+	'rainbowTarget3','letmeknow','VehicleMenue','Menue_Vehicle','my_anus_hurtz','life_no_injection','Tonic_has_a_gaping_vagina','teletoplr','telet',
 	'ygurv1f2','BIGM','E3p','fnc_PVAH_AdminReq','infiSTAR_MAIN_CODE','MAIN_CODE_INJECTED','D34DXH34RT_E5P','Arsenal','Jme_Is_God','B0X_CANN0N_T0GGLE',
 	'PL4YER_CANN0N_T0GGLE','aim','HOLY_FUCK_FDKFHSDJFHSDKJ_vehicles_m','lazy_ILHA_is_lazy','POOP_Item','die_menu_esp_v1','XXMMWW_main_menu','MM_150',
 	'BIS_tracedShooter','JME_HAS_A_GIANT_DONG','nuke_vars','nukepos','fuckfest','fuckfestv2','FAG_NEON','Deverts_keyp','jfkdfjdfjdsfjdsfjkjflfjdlfjdlfjru_keyp',
@@ -486,7 +440,7 @@ _ForbiddenVehicles =
 ];
 
 
-_UFI = false;	/* Use "_ForbiddenItems"/Item Check(s) */
+_UFI = true;	/* Use "_ForbiddenItems"/Item Check(s) */
 _UIW = false;	/* if "_UIW = true;" then it checks if the items the individual player has are in "_ItemWhiteList" */
 _ItemWhiteList =
 [
@@ -514,7 +468,7 @@ _ForbiddenOnEpochOnly =
 ];
 
 
-_UFA = false;	/* Use Ammo Check(s) */
+_UFA = true;	/* Use Ammo Check(s) */
 _UAW = false;	/* if "_UAW = true;" then it checks if the ammo used by the individual player is in "_AmmoWhiteList" */
 _AmmoWhiteList =
 [
@@ -585,46 +539,7 @@ _badpeople =
 	'76561198052912993',	/*	Epoch Axle */
 	'76561198042281363',	/*	Epoch Mr. CopyPaste aka Skarokid */
 	'76561197960406763',	/*	Epoch [VB]AWOL */
-	'76561198059930120','76561198134916119','76561198130615382','76561198000135158',
-	'76561198098132364','76561198127436055','76561198120497784','76561198151285096',
-	'76561198037143375','76561198053362106','76561197960693668','76561198029212490',
-	'76561198118994984','76561198150211409','76561198118066332','76561198148495214',
-	'76561198124727926','76561198087505309','76561198106834234','76561198056113988',
-	'76561198153161518','76561198077972256','76561198144416171','76561198151661947',
-	'76561198075411542','76561198106140797','76561198118378695','76561198062509950',
-	'76561198080657666','76561198156021205','76561198126816660','76561197979392398',
-	'76561197969005505','76561197978751247','76561197971107759','76561197967087500',
-	'76561197995117205','76561197964338716','76561198128229370','76561198141766032',
-	'76561198131838128','76561198137119508','76561198077957452','76561198067414796',
-	'76561198055161991','76561198089299178','76561198129631838','76561198119258603',
-	'76561198002094787','76561198148907901','76561197978913290','76561197984690630',
-	'76561198025777475','76561197961122016','76561198160514374','76561198165856213',
-	'76561198094783145','76561198085523173','76561197984998237','76561198013819290',
-	'76561197982406660','76561197972252136','76561198009791150','76561198154257484',
-	'76561197960292002','76561198044218532','76561198035170425','76561198141958508',
-	'76561198152649864','76561198127341284','76561198166513783','76561198032309705',
-	'76561198137073763','76561198085897950','76561198145115648','76561198080244706',
-	'76561197994045926','76561198124128052','76561198119472477','76561198049992289',
-	'76561198111864019','76561197997686263','76561198161483683','76561198124849894',
-	'76561198164196577','76561198133066692','76561198163057499','76561198058635527',
-	'76561198062276128','76561198157673117','76561198131170408','76561198128889826',
-	'76561198128939134','76561198065607803','76561198121247387','76561198076232303',
-	'76561198144358523','76561198032349954','76561198028313707','76561198148216075',
-	'76561198165881759','76561198165211039','76561198074110583','76561198098254345',
-	'76561198054619746','76561198061552644','76561198068243806','76561198164444108',
-	'76561198165496777','76561198160602020','76561198018065224','76561198202739900',
-	'76561198047883815','76561198069085023','76561198059688627','76561198122259220',
-	'76561198164784675','76561198162451605','76561198151137695','76561198203651168',
-	'76561198149065671','76561198175611354','76561198157469769','76561198019017645',
-	'76561197963041299','76561198159780832','76561198014790670','76561198142729104',
-	'76561198095569574','76561198016803159','76561198161648337','76561198134613431',
-	'76561198166419716','76561198175853759','76561198123807524','76561198167827911',
-	'76561198167152679','76561197980206587','76561197963458654','76561197967605970',
-	'76561198033680504','76561198180913597','76561198123886811','76561197985584715',
-	'76561197999691527','76561198105419039','76561198005271335','76561198053629469',
-	'76561198026212101','76561198103738030','76561198035798322','76561198046700395',
-	'76561198043439272','76561197970859383','76561198038412105','76561197987629806'
-
+	'0'
 ];
 /* ********************************************************************************* */
 /* ********************************************************************************* */
@@ -681,16 +596,41 @@ infiSTAR_IS_RUN_ON_THIS_SERVER = time;
 EPOCH_server_isPAdmin=compileFinal 'true';
 diag_log format['<infiSTAR.de> %1 - run.sqf - finaled EPOCH_server_isPAdmin: %2',time,EPOCH_server_isPAdmin];
 /* ********************************************************************************* */
-/* #651 */
+/* #1910 */
 /* ********************************************************************************* */
-comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
-diag_log format['<infiSTAR.de> %1 - run.sqf - including AntiHack',time];
-#include "A3AH.sqf"
-diag_log format['<infiSTAR.de> %1 - run.sqf - AntiHack included!',time];
-
-diag_log format['<infiSTAR.de> %1 - run.sqf - including AdminTools',time];
-#include "A3AT.sqf"
-diag_log format['<infiSTAR.de> %1 - run.sqf - AdminTools included!',time];
+try {
+	_cfgPatches = configFile >> 'CfgPatches';
+	for '_i' from 0 to (count _cfgPatches - 1) do
+	{
+		_patchClass = _cfgPatches select _i;
+		if(configName _patchClass == 'A3_epoch_code')then
+		{
+			_MOD = 'Epoch';
+		};
+		if(configName _patchClass == 'life_server')then
+		{
+			_MOD = 'AltisLife';
+		};
+		if(configName _patchClass == 'exile_server')then
+		{
+			throw '<infiSTAR.de> This is not the Exile version and it would need many changes to run with Exile. Please go to www.infiSTAR.de and get the Exile version.';
+		};
+	};
+	comment 'Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de - License: (CC)';
+	diag_log format['<infiSTAR.de> %1 - run.sqf - including AntiHack',time];
+	#include "A3AH.sqf"
+	diag_log format['<infiSTAR.de> %1 - run.sqf - AntiHack included!',time];
+	diag_log format['<infiSTAR.de> %1 - run.sqf - including AdminTools',time];
+	#include "A3AT.sqf"
+	diag_log format['<infiSTAR.de> %1 - run.sqf - AdminTools included!',time];
+}
+catch
+{
+	for '_i' from 0 to 10 do
+	{
+		diag_log _exception;
+	};
+};
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
