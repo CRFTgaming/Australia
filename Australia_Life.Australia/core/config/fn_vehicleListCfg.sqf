@@ -68,6 +68,7 @@ switch (_shop) do
 		];
 	};
 	
+<<<<<<< HEAD
 	case "civ_murica":
 	{
 		_return = 
@@ -85,6 +86,8 @@ switch (_shop) do
 		];
 	}
 	
+=======
+>>>>>>> parent of aaf1f61... Shop additions
 	case "civ_truck":
 	{
 		_return =

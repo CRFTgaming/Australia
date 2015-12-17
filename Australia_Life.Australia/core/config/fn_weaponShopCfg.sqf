@@ -224,7 +224,6 @@ switch(_shop) do
 							["muzzle_snds_L",nil,100],
 							["muzzle_snds_H",nil,300],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["optic_Aco_smg",nil,150],
 							["optic_ACO_grn_smg",nil,150],
@@ -314,7 +313,6 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["acc_flashlight",nil,200],
 							["acc_pointer_IR",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["optic_MRD",nil,150],
 							["optic_Aco_smg",nil,150],
 							["optic_ACO_grn_smg",nil,150],
@@ -408,7 +406,6 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["muzzle_snds_H_MG",nil,400],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["optic_MRD",nil,150],
 							["optic_Aco_smg",nil,150],
@@ -506,7 +503,6 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["muzzle_snds_H_MG",nil,400],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["optic_MRD",nil,150],
 							["optic_Aco_smg",nil,150],
@@ -645,7 +641,7 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
 			case (__GETC__(life_coplevel) == 8): 
 			{
-				["Australian Sheriff's Equipment",
+				["Bornholm Sheriff's Equipment",
 					[
 							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
@@ -670,7 +666,7 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
 			case (__GETC__(life_coplevel) == 8): 
 			{
-				["Australian Sheriff's Armory",
+				["Bornholm Sheriff's Armory",
 					[
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -713,7 +709,6 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["muzzle_snds_H_MG",nil,400],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["bipod_01_F_blk",nil,300],
 							["bipod_02_F_blk",nil,300],
