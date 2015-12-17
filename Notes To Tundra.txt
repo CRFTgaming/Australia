@@ -8,3 +8,11 @@ Menus are not working for interaction same with the Y-menu its not working **idk
 Medic helicopters keep trying to spawn on non existant hospitals.
 
 Tried to sync TFR mod files to Github but it constantly fails to sync. may needing fixed or at the least revert/removable.                                                                    
+
+
+
+==============================================================================================================================
+Fixed github, infastar is fixed, and jive's the only one with the menu problem. 
+Task Force radio is working properly 
+Medic hele is still a problem have no clue how to fix it 
+Casey 12/17/15
