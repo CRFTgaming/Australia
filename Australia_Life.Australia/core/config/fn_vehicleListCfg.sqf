@@ -224,7 +224,7 @@ switch (_shop) do
     	};
     	if(__GETC__(life_coplevel) > 6) then // Vehicles available to cops level 7 or higher. Command
 		{	
-			_return pushBack ["subPD",15000];
+			_return pushBack ["subpd",15000];
     	};
     	if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 8 or higher. Sheriff
     	{
