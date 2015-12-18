@@ -57,49 +57,9 @@ switch (_shop) do
 			["aus_taxi",10000],
 			["sub_blue",40000],
 			["sub_black",40000],
-			["Jonzie_Mini_Cooper","Mini Cooper",500],
-			["Jonzie_Transit","Ford Transit",1000],
-			["Jonzie_Corolla","Toyota Sprinter",1350],
-			["Jonzie_Ceed","Kia Cee'd",1500],
-			["Jonzie_Datsun_510","Datsan Bluebird",2000],
-			["Jonzie_Galant","Mitsubishi Galant",3000],
-			["Jonzie_Forklift","Forklift",15000],
-			["Jonzie_Mini_Cooper_R_spec","Mini Cooper Rally",15000],
-			["Jonzie_30CSL","BMW 3.0 CSL",25000],
-			["Jonzie_Datsun_Z432","Datsan Fairlady 2432",25000],
-			["Jonzie_Escalade","Cadillac Escalade ESV",30000],
-			["Jonzie_Quattroporte","Maserati Quattroporte",40000],
-			["Jonzie_VE","Holden Commodore",50000],
-			["Jonzie_Ute","Holden Commodore UTE",55000],
-			["Jonzie_Raptor","Ford 150 Raptor",55000],
-			["Jonzie_XB","Ford Falcon",65000],
-			["Jonzie_STI","Subaru WRX STI",75000],
-			["Jonzie_Tanker_Truck","TGX Tanker",145000],
-			["Jonzie_Log_Truck","TGX Log Truck",145000],
-			["Jonzie_Flat_Bed","TGX Flat Bed",145000],
-			["Jonzie_Box_Truck","TGX Box Truck",165000],
-			["Jonzie_Tow_Truck","TGX Tow Truck",165000],
-			["Jonzie_Viper","Dodge Viper",300000],
 			["C_Hatchback_01_sport_F",1100]
 		];
 	};
-	
-	case "civ_murica":
-	{
-		_return = 
-		[
-			["aus_rust",1000],
-			["aus_yellow",3000],
-			["aus_grey",3000],
-			["aus_brown",3000],
-			["aus_black",3000],
-			["aus_taxi",5000],
-			["aus_grey",3000],
-			["f150_black",7000],
-			["f150_red",7000],
-			["f150_blue",7000]
-		];
-	}
 	
 	case "civ_truck":
 	{
