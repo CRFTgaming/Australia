@@ -16,3 +16,9 @@ Fixed github, infastar is fixed, and jive's the only one with the menu problem.
 Task Force radio is working properly 
 Medic hele is still a problem have no clue how to fix it 
 Casey 12/17/15
+
+12/17/15 Ace - Update
+- Cop clothing and weapon shops aren't working.
+- Jonzie car mod needs Tundra's expertise. There is addional script work for setting up vehicle colors. http://steamcommunity.com/sharedfiles/filedetails/?id=561566896&searchtext= 
+- Medic Heli spawns still need fixed.
+- Subaru PD won't spawn in cop vehicle shop. Vanilla vehicles work just fine so it is not the spawn point.
