@@ -15,7 +15,7 @@
 	
 	This is   VERY IMPORTANT   as it is needed to KICK & BAN people.
 */
-_serverCommandPassword = 'Enter_serverCommandPassword_FromYourConfigHere';
+_serverCommandPassword = 'password123';
 
 
 
@@ -24,7 +24,7 @@ _serverCommandPassword = 'Enter_serverCommandPassword_FromYourConfigHere';
 	
 	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
 */
-_passwordAdmin = 'Enter_passwordAdmin_FromYourConfigHere';
+_passwordAdmin = 'password123';
 
 
 /*
@@ -151,43 +151,43 @@ _adminUIDandAccess =
 /*  Items Added Check    */ _IAC = true;	/* true or false */	/* checks if Items are being added unrightful! */
 /*  Local Vehicle Check  */ _LVC = true;	/* true or false */
 /*  unitRecoil checks    */ _URC = true;	/* true or false */	/* checks unitRecoilCoefficient and resets default unitRecoilCoefficient */
-/*  Notification check   */ _UNC = true;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
+/*  Notification check   */ _UNC = false;	/* true or false */	/* _UNC = false; on AltisLife! - showNotification check */
 /*  Use MPInterrupt check*/ _UMP = false;	/* true or false */
 /*  Check BTTNs on D49   */ _B49 = true;	/* true or false */	/* will announce: BadButton on 49 */
 /*  whitelist for _B49   */ _excludedButtons = [];	/* Will Kick for BadButton XYZ if a customnized button is not white-listed here. Example: _excludedButtons = [1010]; */
 /*  Change MpFramework   */ _MPF = false;	/* true or false */	/* important to protect AltisLife */
 /*  Check Actions Plr    */ _CAP = true;	/* true or false */	/* "Actions: xxx/xxx possible scroll menu hack (or you added custom actions..)" */
-/*  Remove Actions Plr   */ _OAP = true;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
-/*  Remove Actions Objs  */ _OAO = true;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
-/*  Check Attached Objs  */ _CAO = true;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
-/*  Use Anti Teleport    */ _UAT = true;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
-/*  Chat-Vote Day/Night  */ _VDN = true;	/* true or false */
+/*  Remove Actions Plr   */ _OAP = false;	/* true or false */	/* Remove ALL Actions on Player Object: (mousewheel actions) needs to be  false  for AltisLife for e.g. gathering */
+/*  Remove Actions Objs  */ _OAO = false;	/* true or false */	/* Remove ALL Actions on Objects near Player: (mousewheel actions) needs to be  false  when using e.g. IgiLoad */
+/*  Check Attached Objs  */ _CAO = false;	/* true or false */	/* needs to be  false  when using e.g. IgiLoad */
+/*  Use Anti Teleport    */ _UAT = false;	/* true or false */	/* might need to be set to false on other mods than Epoch! */
+/*  Chat-Vote Day/Night  */ _VDN = false;	/* true or false */
 /*  Check Vision Mode    */ _CVM = true;	/* true or false */
 /*  check view distance  */ _CVD = false;	/* true or false */	/* if the viewdistance is not 1600 - ban. */
 /*  check cameraOn       */ _CCO = true;	/* true or false */	/* needs to be false for UAV drones and such things.. */
-/*  Revert onEachFrame   */ _REF = true;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
+/*  Revert onEachFrame   */ _REF = false;	/* true or false */	/* AltisLife uses this for PlayerTags - so it should be   _REF = false;   on AltisLife */
 /*  Map Icon Check       */ _MIC = true;	/* true or false */	/* Needs to be  false  on some WasteLand versions */
 /*  Remove All Mines     */ _RAM = false;	/* true or false */
 /*  Remove All UAVs      */ _RUS = false;	/* true or false */
 /*  onEachFrame function */ _rOEF = {};	/* this needs to be CODE */
 /*  custom HandleDamage  */ _CHD = {};		/* this needs to be CODE */
-/*  Revert allowDamage   */ _RAD = true;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
+/*  Revert allowDamage   */ _RAD = false;	/* true or false */	/* if you have safezones using "player allowDamage false;" or similar.. set _RAD = false; */
 /*  Revert HandleDamage  */ _RHD = false;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  EH_Draw3D check      */ _C3D = false;	/* true or false */	/* announces: "EH_Draw3D x should be y" */
 /*  MouseMoving EH check */ _MOH = false;	/* true or false */	/* announces: "MouseMoving EventHandler added" - needs to be disabled for UAV scripts and such.. */
 /*  MouseButton EH check */ _MBC = false;	/* true or false */	/* announces: "MouseButton EventHandler added" */
-/*  Revert MouseButton   */ _RMB = true;	/* true or false */	/* false with Task Force Radio ? */
-/*  Revert KeyUp         */ _RUK = true;	/* true or false */	/* recommended:  true  Removes custom KeyUps and sets back the default ones (false with Task Force Radio ?) */
-/*  Revert KeyDown       */ _RDK = true;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
+/*  Revert MouseButton   */ _RMB = false;	/* true or false */	/* false with Task Force Radio ? */
+/*  Revert KeyUp         */ _RUK = false;	/* true or false */	/* recommended:  true  Removes custom KeyUps and sets back the default ones (false with Task Force Radio ?) */
+/*  Revert KeyDown       */ _RDK = false;	/* true or false */	/* recommended:  true  Removes custom KeyDowns and sets back the default ones (false with Task Force Radio ?) */
 /*  Check Keybinds       */ _CKB = true;	/* true or false */	/* recommended:  true  _RKB needs to be true! Checks Keybinds, if it finds added ones it shows: "KeyBinds added   %1 should be %2" */
 /*  check MapSingleClick */ _OMC = false;	/* true or false */	/* announces: "MapSingleClick modified", if modification is found - NEEDS _MBC to be true! */
 /*  Remove Hit Handler   */ _REH = true;	/* true or false */	/* Needs to be  false  for Paintball script */
 /*  Revert InventoryOpen */ _RIO = true;	/* true or false */	/* AltisLife only: Sets the custom InventoryOpened Handler */
 /*  Revert Killed EH     */ _RKH = true;	/* true or false */
-/*  "" Respawn Handler   */ _RRH = true;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
+/*  "" Respawn Handler   */ _RRH = false;	/* true or false */	/* Needs to be  false  for some custom loadout scripts */
 /*  Revert Map EH        */ _RMEH = ['MouseButtonDblClick','MouseButtonClick','MouseButtonDown','MouseButtonUp','Draw','MouseZChanged','MouseHolding','KeyDown','KeyUp'];
-/*  mod PlayerDisconnect */ _OPD = true;	/* true or false */
-/*  mod PlayerConnect    */ _OPC = true;	/* true or false */
+/*  mod PlayerDisconnect */ _OPD = false;	/* true or false */
+/*  mod PlayerConnect    */ _OPC = false;	/* true or false */
 /*  custom _OPC Function */ _customOnPlayerConnected = '';	/* this needs to be a STRING - Example: _customOnPlayerConnected = '[_uid] spawn YOUR_FUNCTION;'; */
 
 /*  Do not change EH_Fired at all! */ _NO_EHF = false;	/*true or false */	/* obviously needs to be false if settings below are supposed to be used! */
@@ -198,10 +198,10 @@ _adminUIDandAccess =
 /* ------- SOME EPOCH ONLY FUNCTIONS - BELOW ------- */
 /*  Check Crypto         */ _CCT = false;	/* true or false */	/* When a players Crypto is smaller than 0 or bigger than 25000, the player gets banned (not possible with default epoch)
 /*  Use CombatLog checks */ _CLG = false;	/* true or false */	/* "PLAYERNAME CombatLogged GPS X/Y find the dead body!"
-/*  Use Anti Glitch      */ _UAG = true;	/* true or false */	/* a try to stop glitching through walls on Doors/Walls */
-/*  Use Anti Wall Look   */ _AWL = true;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
+/*  Use Anti Glitch      */ _UAG = false;	/* true or false */	/* a try to stop glitching through walls on Doors/Walls */
+/*  Use Anti Wall Look   */ _AWL = false;	/* true or false */	/* *experimental* a try to stop people from watching through Epoch Doors/Walls */
 /*  MPHit Log            */ _MPH = false;	/* true or false */	/* will create a A3_MPHIT.txt file where logs hits on players */
-/*  Token Check          */ _TOC = true;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
+/*  Token Check          */ _TOC = false;	/* true or false */	/* checks if a player got a token after a certain amount of time (trigger message: PlayerConnected %1 seconds ago but did not Request a Token!) */
 /* ------- SOME EPOCH ONLY FUNCTIONS - ABOVE ------- */
 
 
@@ -219,7 +219,7 @@ _KFR = false;	/* true or false */
 _RVR = false;	/* true or false */
 
 /* "_RPR": Will only delete Ropes if the roped object has a crew! */
-_RPR = false;	/* true or false */
+_RPR = true;	/* true or false */
 
 
 
@@ -440,7 +440,7 @@ _ForbiddenVehicles =
 ];
 
 
-_UFI = true;	/* Use "_ForbiddenItems"/Item Check(s) */
+_UFI = false;	/* Use "_ForbiddenItems"/Item Check(s) */
 _UIW = false;	/* if "_UIW = true;" then it checks if the items the individual player has are in "_ItemWhiteList" */
 _ItemWhiteList =
 [
@@ -468,7 +468,7 @@ _ForbiddenOnEpochOnly =
 ];
 
 
-_UFA = true;	/* Use Ammo Check(s) */
+_UFA = false;	/* Use Ammo Check(s) */
 _UAW = false;	/* if "_UAW = true;" then it checks if the ammo used by the individual player is in "_AmmoWhiteList" */
 _AmmoWhiteList =
 [
