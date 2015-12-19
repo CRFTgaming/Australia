@@ -106,6 +106,14 @@ switch (_filter) do
 			_ret pushBack ["TRYK_B_USMC_R","Sheriff SWAT 2",200];
 			_ret pushBack ["U_B_Wetsuit","WetSuit",100];
 		};
+		
+		if(__GETC__(life_coplevel) == 10) then 
+		{
+			_ret pushBack ["doc","DOC Uniform",100];
+			_ret pushBack ["TRYK_V_tacv1_P_BK","DOC Vest",100];
+			_ret pushBack ["pcapcorrections","DOC Hat",100];
+		};
+	};
 	};
 	
 //Hats
@@ -363,6 +371,7 @@ switch (_filter) do
 			["B_Bergen_sgg",nil,200],
 			["B_Bergen_rgr_Exp",nil,200],
 			["PMC_B_Carryall_blk",nil,250],
+			["tf_mr3000_bwmod","Long Range Radio",500],
 			["PMC_B_Kitbag_blk","Black Kitbag",1000],
 			["B_Carryall_cbr",nil,250]
 		];
