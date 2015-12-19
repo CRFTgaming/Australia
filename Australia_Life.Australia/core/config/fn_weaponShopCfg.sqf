@@ -658,10 +658,15 @@ switch(_shop) do
 							["Toolkit",nil,200],
 							["ItemMap",nil,0],
 							["Rangefinder",nil,100],
+							["ItemRadio","CellPhone",0],
 							["NVGoggles_OPFOR","NVG Black",2000],
 							["pmc_earpiece","Ear Piece NVG",2000],
+							// NON LETHAL
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
+							["arifle_MX_GL_Black_F","Non-Lethal Rifle",2500],
+							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
+							// LETHAL
 							["hgun_mas_m9_F","Beretta M9",1000],
 							["15Rnd_mas_9x21_Mag","15rd Beretta Mag",50],
 							["hgun_mas_glock_F","Glock 17",1000],
@@ -674,38 +679,8 @@ switch(_shop) do
 							["30Rnd_mas_9x21_Stanag","MP5A5 mag",70],
 							["PMC_m4","M4 Carbine",3000],
 							["30Rnd_556x45_Stanag","M4 Carbine mag",90],
-							["arifle_mas_m4vlt","M4 VLTOR",3000],
-							["30Rnd_mas_556x45_Stanag","M4 VLTOR mag",90],
-							["arifle_mas_m4","M4A1",3000],
-							["30Rnd_mas_556x45_Stanag","M4A1 mag",90],
-							["arifle_mas_m4c","M4A1 CQB",300],
-							["30Rnd_mas_556x45_Stanag","M4A1 CQB mag",90],
-							["arifle_mas_hk416","HK416",3000],
-							["30Rnd_mas_556x45_Stanag","HK416 mag",90],
-							["srifle_mas_hk417","HK417",3000],
-							["20Rnd_mas_762x51_Stanag","HK417 mag",90], 
-							["arifle_mas_hk417c","Hk417 CQB",3000],
-							["20Rnd_mas_762x51_Stanag","Hk417 CQB mag",90],
-							["arifle_mas_m16","M16A4",3000],
-							["30Rnd_mas_556x45_Stanag","M16A4 mag",90],
-							["arifle_mas_g36c","G36C",3000],
-							["30Rnd_mas_556x45_Stanag","G36C mag",90],    
-							["arifle_mas_fal","FN FAL",3000],
-							["20Rnd_mas_762x51_Stanag","FN FAL mag",90],
-							["arifle_mas_g3","ARX160 black",3000],
-							["20Rnd_mas_762x51_Stanag","ARX160 mag",90], 
-							["arifle_mas_l119","L11A1",3000],
-							["30Rnd_mas_556x45_Stanag","L11A1 mag",90], 
-							["arifle_mas_l119c","L11A1 CQB",3000],
-							["30Rnd_mas_556x45_Stanag","L11A1 CQB mag",90],
-							["arifle_mas_arx_l","ARX160 black",3000],
-							["30Rnd_mas_556x45_Stanag","ARX160 mag",90],
-							["srifle_mas_lrr","LRR AWM",10000],
-							["10Rnd_mas_338_Stanag","LRR AWM mag",120], 
-							["srifle_mas_m24","M24",11000],
-							["5Rnd_mas_762x51_Stanag","M24 mag",200],
-							["srifle_mas_m110","M110",10000],
-							["20Rnd_mas_762x51_Stanag","M110 mag",120], 
+							["srifle_mas_m24","M24 Rifle",4000],
+							["5Rnd_mas_762x51_Stanag","5rd M24 Mag",100],
 							//attachments
 							["bipod_01_F_blk",nil,300],
 							["bipod_02_F_blk",nil,300],
@@ -724,9 +699,9 @@ switch(_shop) do
 							["optic_Hamr",nil,250],
 							["optic_NVS",nil,1000],
 							["optic_DMS",nil,1000],
-							//Launchers and grenades
+							// HAND GRENADES
 							["HandGrenade_Stone","Flashbang",1000],
-							["ItemRadio","CellPhone",0]
+							["SmokeShellBlue","Teargas",700]
 					]
 				];
 			};
