@@ -147,7 +147,13 @@ switch (_filter) do
 			["B_Carryall_cbr",nil,250],
 			["B_Carryall_mcamo",nil,250],
 			["B_Carryall_khk",nil,250],
-			["TRYK_B_Carryall_wood","Woodland Carry-all",250]
+			["TRYK_B_Carryall_wood","Woodland Carry-all",250],
+			//Long Range Radios
+			["tf_anprc155","AN/PRC155",1000],
+			["tf_anprc155_coyote","AN/PRC Coyote",1000],
+			["tf_mr3000","MR3000",1000],
+			["tf_mr3000_multicam","MR3000 Multicam",1000],
+			["tf_rt1523g_big_bwmod","RT1523",1000]
 		];
 	};
 };

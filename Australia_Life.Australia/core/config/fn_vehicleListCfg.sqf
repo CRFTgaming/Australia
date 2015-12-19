@@ -258,6 +258,7 @@ switch (_shop) do
     	// Vehicles available to cops level 4 or higher. Lieutenant
 		_return pushBack ["sab_C130_J",30000];
 		_return pushBack ["sab_C130_JC",40000];
+		_return pushBack ["EC635_Unarmed",30000];
 		_return pushBack ["armscor_A109LUH_B",30000];
 
     	if (__GETC__(life_coplevel) < 5) exitWith {};
