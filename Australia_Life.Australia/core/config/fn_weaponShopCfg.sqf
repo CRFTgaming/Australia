@@ -55,7 +55,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop! Please see an APD recruiter about applying."};
+			case (playerSide != west): {"You are not a cop! Please see an AFP recruiter about applying."};
 			case (__GETC__(life_coplevel) == 0): 
 			{
 				["APD Public Recruit Weapons",
@@ -643,6 +643,9 @@ switch(_shop) do
 							["optic_SOS",nil,1200],
 							["optic_LRPS",nil,1200],
 							//Launchers and grenades
+							["arifle_MX_GL_Black_F","Non-Lethal Rifle",2500],
+							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
+							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
 							["HandGrenade_Stone","Flashbang",1000],
 							["SmokeShellBlue","Teargas",700],
 							["ItemRadio","CellPhone",500]
@@ -665,6 +668,7 @@ switch(_shop) do
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["arifle_MX_GL_Black_F","Non-Lethal Rifle",2500],
+							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
 							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
 							// LETHAL
 							["hgun_mas_m9_F","Beretta M9",1000],
