@@ -276,8 +276,6 @@ switch (_shop) do
 		_return pushBack ["dezkit_b206_fbi",8000];
 		
 
-
-	
     	if (__GETC__(life_coplevel) < 8) exitWith {};
     	// Vehicles available to cops level 8 or higher. Sheriff's Department
   	};
