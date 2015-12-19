@@ -184,8 +184,6 @@ switch (_shop) do
     	{
     		_return pushBack 
     		["holden_pd",1000];
-			_return pushBack
-			["Jonzie_Highway"],3500];
     	};
     	if(__GETC__(life_coplevel) > 3) then // Vehicles available to cops level 4 or higher. Lieutenant
     	{
@@ -210,8 +208,6 @@ switch (_shop) do
 			["aus_sheriff",2000];
 			_return pushBack 
 			["aus_sheriffslick",2000];
-			_return pushBack
-			["Jonzie_Highway"],3500];
 			
     	};
   	};
