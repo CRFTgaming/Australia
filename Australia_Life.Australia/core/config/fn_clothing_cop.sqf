@@ -112,9 +112,8 @@ switch (_filter) do
 			_ret pushBack ["doc","DOC Uniform",100];
 		};
 	};
-};
 	
-//Hats
+ //Hats
 	case 1:
 	{
 		if(__GETC__(life_coplevel) == 0) then
