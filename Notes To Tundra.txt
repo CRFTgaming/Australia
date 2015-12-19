@@ -22,3 +22,10 @@ Casey 12/17/15
 - Jonzie car mod needs Tundra's expertise. There is addional script work for setting up vehicle colors. http://steamcommunity.com/sharedfiles/filedetails/?id=561566896&searchtext= 
 - Medic Heli spawns still need fixed.
 - Subaru PD won't spawn in cop vehicle shop. Vanilla vehicles work just fine so it is not the spawn point.
+
+
+12/19/15 Ace - Update
+- Jonzie's cars need added to shops
+- I broke Cop Clothing shop. Is it possible that we need coplvl9 area? I have it skip from 8 to 10.
+- STILL NEED MEDI HELIS FIXED!!!!
+- I got Doppler's PD Subaru to spawn in the shops so that is fixed. 
