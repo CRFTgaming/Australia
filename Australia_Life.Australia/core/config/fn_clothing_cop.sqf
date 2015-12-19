@@ -112,7 +112,7 @@ switch (_filter) do
 			_ret pushBack ["doc","DOC Uniform",100];
 		};
 	};
-	};
+};
 	
 //Hats
 	case 1:
@@ -386,8 +386,7 @@ switch (_filter) do
 			["B_Bergen_rgr_Exp",nil,200],
 			["PMC_B_Carryall_blk",nil,250],
 			["tf_mr3000_bwmod","Long Range Radio",500],
-			["PMC_B_Kitbag_blk","Black Kitbag",1000],
-			["B_Carryall_cbr",nil,250]
+			["PMC_B_Kitbag_blk","Black Kitbag",1000]
 		];
 	};
 };
