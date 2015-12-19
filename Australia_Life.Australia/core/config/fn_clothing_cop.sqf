@@ -110,8 +110,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) == 10) then 
 		{
 			_ret pushBack ["doc","DOC Uniform",100];
-			_ret pushBack ["TRYK_V_tacv1_P_BK","DOC Vest",100];
-			_ret pushBack ["pcapcorrections","DOC Hat",100];
 		};
 	};
 	};
@@ -186,7 +184,10 @@ switch (_filter) do
 			_ret pushBack ["45KOso_helmet_alpha","Sheriff SWAT Helmet",50];
 			_ret pushBack ["H_HelmetB_light_snakeskin","Sheriff SWAT Helmet 2",50];
 		};
-		
+		if(__GETC__(life_coplevel) == 10) then
+		{
+			_ret pushBack ["pcapcorrections","DOC Hat",100];
+		};
 	};
 	
 	//Glasses
@@ -261,6 +262,15 @@ switch (_filter) do
 			_ret pushBack ["Mask_M50","Gas Mask",800];
 		};
 			if(__GETC__(life_coplevel) == 8) then
+		{
+			_ret pushBack ["G_Aviator","Aviators",20];
+			_ret pushBack ["G_B_Diving","Divers Goggles",20];
+			_ret pushBack ["G_Tactical_Clear","Tactical Glasses",20];
+			_ret pushBack ["G_Tactical_Black","Tactical Shades",20];
+			_ret pushBack ["Mask_M50","Gas Mask",800];
+			_ret pushBack ["TRYK_kio_balaclava_ESS","Balaclava & Goggles",20];	
+		};
+			if(__GETC__(life_coplevel) == 10) then
 		{
 			_ret pushBack ["G_Aviator","Aviators",20];
 			_ret pushBack ["G_B_Diving","Divers Goggles",20];
@@ -353,6 +363,10 @@ switch (_filter) do
 			_ret pushBack ["TRYK_V_tacv1lc_SRF2_BK","Sheriff's SWAT (BLK)",650];
 			_ret pushBack ["V_PlateCarrier1_PMC_marpat","Sheriff's SWAT Marpat",650];
 			_ret pushBack ["V_RebreatherB","Scuba Gear",600];
+		};
+		if(__GETC__(life_coplevel) == 10) then
+		{
+			_ret pushBack ["TRYK_V_tacv1_P_BK","DOC Vest",100];
 		};
 	};
 	
