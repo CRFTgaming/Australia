@@ -24,10 +24,11 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
-			["f150ems",7000],
-			["C_Offroad_01_F",1500],
-			["C_SUV_01_F",1300],
 			["C_Hatchback_01_F",800],
+			["C_SUV_01_F",1300],
+			["C_Offroad_01_F",1500],
+			["Jonzie_Ambulance",4500],
+			["f150ems",7000],
 			["I_Truck_02_medical_F",2500],
 			["O_Truck_03_medical_F",4500],
 			["B_Truck_01_medical_F",6000]
@@ -50,14 +51,17 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",650],
 			["C_Hatchback_01_F",800],
-			["C_Offroad_01_F",1500],
-			["C_Van_01_transport_F",2500],
-			["C_Van_01_Box_F",2500],
+			["C_Offroad_01_F",1300],
 			["C_SUV_01_F",1300],
+			["C_Hatchback_01_sport_F",1500],
 			["aus_taxi",10000],
 			["sub_blue",40000],
 			["sub_black",40000],
-			["C_Hatchback_01_sport_F",1100]
+			["Jonzie_Ute",35000],
+			["Jonzie_STI",45000],
+			["Jonzie_Escalade",45000],
+			["Jonzie_VE",45000],
+			["Jonzie_Viper",50000]
 		];
 	};
 	
@@ -82,6 +86,8 @@ switch (_shop) do
 			["I_Truck_02_box_F",9000],
 			["B_Truck_01_box_F",15000],
 			["B_Truck_01_mover_F",10000],
+			["Jonzie_Tow_Truck",10000],
+			["Jonzie_Forklift",10000],
 			["O_Truck_03_device_F",20000]
 		];	
 	};
