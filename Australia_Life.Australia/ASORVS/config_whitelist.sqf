@@ -1,6 +1,6 @@
 #include <macro.h>
 //this addAction [""Spawn Cars"", {[[""cars""], [""B_Quadbike_01_F"", ""B_G_Offroad_01_F"", ""B_G_Offroad_01_armed_F"", ""B_G_Offroad_01_repair_F"", ""B_MRAP_01_F"",
-                                                 ""B_MRAP_01_hmg_F"", ""B_Truck_01_mover_F"", ""B_Truck_01_fuel_F"", ""B_G_Van_01_transport_F""], ""cop_car_3""] execvm ""ASORVS\open.sqf"";}];
+                                                 //""B_MRAP_01_hmg_F"", ""B_Truck_01_mover_F"", ""B_Truck_01_fuel_F"", ""B_G_Van_01_transport_F""], ""cop_car_3""] execvm ""ASORVS\open.sqf"";}];
 if(__GETC__(life_coplevel) == 9) then
   {
     [] execVM "ASORVS\config_9.sqf";
