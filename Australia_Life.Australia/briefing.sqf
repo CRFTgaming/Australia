@@ -61,7 +61,6 @@ player createDiarySubject ["controls","Controls"];
 				"
 					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
 					
-					Kavalla, Athira, Pyrgos (White Zones only)<br/>
 					All Police HQs<br/>
 					Main Rebel Outpost<br/>
 					Rebel Outposts<br/>
@@ -210,11 +209,11 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Policy and Procedure, Rules",
 				"
-				This is the Rules and Ruglations of the A.P.D. All officers are required to follow this regardless of rank.<br/><br/>
+				This is the Rules and Ruglations of the A.F.P. All officers are required to follow this regardless of rank.<br/><br/>
 
-				1.All members of the A.P.D. no matter the rank are required to be on TeamSpeak3 at all times in the respective channel for the server they are playing on! ( ts.epikgaming.net )​<br/><br/>
+				1.All members of the A.F.P. no matter the rank are required to be on TeamSpeak3 at all times in the respective channel for the server they are playing on! ( ts.epikgaming.net )​<br/><br/>
 
-				2.All officers will spawn at the Athira HQ spawn point. Once spawned the officer will make it known via TS3 that they need a partner and a patrol district.​<br/>
+				2.All officers will spawn at their designated spawn point. Once spawned the officer will make it known via TS3 that they need a partner and a patrol district.​<br/>
 
 				3.All officers will have a partner. Partners will be assigned at the restart of the server they are playing on. (Partner and district assignments will be done by the highest ranking officer on at the time.)​<br/>
 
@@ -222,7 +221,7 @@ player createDiarySubject ["controls","Controls"];
 
 				5.All partners will be assigned with a lethal and nonlethal officer according to player rank restrictions.<br/>
 
-				6.All officers ranked Patrol Officer/Deputy or higher will have Static AA and AT/Hmg in their vehicle at all times. (This rule applies to land and air patrols.)​<br/>
+				6.All officers ranked Patrol Officer/Deputy or higher will have lethal weapon in their vehicle at all times. (This rule applies to land and air patrols.)​<br/>
 
 				7.All officers are required to be in uniform with all necessary equipment in good working condition ready for duty.​<br/>
 
@@ -236,9 +235,9 @@ player createDiarySubject ["controls","Controls"];
 
 				12.While during your tour of duty you have a situation where you are unsure of what to do. You will radio in for a supervisor ( Higher ranking officer) to show up on scene. The chain of command will be followed until a decision is made and the call is code 4.​<br/>
 
-				13.All officers that have a RPG, LMG or sniper rifle will not carry them on their person unless they are involved in a live operation. These weapons will be kept inside vehicles or staged in a vehicle at an HQ at all times.​<br/>
+				13.All officers that have a LMG or sniper rifle will not carry them on their person unless they are involved in a live operation. These weapons will be kept inside vehicles or staged in a vehicle at an HQ at all times.​<br/>
 
-				14.At no time will an A.P.D. officer commandeer a civilian/rebel vehicle.​<br/>
+				14.At no time will an A.F.P. officer commandeer a civilian/rebel vehicle.​<br/>
 
 				15.Any officer who has to take action inside of a safe zone will restrain the suspect and immediately escort them outside of the safe zone as it is now a role play event.​<br/>
 
@@ -268,7 +267,7 @@ player createDiarySubject ["controls","Controls"];
 
 				28.At no time will anyone discharge their police issued weapon outside of a situation requiring police action.​<br/>
 
-				29.All officers will keep their suppressor on their police issued taser at all times.​<br/>
+				29.All officers will keep their police issued taser at all times.​<br/>
 
 				30.Officers with the rank of Lieutenant or higher will have channel admin in the A.P.D. channels of TeamSpeak. These officers will have the full authority to remove anyone that is deemed unruly or disruptive in TeamSpeak while playing as A.P.D.​<br/>
 
@@ -276,7 +275,7 @@ player createDiarySubject ["controls","Controls"];
 
 				32.All officers ranked Sergeant or above will have their rank in their profile name as to identify them as a commanding officer.​<br/>
 
-				33.All officers no matter the rank will keep updated via the epikgaming.net website of any changes to the A.P.D. Policy and Procedure Manual.​<br/><br/>
+				33.All officers no matter the rank will keep updated via the CRFTGaming.com website of any changes to the A.F.P. Policy and Procedure Manual.​<br/><br/>
 
 				"
 		]
@@ -286,20 +285,20 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Code of Conduct",
 				"
-				This is how you need to act when you are on duty as a A.P.D officer.<br/><br/>
-				1. All members of the Altis Police Department are to treat one another with respect and dignity that is becoming of a member of the Police Department.​<br/>
+				This is how you need to act when you are on duty as a A.F.P. officer.<br/><br/>
+				1. All members of the Australian Federal Police are to treat one another with respect and dignity that is becoming of a member of the Police Department.​<br/>
 
-				2. All members of the Altis Police Department are expected to treat all citizens with respect and dignity during any situation or conflict. (At no time will anyone be harassed or bullied in accordance with Epikgaming server rules.)​<br/>
+				2. All members of the Australian Federal Police are expected to treat all citizens with respect and dignity during any situation or conflict. (At no time will anyone be harassed or bullied in accordance with Epikgaming server rules.)​<br/>
 
-				3. All members of the Altis Police Department will follow all Epikgaming server rules at all times while on duty and off. (Any officer caught breaking server rules will be subject to disciplinary action decided by the Internal Affairs Division pending an investigation.)​<br/>
+				3. All members of the Australian Federal Police will follow all CRFT Gaming server rules at all times while on duty and off. (Any officer caught breaking server rules will be subject to disciplinary action decided by the Internal Affairs Division pending an investigation.)​<br/>
 
-				4.All members of the Altis Police Department will follow all orders from a higher ranking officer. If the officer feels the order was wrong or against the Altis Police Departments Code Of Conduct they will immediately report the incident to a member of the Internal Affairs Division for investigation.​<br/>
+				4.All members of the Australian Federal Police will follow all orders from a higher ranking officer. If the officer feels the order was wrong or against the Australian Federal Police Code Of Conduct they will immediately report the incident to a member of the Internal Affairs Division for investigation.​<br/>
 
-				5.All members of the Altis Police Department will use a separate profile and name while on duty. This will protect the name and integrity of the A.P.D.​<br/>
+				5.All members of the Australian Federal Police will use a separate profile and name while on duty. This will protect the name and integrity of the A.F.P.​<br/>
 
 				6.At no time will an officer have a gang, faction, or clan tag in their name while on duty.​<br/>
 
-				7.The tags [APD] and [Deputy] are reserved for whitelisted officers only. [APD Pub] will be used by public officers.​ <br/><br/>
+				7.The tags [AFP] and [Deputy] are reserved for whitelisted officers only. [AFP Pub] will be used by public officers.​ <br/><br/>
 
 				"
 		]
@@ -307,7 +306,7 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["policerules",
 		[
-			"A.P.D Response Codes",
+			"A.F.P./A.S.D. Response Codes",
 				"
 				This is how you are to call out your situation and/or status through teamspeak.<br/><br/>
 
@@ -318,10 +317,10 @@ player createDiarySubject ["controls","Controls"];
 
 				10-7: Out of service (Going AFK)​<br/>
 				10-8: Back in service (Return from AFK)​<br/>
+				10-38: Traffic Stop<br/><br/>
 				10-41: Starting tour of duty (Coming online as A.P.D.)​<br/>
 				10-42: Ending tour of duty (Going offline as A.P.D.)​<br/>
 				10-50: Vehicle collision<br/>
-				10-80: Traffic Stop<br/><br/> 
 
 				"
 		]
@@ -358,7 +357,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Uniform Policy",
 				"
-				1.All A.P.D. Officers will wear the standard issue Police Uniform at all times. <br/>
+				1.All A.F.P. Officers will wear the standard issue Police Uniform at all times. <br/>
 				
 				2.All S.W.A.T. team members will keep a S.W.A.T. uniform in their backpack or vehicle until they are activated for a live operation.<br/>
 				
@@ -366,7 +365,7 @@ player createDiarySubject ["controls","Controls"];
 				
 				4.The only headcovers allowed for patrol are the beret and the black cap based on rank availability.<br/>
 				
-				5.All A.P.D. are required to wear vests at all times while on patrol/training. These vests include the police vest and black plate carrier rig.<br/>
+				5.All A.F.P. are required to wear vests at all times while on patrol/training. These vests include the police vest and black plate carrier rig.<br/>
 				
 				6.Combat helmets will be stored inside vehicles or backpacks. They will only be used for live operations.<br/>
 				
@@ -383,7 +382,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				Get more rules and regulations at<br/><br/>
 
-				https://docs.google.com/document/d/1Yy09Sy2c1j-vWZDnZ7RTVlYlr833BO5k51wB_h3UgXA/edit#heading=h.bzmyjsqk3e6i<br/><br/>
+				http://crftgaming.org/forums/forumdisplay.php?fid=47<br/><br/>
 
 
 				"
