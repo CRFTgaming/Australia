@@ -75,7 +75,6 @@ switch (_filter) do
 			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
 			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
 			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
-			_ret pushBack ["U_B_CombatUniform_mcam",SWAT,600];
 		};
 
 		if(__GETC__(life_coplevel) == 7) then
@@ -90,7 +89,6 @@ switch (_filter) do
 			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
 			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
 			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
-			_ret pushBack ["U_B_CombatUniform_mcam",SWAT,600];
 		};
 
 		if(__GETC__(life_coplevel) == 8) then 
