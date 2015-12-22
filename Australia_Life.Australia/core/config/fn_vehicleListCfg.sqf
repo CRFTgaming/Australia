@@ -159,6 +159,10 @@ switch (_shop) do
     		["B_Heli_Transport_03_unarmed_green_F",30000];
 			_return pushBack
     		["B_Heli_Transport_03_F",35000];
+			_return pushBack
+			["O_G_Offroad_01_armed_F,40000]; //RENT ONLY
+			_return pushBack
+			["O_MRAP_02_hmg_F",50000]; //RENT ONLY
 		};
 	};
 	
@@ -202,7 +206,10 @@ switch (_shop) do
     	};
     	if(__GETC__(life_coplevel) > 6) then // Vehicles available to cops level 7 or higher. Command
 		{	
-			_return pushBack ["subpd",15000];
+			_return pushBack 
+			["subpd",15000];
+			_return pushBack
+			["B_MRAP_01_hmg_F,25000];
     	};
     	if(__GETC__(life_coplevel) > 7) then // Vehicles available to cops level 8 or higher. Sheriff
     	{
@@ -210,7 +217,8 @@ switch (_shop) do
 			["aus_sheriff",2000];
 			_return pushBack 
 			["aus_sheriffslick",2000];
-			
+			_return pushBack 
+			["B_MRAP_01_hmg_F,25000];
     	};
   	};
 	
