@@ -29,3 +29,11 @@ Casey 12/17/15
 - I broke Cop Clothing shop. Is it possible that we need coplvl9 area? I have it skip from 8 to 10.
 - STILL NEED MEDI HELIS FIXED!!!!
 - I got Doppler's PD Subaru to spawn in the shops so that is fixed. 
+
+12/22/15
+- Jonzie Cars are added to shops 
+-Cop shops are fixed
+-Ifrit and Off Road hmg are added back to shops for rent only (need something for rebels to waste money on)
+-Hunter hmg added to police shops for command only
+-Wanted + menu updated with current laws 
+
