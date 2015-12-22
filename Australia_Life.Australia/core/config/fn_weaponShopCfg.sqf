@@ -34,7 +34,7 @@ switch(_shop) do
 						["ItemMap",nil,20],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
-						["NVGoggles_OPFOR",nil,1000],
+						["pmc_earpiece",nil,1000],
 						["V_TacVestIR_blk",nil,400],
 						["TRYK_V_Sheriff_BA_T4","Med Vest OD",400],
 						["TRYK_V_Sheriff_BA_TB4","Med Vest BLK",400],
