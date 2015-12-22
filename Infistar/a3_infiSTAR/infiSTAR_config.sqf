@@ -271,7 +271,7 @@ _allowedIDDs =
 	// Displays whitelisted for Epoch
 	-3000,-1900,-1500,-1338,-1300,-1200,-13,-8,-7,-6,-5,
 	0,4,5,6,8,12,18,24,46,49,54,55,63,70,129,131,148,151,154,163,169,174,262,602,999,
-	66600,77700,316000
+	66600,77700,316000,2001,2300,2800
 ];
 /*
 	// Different Displays from different mods/additions (might not be needed at all)
