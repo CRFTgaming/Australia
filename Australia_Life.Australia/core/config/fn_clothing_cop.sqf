@@ -177,7 +177,7 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) == 8) then
 		{
-			_ret pushBack ["H_Cap_blk","Sheriff Hat",50];
+			_ret pushBack ["pcapgreen","Sheriff Hat",50];
 			_ret pushBack ["H_HelmetB_plain_blk","Ballistic Helmet",50];
 			_ret pushBack ["Vdo_opscore_black_3_peltor","Voodoo Helmet Blk",50];
 			_ret pushBack ["45KOso_helmet_alpha","Sheriff SWAT Helmet",50];
