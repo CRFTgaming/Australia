@@ -227,8 +227,8 @@ _RPR = true;	/* true or false */
 _EpochIndestructible = true;
 
 
-/*  CommandingMenu Check */ _CMC = true;	/* true or false */
-/*  Close ALL CMD-Menus  */ _KCM = true;	/* true or false */	/* Just closes All Commandingmenus (ignores the white-list below) */
+/*  CommandingMenu Check */ _CMC = false;	/* true or false */
+/*  Close ALL CMD-Menus  */ _KCM = false;	/* true or false */	/* Just closes All Commandingmenus (ignores the white-list below) */
 /* _cMenu: if '_CMC = true;' then this array holds the ALLOWED Commanding Menus */
 _cMenu =
 [
