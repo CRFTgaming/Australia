@@ -11,7 +11,7 @@ _onScreenTime = 9; //<-- How long is the text on the screen for ? Recommended: 1
 sleep 25; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Welcome to";
-_role1names = ["CRFT Gaming's Bornholm Server"];
+_role1names = ["CRFT Gaming's Australia Server"];
 _role2 = "IMPORTANT NOTICE:";
 _role2names = ["This is a role-play server!  Please press M and read the Server Rules"];
 _role3 = "Owners:";
