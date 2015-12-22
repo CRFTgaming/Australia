@@ -130,10 +130,6 @@ switch (_shop) do
 			_return pushBack
 			["O_G_Offroad_01_armed_F",7000];
 			_return pushBack
-			["O_MRAP_02_hmg_F",10000];
-			_return pushBack
-			["O_MRAP_02_gmg_F",15000];
-			_return pushBack
 			["O_Truck_03_transport_F",10000];
 			_return pushBack
 			["O_Truck_03_covered_F",12500];
