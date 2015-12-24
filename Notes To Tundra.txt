@@ -37,3 +37,8 @@ Casey 12/17/15
 -Hunter hmg added to police shops for command only
 -Wanted + menu updated with current laws 
 
+-------------------------------------------------------------------------------------------------------------------------------
+I added the rest of the wanted charges to both files but for some reason when you commit a crime it does not add you to the list automatically.
+Figured it might be something you could look over.
+
+Also added the script to spawn with a jump suit when your in jail and it doesn't work either 2 files added in the core/civ folder 
