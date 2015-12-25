@@ -727,7 +727,7 @@ switch(_shop) do
 							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["Laserdesignator_02","Radar Gun",100],
+							["Radar_Gun","Radar Gun",100],
 							["pmc_earpiece","NVG Ear Piece",1500],
 							["NVGoggles_OPFOR","NVG Black",2000],
 							["NVGoggles","NVG Brown",2000],
