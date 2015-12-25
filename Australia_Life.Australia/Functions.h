@@ -286,8 +286,6 @@ class Life_Client_Core
 		class civInteractionMenu {};
 		class removeWeapons {};
 		class freezePlayer {};
-		class inJail {};
-		class outOfJail {};
 	};
 	
 	class Vehicle

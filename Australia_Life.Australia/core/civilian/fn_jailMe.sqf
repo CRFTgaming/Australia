@@ -84,7 +84,6 @@ switch (true) do
 		serv_wanted_remove = [player];
 		player setPos (getMarkerPos "jail_release");
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
-		[] call life_fnc_outOfJail;
 		[5] call SOCK_fnc_updatePartial;
 	};
 	
@@ -103,7 +102,6 @@ switch (true) do
 		hint localize "STR_Jail_Released";
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
-		[] call life_fnc_outOfJail;
 		[5] call SOCK_fnc_updatePartial;
 	};
 };
