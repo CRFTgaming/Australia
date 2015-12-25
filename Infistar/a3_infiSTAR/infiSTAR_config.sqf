@@ -240,7 +240,7 @@ _cMenu =
 
 
 /*  Check Global Markers */ _CGM = false;	/* true or false */	/* you may need to disable this check for A.I. Missions - or whitelist the used Markers in the _aLocalM Array beneath */
-/*  Check Local Markers  */ _CLM = true;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
+/*  Check Local Markers  */ _CLM = false;	/* true or false */	/* false if you do not want LocalMarker to be checked. */
 /*  Use _aLocalM array   */ _UMW = true;	/* true or false */	/* use allowed marker array from below (for example AltisLife uses house_ and others in there) or A.I. Missions */
 /* _aLocalM: if '_CLM' && _UMW - this array of names will be allowed */
 _aLocalM =
@@ -265,7 +265,6 @@ _badIDDsToClose =
 _allowedIDDs =
 [
 	// Displays whitelisted for Epoch
-	playersys_DIALOG,R3F_LOG_IDD_dlg_contenu_vehicule,R3F_LOG_IDD_dlg_liste_objets,
 	-3000,-1900,-1500,-1338,-1300,-1200,-666,-15,-14,-13,-12,-11,-10,-9,
 	-8,-7,-6,-5,-4,-3,-2,-1,0,4,5,6,8,12,18,24,46,49,54,55,63,70,129,131,
 	148,151,154,163,169,174,262,602,999,160,300,301,302,303,304,601,2001,
