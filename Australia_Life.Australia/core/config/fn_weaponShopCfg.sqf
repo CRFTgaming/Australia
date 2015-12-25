@@ -728,7 +728,7 @@ switch(_shop) do
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Radar_Gun","Radar Gun",100],
-							["radar_record_tape","Radar Tape"],
+							["radar_record_tape","Radar Tape",10],
 							["pmc_earpiece","NVG Ear Piece",1500],
 							["NVGoggles_OPFOR","NVG Black",2000],
 							["NVGoggles","NVG Brown",2000],
