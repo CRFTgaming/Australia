@@ -35,15 +35,6 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
 						["pmc_earpiece",nil,1000],
-						["V_TacVestIR_blk",nil,400],
-						["TRYK_V_Sheriff_BA_T4","Med Vest OD",400],
-						["TRYK_V_Sheriff_BA_TB4","Med Vest BLK",400],
-						["B_FieldPack_ocamo",nil,200],
-						["TRYK_B_Medbag_ucp",nil,200],
-						["TRYK_B_Medbag_BK",nil,200],
-						["TRYK_B_Medbag",nil,200],
-						["B_Carryall_ocamo",nil,300],
-						["H_PilotHelmetHeli_B",nil,1000],
 						["ItemRadio","CellPhone",500]
 					]
 				];
@@ -727,8 +718,6 @@ switch(_shop) do
 							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["Radar_Gun","Radar Gun",100],
-							["radar_record_tape","Radar Tape",10],
 							["pmc_earpiece","NVG Ear Piece",1500],
 							["NVGoggles_OPFOR","NVG Black",2000],
 							["NVGoggles","NVG Brown",2000],
