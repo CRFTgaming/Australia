@@ -32,10 +32,10 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
 						["ItemMap",nil,20],
+					    ["ItemRadio","CellPhone",500]
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
-						["pmc_earpiece",nil,1000],
-						["ItemRadio","CellPhone",500]
+						["pmc_earpiece",nil,1000]
 					]
 				];
 			};
@@ -51,16 +51,15 @@ switch(_shop) do
 			{
 				["APD Public Recruit Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
-							["ItemMap",nil,0],
-							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
-							["pmc_earpiece","Ear Piece NVG",2000],
-							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
-							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["ItemRadio","CellPhone",0]
+							["ItemMap",nil,0],
+							["FirstAidKit",nil,20],
+							["Rangefinder",nil,100],
+							["Toolkit",nil,200],
+							["pmc_earpiece","Ear Piece NVG",1000],
+							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
+							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20]
 					]
 				];
 			};
@@ -68,12 +67,12 @@ switch(_shop) do
 			{
 				["APD Cadets Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -84,8 +83,7 @@ switch(_shop) do
 							["hgun_mas_glocksf_F","Glock 21",1500],
 							["12Rnd_mas_45acp_Mag","12rd Glock 21 Mag",50],
 							["hgun_mas_acp_F","1911",1500],
-							["8Rnd_mas_45acp_Mag","8rd 1911 Mag",50],					
-							["ItemRadio","CellPhone",0]
+							["8Rnd_mas_45acp_Mag","8rd 1911 Mag",50]
 					]
 				];
 			};
@@ -93,12 +91,12 @@ switch(_shop) do
 			{
 				["APD Patrol Officer Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -151,8 +149,7 @@ switch(_shop) do
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200],
-							["ItemRadio","CellPhone",0]
+							["optic_mas_acog_eo","ACOG",200]
 					]
 				];
 			};
@@ -160,12 +157,12 @@ switch(_shop) do
 			{
 				["APD Sergeant Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -232,8 +229,7 @@ switch(_shop) do
 							["optic_NVS",nil,1000],
 							["optic_DMS",nil,1000],
 							//Launchers and grenades
-							["HandGrenade_Stone","Flashbang",1000],
-							["ItemRadio","CellPhone",0]
+							["HandGrenade_Stone","Flashbang",1000]
 					]
 				];
 			};
@@ -241,12 +237,12 @@ switch(_shop) do
 			{
 				["APD Lieutenant Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -326,8 +322,7 @@ switch(_shop) do
 							["optic_NVS",nil,1000],
 							["optic_DMS",nil,1000],
 							//Launchers and grenades
-							["HandGrenade_Stone","Flashbang",1000],
-							["ItemRadio","CellPhone",0]
+							["HandGrenade_Stone","Flashbang",1000]
 					]
 				];
 			};
@@ -335,12 +330,12 @@ switch(_shop) do
 			{
 				["APD Captains Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -425,8 +420,7 @@ switch(_shop) do
 							["optic_DMS",nil,1000],
 							//Launchers and grenades
 							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700],
-							["ItemRadio","CellPhone",0]
+							["SmokeShellBlue","Teargas",700]
 					]
 				];
 			};
@@ -434,12 +428,12 @@ switch(_shop) do
 			{
 				["APD SWAT Arsenal",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -528,8 +522,7 @@ switch(_shop) do
 							["optic_LRPS",nil,1200],
 							//Launchers and grenades
 							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700],
-							["ItemRadio","CellPhone",0]
+							["SmokeShellBlue","Teargas",700]
 					]
 				];
 			};
@@ -638,8 +631,7 @@ switch(_shop) do
 							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
 							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
 							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700],
-							["ItemRadio","CellPhone",500]
+							["SmokeShellBlue","Teargas",700]
 					]
 				];
 			};
@@ -647,13 +639,12 @@ switch(_shop) do
 			{
 				["DOC Weapons",
 					[
-							["FirstAidKit",nil,20],
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
+							["ItemRadio","CellPhone",0]
+							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["ItemRadio","CellPhone",0],
-							["NVGoggles_OPFOR","NVG Black",2000],
+							["Toolkit",nil,200],
 							["pmc_earpiece","Ear Piece NVG",2000],
 							// NON LETHAL
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
@@ -713,15 +704,12 @@ switch(_shop) do
 				["Australian Sheriff's Equipment",
 					[
 							["ItemGPS",nil,0],
-							["Toolkit",nil,200],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
+							["ItemRadio","CellPhone",0]
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["pmc_earpiece","NVG Ear Piece",1500],
-							["NVGoggles_OPFOR","NVG Black",2000],
-							["NVGoggles","NVG Brown",2000],
-							["NVGoggles_INDEP","NVG Green",2000]
+							["Toolkit",nil,200],
+							["pmc_earpiece","Ear Piece NVG",2000]
 					]
 				];
 			};
@@ -882,12 +870,13 @@ switch(_shop) do
 			{
 				["Mohammed's Equipment Shop",
 					[
+						["ItemGPS",nil,0],
 						["ItemMap",nil,0],
-						["ItemRadio","CellPhone",0],
-						["ItemGPS",nil,100],
+						["ItemRadio","CellPhone",0]
+						["FirstAidKit",nil,20],
 						["Rangefinder",nil,100],
 						["Toolkit",nil,200],
-						["pmc_earpiece","NVG Ear Piece",1500],
+						["pmc_earpiece","Ear Piece NVG",2000],
 						["NVGoggles_OPFOR","NVG Black",2000],
 						["NVGoggles","NVG Brown",2000],
 						["NVGoggles_INDEP","NVG Green",2000]
