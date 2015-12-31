@@ -67,7 +67,7 @@ _useTildMenu = false;	/* true or false */
 /* "_startAsNormal": if you add admin UIDs in here as well, they will start as almost "normal" player instead of with admin menu and such. */
 _startAsNormal =
 [
-	'0','0','0'
+	'76561198058563261','0','0'
 ];
 /* if one of the admins with the UIDs in "_startAsNormal" uses the !admin command to login as admin, it will be announced to ANYONE on the server if "_announce_adminstate_changed" is true. */
 _announce_adminstate_changed = false;	/* true or false */
