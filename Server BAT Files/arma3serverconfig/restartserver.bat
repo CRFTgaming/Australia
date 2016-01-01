@@ -26,9 +26,9 @@ echo Logs Rotated...Starting Server
 
 
 ::RESTARTING THE ARMA 3 SERVER BE SURE TO EDIT THIS TO YOUR SERVER .EXE LOCATION -NOTE ALSO THIS IS WHERE YOU DEFINE WHERE YOU CONFIG.CFG IS
-cd C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Server
+cd D:\SteamLibrary\steamapps\common\Arma 3 Server
 timeout 3
-start "arma3" /min /high "arma3server.exe" -port=2302 "-config=C:\arma3serverconfig\config.cfg" "-cfg=C:\arma3serverconfig\basic.cfg" "-profiles=C:\arma3serverconfig\Users" -name=arma3serverconfig "-mod=@extDB;@life_server;curator;heli;kart;mark;@CRFT_ADDONS;@infiSTAR_A3;@allinarmaterrainpack;@Australia" -world=empty -nosplash -noSound -noPause -enableHT -malloc=system 
+start "arma3" /min /high "arma3server.exe" -port=2302 "-config=D:\arma3serverconfig\config.cfg" "-cfg=C:\arma3serverconfig\basic.cfg" "-profiles=C:\arma3serverconfig\Users" -name=arma3serverconfig "-mod=@extDB;@life_server;curator;heli;kart;mark;@CRFT_ADDONS;@infiSTAR_A3;@allinarmaterrainpack;@Australia" -world=empty -nosplash -noSound -noPause -enableHT -malloc=system 
 timeout 6
 echo ARMA 3 Server has started
 
