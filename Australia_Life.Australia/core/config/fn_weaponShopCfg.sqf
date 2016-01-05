@@ -32,7 +32,7 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
 						["ItemMap",nil,20],
-					    ["ItemRadio","CellPhone",500]
+					    ["ItemRadio","CellPhone",500],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
 						["pmc_earpiece",nil,1000]
@@ -52,7 +52,7 @@ switch(_shop) do
 				["APD Public Recruit Weapons",
 					[
 							["ItemGPS",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["ItemMap",nil,0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
@@ -69,7 +69,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -93,7 +93,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -159,7 +159,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -239,7 +239,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -332,7 +332,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -430,7 +430,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -641,7 +641,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -705,7 +705,7 @@ switch(_shop) do
 					[
 							["ItemGPS",nil,0],
 							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0]
+							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
 							["Toolkit",nil,200],
@@ -872,7 +872,7 @@ switch(_shop) do
 					[
 						["ItemGPS",nil,0],
 						["ItemMap",nil,0],
-						["ItemRadio","CellPhone",0]
+						["ItemRadio","CellPhone",0],
 						["FirstAidKit",nil,20],
 						["Rangefinder",nil,100],
 						["Toolkit",nil,200],
