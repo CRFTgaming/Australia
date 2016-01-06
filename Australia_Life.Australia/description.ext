@@ -60,7 +60,7 @@ class RscTitles
 	    }; 
 	};
 }; 
-#include "ASORVS\menu.hpp"
+
 class CfgFunctions
 {
 	#include "Functions.h"
