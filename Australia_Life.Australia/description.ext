@@ -64,7 +64,6 @@ class RscTitles
 class CfgFunctions
 {
 	#include "Functions.h"
-	#include "ASORVS\cfgfunctions.hpp"
 };
 
 class CfgDebriefing
